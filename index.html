@@ -7,11 +7,11 @@
   <body>
     <header>
       <section class="action-product">
-        <div class="logo">ТЕХНОМАРТ</div>
-        <div class="search">Поиск:</div>
-        <div class="bookmarks">Закладки: 0</div>
-        <div class="cart">Корзина: 0</div>
-        <div class="order-submit">Оформить заказ</div>
+        <span class="logo">ТЕХНОМАРТ</span>
+        <span class="search">Поиск:</span>
+        <span class="bookmarks">Закладки: 0</span>
+        <span class="cart">Корзина: 0</span>
+        <span class="order-submit">Оформить заказ</span>
       </section>
       <section class="store-main">
         <div class="description">Интернет-магазин строительных материалов и инструментов для ремонта</div>
@@ -20,17 +20,17 @@
           <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <ul class="user-account">
-          <li><a href="">Войти</a></li>
-          <li><a href="">Регистрация</a></li>
+          <li><span>Войти</span></li>
+          <li><span>Регистрация</span></li>
         </ul>
         <ul class="nav-main">
           <li><a class="nav-current">Главная</a></li>
-          <li><a href="">Компания</a></li>
-          <li><a href="">Каталог</a></li>
-          <li><a href="">Новости</a></li>
-          <li><a href="">Спецпредложения</a></li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Контакты</a></li>
+          <li><a href="company.html">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="promotion.html">Спецпредложения</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contact.html">Контакты</a></li>
         </ul>
       </section>
     </header>
@@ -65,7 +65,7 @@
         </div>
         <div class="slider">
           ДРЕЛИ <span>соседям на радость!</span>
-          <a>ОТКРЫТЬ КАТАЛОГ</a>
+          <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
         </div>
       </section>
 
@@ -140,50 +140,66 @@
             <li class="maker-logo logo-hitachi"></li>
             <li class="maker-logo logo-lg"></li>
             <li class="maker-logo logo-aeg"></li>
-            <li class="maker-logo logo-metabo>metabo"></li>
+            <li class="maker-logo logo-metabo"></li>
           </ul>
         </div>
       </section>
 
       <section class="services">
-        <h1>Services</h1>
+        <h1 class="visually-hidden">Services</h1>
           <div>
-            Сервисы
-          Хороший интернет-магазин отличается от плохого не только ценами!
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+            <h2>Сервисы</h2>
+            <p>
+              Хороший интернет-магазин отличается от плохого не только ценами!<br>
+              Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+            </p>
+            <ul class="services-list">
+              <li>Доставка</li>
+                <ul class="service-delivery">
+                  <li>
+                    <div>
+                      <h3>Доставка</h3>
+                      <p>
+                        Мы с удовольствием доставим ваш товар прямо<br>
+                        к вашему подъезду совершенно бесплатно!<br>
+                        Ведь мы неплохо заработаем,<br>
+                        поднимая его на ваш этаж!
+                      </p>
+                      <img src="http://placehold.it/150x100">
+                    </div>
+                  </li>
+                </ul>
+              <li>Гарантия</li>
+              <li>Кредит</li>
+            </ul>
 
-          Доставка
 
-          Мы с удовольствием доставим ваш товар прямо
-          к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем,
-          поднимая его на ваш этаж!
+
+
         </div>
       </section>
 
       <section class="company-info">
         <h1 class="visually-hidden">About</h1>
-КОМПАНИЯ «Техномарт»
-
-Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-
-Мы можем доставить ваш товар в самые отдаленные точки России!
-Техномарт работает со многими транспортными компаниями:
-
-Деловые линии
-
-Автотрейдинг
-
-ЖелДорЭкспедиция
-Подробнее о компании
-
-КОНТАКТЫ
-
-Вы можете забрать товар сами,
-заехав в наш офис:
-
-ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!
-
+        <div>
+          <h2>КОМПАНИЯ «ТЕХНОМАРТ»</h2>
+          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+          Техномарт работает со многими транспортными компаниями:</p>
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <p><span>ПОДРОБНЕЕ О КОМПАНИИ</span></p>
+        </div>
+        <div>
+          <h2>КОНТАКТЫ</h2>
+          <p>Вы можете забрать товар сами,<br>
+          заехав в наш офис:</p>
+          <span><img src="http://placehold.it/150x100"></span>
+          <p><span>ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</span></p>
+        </div>
       </section>
     </main>
 
@@ -221,8 +237,12 @@
           <a class="social social-ins" href=""></a>
         </div>
         <div class="developer">
-          <p>Обратная связь: mail@htmlacademy.ru</p>
-          <p>Разработано - htmlacademy.ru</p>
+          <p>Обратная связь:<br>
+            <span>mail@htmlacademy.ru</span>
+          </p>
+          <p>Разработано - <br>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          </p>
         </div>
       </section>
     </footer>

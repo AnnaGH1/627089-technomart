@@ -41,47 +41,57 @@
     </header>
     <main>
       <section class="breadcrumbs">
-        <a href="index.html"><span>Home icon</span></a>
-        <span class="arrow-breadcrumbs">Иконка стрелки</span>
-        <a>КАТАЛОГ</a>
-        <span class="arrow-breadcrumbs">Иконка стрелки</span>
-        <a>ИНСТРУМЕНТ</a>
-        <span class="arrow-breadcrumbs">Иконка стрелки</span>
-        <a>ПЕРФОРАТОРЫ</a>
+        <ul>
+          <li><a href="index.html">Главная страница</a></li>
+          <li><a href="#">КАТАЛОГ</a></li>
+          <li><a href="#">ИНСТРУМЕНТ</a></li>
+          <li><a>ПЕРФОРАТОРЫ</a></li>
+        </ul>
       </section>
       <section class="product">
         <h2>ПЕРФОРАТОРЫ</h2>
         <aside class="filter">
           <h3>ФИЛЬТР:</h3>
+          <div class="filter-price">
             <h4>ЦЕНА:</h4>
             <div class="price-range-slider">
+                <span class="price-min-slider">Min</span>
+                <span class="price-line-slider">Slider</span>
+                <span class="price-max-slider">Max</span>
             </div>
             <div class="price-range-type">
-              <span class="price-min"></span>
-              -
-              <span class="price-max"></span>
+                <span class="price-min-type">Min</span>
+                <span>-</span>
+                <span class="price-max-type">Max</span>
             </div>
-            <ul>ПРОИЗВОДИТЕЛИ:
+          </div>
+          <div class="filter-maker">
+            <h4>ПРОИЗВОДИТЕЛИ:</h4>
+            <ul>
               <li><button></button>BOSCH</li>
               <li><button></button>ИНТЕРСКОЛ</li>
               <li><button></button>MAKITA</li>
               <li><button></button>DEWALT</li>
               <li><button></button>HITACHI</li>
             </ul>
-            <ul>ПИТАНИЕ:
+          </div>
+          <div>
+            <h4>ПИТАНИЕ:</h4>
+            <ul>
               <li><button></button>АККУМУЛЯТОРНЫЕ</li>
               <li><button></button>СЕТЕВЫЕ</li>
             </ul>
+          </div>
             <button class="filter-result">ПОКАЗАТЬ</button>
         </aside>
         <aside class="sorting">
           <h3>СОРТИРОВКА:</h3>
           <ul>
-            <li>ПО ЦЕНЕ</li>
-            <li>ПО ТИПУ</li>
-            <li>ПО ФУНКЦИОНАЛУ</li>
-            <li><span class="order-ascending">Иконка восходящей сортировки</span></li>
-            <li><span class="order-descending">Иконка нисходящей сортировки</span></li>
+            <li><button></button>ПО ЦЕНЕ</li>
+            <li><button></button>ПО ТИПУ</li>
+            <li><button></button>ПО ФУНКЦИОНАЛУ</li>
+            <li><button class="order-ascending">Иконка восходящей сортировки</button></li>
+            <li><button class="order-descending">Иконка нисходящей сортировки</button></li>
           </ul>
         </aside>
         <div class="product-list">
@@ -125,7 +135,6 @@
               <p class="sale-price">
                 12500 P.
               </p>
-              <span>new</span>
             </li>
             <li>
               <img srс="http://placehold.it/150x100" alt="Фото дрели">
@@ -152,7 +161,6 @@
               <p class="sale-price">
                 25500 P.
               </p>
-              <span>new</span>
             </li>
             <li>
               <img srс="http://placehold.it/150x100" alt="Фото дрели">
@@ -178,7 +186,6 @@
               <p class="sale-price">
                 15500 P.
               </p>
-              <span>new</span>
             </li>
             <li>
               <img srс="http://placehold.it/150x100" alt="Фото дрели">

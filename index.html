@@ -8,11 +8,11 @@
     <header>
       <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта ТЕХНОМАРТ</h1>
       <section class="action-product">
-        <p class="logo">ТЕХНОМАРТ</p>
+        <p class="logo"><img srс="http://placehold.it/150x100" alt="Логотип ТЕХНОМАРТ"></p>
         <p class="search"><span class="icon-search"></span>Поиск:</p>
         <p class="bookmarks"><span class="icon-bookmark"></span>Закладки: 0</p>
         <p class="cart"><span class="icon-cart"></span>Корзина:<span>0</span></p>
-        <p class="order-submit">Оформить заказ</p>
+        <p class="order-submit-main">Оформить заказ</p>
       </section>
       <section class="store-main">
         <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
@@ -41,33 +41,35 @@
         <h2 class="visually-hidden">Features</h2>
         <div class="card card-material">
           Материалы
-          <a>на любой вкус</a>
+          <a><button>на любой вкус</button></a>
           <span class="icon icon-materials"></span>
           <span>new</span>
         </div>
         <div class="card card-instrument">
           Инструмент
-          <a>на все случаи</a>
+          <a><button>на все случаи</button></a>
           <span class="icon icon-instrument"></span>
         </div>
         <div class="card card-equipment">
           Техника
-          <a>для стройки</a>
+          <a><button>для стройки</button></a>
           <span class="icon icon-equipment"></span>
         </div>
         <div class="card card-promo">
           Скидки 50%
-          <a>на 350 товаров</a>
+          <a><button>на 350 товаров</button></a>
           <span class="icon icon-promo"></span>
         </div>
         <div class="card card-delivery">
           Доставка
-          <a>бесплатно</a>
+          <a><button>бесплатно</button></a>
           <span class="icon icon-delivery"></span>
         </div>
-        <div class="slider">
+        <div class="slider-photo">
           <img srс="http://placehold.it/150x100" alt="Фото дрели в действии">
           <p>ДРЕЛИ <span>соседям на радость!</span></p>
+          <button class="arrow-left">Стрелка влево</button>
+          <button class="arrow-right">Стрелка вправо</button>
           <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
         </div>
       </section>
@@ -135,14 +137,14 @@
           <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
           <a>ВСЕ ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</a>
           <ul class="maker-logo">
-            <li><img srс="http://placehold.it/150x100" alt="Логотип Bosch"></li>
-            <li><img srс="http://placehold.it/150x100" alt="Логотип Makita"></li>
-            <li><img srс="http://placehold.it/150x100" alt="Логотип DeWalt"></li>
-            <li><img srс="http://placehold.it/150x100" alt="Логотип ИНТЕРСКОЛ"></li>
-            <li><img srс="http://placehold.it/150x100" alt="Логотип HITACHI"></li>
-            <li><img srс="http://placehold.it/150x100" alt="Логотип LG"></li>
-            <li><img srс="http://placehold.it/150x100" alt="Логотип AEG"></li>
-            <li><img srс="http://placehold.it/150x100" alt="Логотип metabo"></li>
+            <li><a href="https://www.boschtools.com/"><img srс="http://placehold.it/150x100" alt="Логотип Bosch"></a></li>
+            <li><a href="#"><img srс="http://placehold.it/150x100" alt="Логотип Makita"></a></li>
+            <li><a href="#"><img srс="http://placehold.it/150x100" alt="Логотип DeWalt"></a></li>
+            <li><a href="#"><img srс="http://placehold.it/150x100" alt="Логотип ИНТЕРСКОЛ"></a></li>
+            <li><a href="#"><img srс="http://placehold.it/150x100" alt="Логотип HITACHI"></a></li>
+            <li><a href="#"><img srс="http://placehold.it/150x100" alt="Логотип LG"></a></li>
+            <li><a href="#"><img srс="http://placehold.it/150x100" alt="Логотип AEG"></a></li>
+            <li><a href="#"><img srс="http://placehold.it/150x100" alt="Логотип metabo"></a></li>
           </ul>
         </div>
       </section>
@@ -193,8 +195,8 @@
           <h2>КОНТАКТЫ</h2>
           <p>Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
-          <span class="delivery-image"></span>
-          <p><span>ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</span></p>
+          <a class="contact-map"><img href="#"></a>
+          <p><button>ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button></p>
         </div>
       </section>
     </main>
@@ -202,7 +204,7 @@
 
     <footer>
       <section class="site-internal">
-        <div class="logo">ТЕХНОМАРТ</div>
+        <p class="logo"><img srс="http://placehold.it/150x100" alt="Логотип ТЕХНОМАРТ"></p>
         <div class="contact">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55
@@ -231,9 +233,11 @@
           Все права защищены
         </div>
         <div class="share">
-          <a class="social social-vk" href=""></a>
-          <a class="social social-fb" href=""></a>
-          <a class="social social-ins" href=""></a>
+          <ul>
+            <li><a class="social social-vk" href="#"></a>ВКонтакте</li>
+            <li><a class="social social-fb" href="#">Facebook</a></li>
+            <li><a class="social social-ins" href="#">Instagram</a></li>
+          </ul>
         </div>
         <div class="developer">
           <p>Обратная связь:<br>
@@ -245,6 +249,33 @@
         </div>
       </section>
     </footer>
+
+    <section class="slider-empty">
+      <img srс="http://placehold.it/150x100" alt="Белый фон">
+    </section>
+
+
+    <section class="modal modal-write-us">
+      <p><button class="close-modal-write-us"></button></p>
+      <span>Ваше имя:</span>
+      <!-- Форма -->
+      <span>Представьтесь, пожалуйста</span>
+
+      <span>Ваш e-mail:</span>
+      <!-- Форма -->
+      <span>Для отправки ответа</span>
+
+      <span>Текст письма:</span>
+      <!-- Форма -->
+      <span>В свободной форме</span>
+      <p><button class="send">ОТПРАВИТЬ</button><p>
+    </section>
+
+
+    <section class="modal modal-map-popup">
+      <p><button class="close-modal-write-us"></button></p>
+      <a href="https://yandex.ru/maps/"><img srс="http://placehold.it/150x100" alt="Карта увеличенная"></a>
+    </section>
   </body>
 
 </html>

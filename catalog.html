@@ -7,28 +7,31 @@
     <header>
       <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта ТЕХНОМАРТ - страница каталога</h1>
       <section class="action-product">
-        <p class="logo">ТЕХНОМАРТ</p>
+        <p class="logo"><a href="index.html"><img srс="http://placehold.it/150x100" alt="Логотип ТЕХНОМАРТ"></a></p>
         <p class="search"><span class="icon-search"></span>Поиск:</p>
         <p class="bookmarks"><span class="icon-bookmark"></span>Закладки: 0</p>
         <p class="cart"><span class="icon-cart"></span>Корзина:<span>10</span></p>
-        <p class="order-submit">Оформить заказ</p>
+        <p class="order-submit-main">Оформить заказ</p>
       </section>
       <section class="store-main">
         <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <p class="phone"><span class="icon-bookmark"></span>+7 (812) 555-05-55</p>
         <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <ul class="user-account">
-          <li><span class="icon-user"></span><span>Равшан Джамшутович</span><span class="icon-quit"></span></li>
-          <li><span>Мои заказы</span></li>
-          <li><span class="bullet"></span></li>
-          <li><span>Личный кабинет</span></li>
-        </ul>
+        <div class="user-account">
+          <p>
+            <a href="#"><span class="icon-user">Иконка пользователя</span>Равшан Джамшутович</a>
+            <a href="#"><span class="icon-quit">Иконка выход</span></a>
+          </p>
+          <p><span>Мои заказы</span></p>
+          <p><span class="bullet"></span></p>
+          <p><span>Личный кабинет</span></p>
+        </div>
       </section>
       <nav>
         <ul class="nav-main">
-          <li><a class="nav-current">Главная</a></li>
+          <li><a href="index.html">Главная</a></li>
           <li><a href="company.html">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a class="nav-current">Каталог</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="promotion.html">Спецпредложения</a></li>
           <li><a href="delivery.html">Доставка</a></li>
@@ -38,8 +41,12 @@
     </header>
     <main>
       <section class="breadcrumbs">
+        <a href="index.html"><span>Home icon</span></a>
+        <span class="arrow-breadcrumbs">Иконка стрелки</span>
         <a>КАТАЛОГ</a>
+        <span class="arrow-breadcrumbs">Иконка стрелки</span>
         <a>ИНСТРУМЕНТ</a>
+        <span class="arrow-breadcrumbs">Иконка стрелки</span>
         <a>ПЕРФОРАТОРЫ</a>
       </section>
       <section class="product">
@@ -47,20 +54,25 @@
         <aside class="filter">
           <h3>ФИЛЬТР:</h3>
             <h4>ЦЕНА:</h4>
-              <span class="price-range-slider"></span>
-              <span class="price-range-input"></span>
+            <div class="price-range-slider">
+            </div>
+            <div class="price-range-type">
+              <span class="price-min"></span>
+              -
+              <span class="price-max"></span>
+            </div>
             <ul>ПРОИЗВОДИТЕЛИ:
-              <li>BOSCH</li>
-              <li>ИНТЕРСКОЛ</li>
-              <li>MAKITA</li>
-              <li>DEWALT</li>
-              <li>HITACHI</li>
+              <li><button></button>BOSCH</li>
+              <li><button></button>ИНТЕРСКОЛ</li>
+              <li><button></button>MAKITA</li>
+              <li><button></button>DEWALT</li>
+              <li><button></button>HITACHI</li>
             </ul>
             <ul>ПИТАНИЕ:
-              <li>АККУМУЛЯТОРНЫЕ</li>
-              <li>СЕТЕВЫЕ</li>
+              <li><button></button>АККУМУЛЯТОРНЫЕ</li>
+              <li><button></button>СЕТЕВЫЕ</li>
             </ul>
-            <button>ПОКАЗАТЬ</button>
+            <button class="filter-result">ПОКАЗАТЬ</button>
         </aside>
         <aside class="sorting">
           <h3>СОРТИРОВКА:</h3>
@@ -68,6 +80,8 @@
             <li>ПО ЦЕНЕ</li>
             <li>ПО ТИПУ</li>
             <li>ПО ФУНКЦИОНАЛУ</li>
+            <li><span class="order-ascending">Иконка восходящей сортировки</span></li>
+            <li><span class="order-descending">Иконка нисходящей сортировки</span></li>
           </ul>
         </aside>
         <div class="product-list">
@@ -243,9 +257,11 @@
           Все права защищены
         </div>
         <div class="share">
-          <a class="social social-vk" href=""></a>
-          <a class="social social-fb" href=""></a>
-          <a class="social social-ins" href=""></a>
+          <ul>
+            <li><a class="social social-vk" href=""></a></li>
+            <li><a class="social social-fb" href=""></a></li>
+            <li><a class="social social-ins" href=""></a></li>
+          </ul>
         </div>
         <div class="developer">
           <p>Обратная связь:<br>
@@ -257,5 +273,11 @@
         </div>
       </section>
     </footer>
+    <section class="modal modal-cart">
+      <p><button class="close-modal-cart-item-added"></button></p>
+      <p><span class="icon-added"></span>ТОВАР ДОБАЛЕН В КОРЗИНУ</p>
+      <p><button class="order-submit-popup">ОФОРМИТЬ</button><p>
+      <p><button class="continue-shopping">ПРОДОЛЖИТЬ ПОКУПКИ</button><p>
+    </section>
   </body>
 </html>

@@ -9,29 +9,31 @@
       <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта ТЕХНОМАРТ - главная страница</h1>
       <section class="action-product">
         <p class="logo"><a><img srс="http://placehold.it/150x100" alt="Логотип ТЕХНОМАРТ"></a></p>
-        <p class="search"><span class="icon-search"></span>Поиск:</p>
-        <p class="bookmarks"><span class="icon-bookmark"></span>Закладки: 0</p>
-        <p class="cart"><span class="icon-cart"></span>Корзина:<span>0</span></p>
-        <p class="order-submit-main">Оформить заказ</p>
+        <p class="search">Поиск:</p>
+        <p class="bookmarks">Закладки:<span>0</span></p>
+        <p class="cart">Корзина:<span>0</span></p>
+        <button class="order-submit-main">Оформить заказ</button>
       </section>
-      <section class="store-main">
+      <section class="store-intro">
         <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <p class="phone"><span class="icon-bookmark"></span>+7 (812) 555-05-55</p>
-        <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <ul class="user-account">
-          <li><span>Войти</span></li>
-          <li><span>Регистрация</span></li>
-        </ul>
+        <p class="contact-phone">+7 (812) 555‒05‒55</p>
+        <p class="contact-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <div class="user-account">
+          <ul>
+            <li><button>Войти</button></li>
+            <li><button>Регистрация</button></li>
+          </ul>
+      </div>
       </section>
-      <nav>
-        <ul class="nav-main">
+      <nav class="nav-main">
+        <ul>
           <li><a class="nav-current">Главная</a></li>
-          <li><a href="company.html">Компания</a></li>
+          <li><a href="#">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="promotion.html">Спецпредложения</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contact.html">Контакты</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -40,35 +42,25 @@
       <section class="features-main">
         <h2 class="visually-hidden">Features</h2>
         <div class="card card-material">
-          Материалы
-          <a><button>на любой вкус</button></a>
-          <span class="icon icon-materials"></span>
+          <p>Материалы<a href="#">на любой вкус</a></p>
         </div>
         <div class="card card-instrument">
-          Инструмент
-          <a><button>на все случаи</button></a>
-          <span class="icon icon-instrument"></span>
+          <p>Инструмент<a href="#">на все случаи</a></p>
         </div>
         <div class="card card-equipment">
-          Техника
-          <a><button>для стройки</button></a>
-          <span class="icon icon-equipment"></span>
+          <p>Техника<a href="#">для стройки</a></p>
         </div>
         <div class="card card-promo">
-          Скидки 50%
-          <a><button>на 350 товаров</button></a>
-          <span class="icon icon-promo"></span>
+          <p>Скидки 50%<a href="#">на 350 товаров</a></p>
         </div>
         <div class="card card-delivery">
-          Доставка
-          <a><button>бесплатно</button></a>
-          <span class="icon icon-delivery"></span>
+          <p>Доставка<a href="#">бесплатно</a></p>
         </div>
         <div class="slider-photo">
           <img srс="http://placehold.it/150x100" alt="Фото дрели в действии">
           <p>ДРЕЛИ <span>соседям на радость!</span></p>
-          <button class="arrow-left">Стрелка влево</button>
-          <button class="arrow-right">Стрелка вправо</button>
+          <button class="arrow arrow-left">Стрелка влево</button>
+          <button class="arrow arrow-right">Стрелка вправо</button>
           <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
         </div>
       </section>
@@ -159,10 +151,8 @@
               <div class="delivery-description">
                 <h3>Доставка</h3>
                 <p>
-                  Мы с удовольствием доставим ваш товар прямо
-                  к вашему подъезду совершенно бесплатно!
-                  Ведь мы неплохо заработаем,
-                  поднимая его на ваш этаж!
+                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                  Ведь мы неплохо заработаем, поднимая его на ваш этаж!
                 </p>
               </div>
             <li>Гарантия</li>
@@ -183,14 +173,13 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <p><span>ПОДРОБНЕЕ О КОМПАНИИ</span></p>
+          <p><a href="#">ПОДРОБНЕЕ О КОМПАНИИ</a></p>
         </div>
         <div>
           <h2>КОНТАКТЫ</h2>
-          <p>Вы можете забрать товар сами,<br>
-          заехав в наш офис:</p>
+          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
           <a class="contact-map" href="https://yandex.ru/maps/"><img srс="http://placehold.it/150x100" alt="Карта"></a>
-          <p><button>ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button></p>
+          <p><a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a></p>
         </div>
       </section>
     </main>
@@ -201,45 +190,46 @@
         <p class="logo"><a><img srс="http://placehold.it/150x100" alt="Логотип ТЕХНОМАРТ"></a></p>
         <div class="contact">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-          +7 (812) 555-05-55
+          +7 (812) 555‒05‒55
         </div>
-        <div>
-          <ul class="nav-secondary">
-            <li>Компания</li>
-            <li>Новости</li>
-            <li>Каталог</li>
-            <li>Доставка</li>
-            <li>Контакты</li>
+        <nav class="nav-secondary">
+          <ul>
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
-        </div>
-        <div>
-          <ul class="features-secondary">
-            <li>Материалы</li>
-            <li>Техника</li>
-            <li>Инструмент</li>
-            <li>Спецпредложения</li>
+        </nav>
+        <nav class="nav-product">
+          <ul>
+            <li><a href="#">Материалы</a></li>
+            <li><a href="#">Техника</a></li>
+            <li><a href="#">Инструмент</a></li>
+            <li><a href="#">Спецпредложения</a></li>
           </ul>
-        </div>
+        </nav>
       </section>
+
       <section class="site-external">
         <div class="rights">
-          © 2010-2017 Компания "Техномарт"<br>
+          © 2010‒2017 Компания "Техномарт"
           Все права защищены
         </div>
         <div class="share">
           <ul>
-            <li><a class="social social-vk" href="#"></a>ВКонтакте</li>
-            <li><a class="social social-fb" href="#">Facebook</a></li>
-            <li><a class="social social-ins" href="#">Instagram</a></li>
+            <li><a class="social social-vkontakte" href="#">ВКонтакте</a></li>
+            <li><a class="social social-facebook" href="#">facebook</a></li>
+            <li><a class="social social-instagram" href="#">Instagram</a></li>
           </ul>
         </div>
         <div class="developer">
-          <p>Обратная связь:<br>
-            <span>mail@htmlacademy.ru</span>
+          <p>Обратная связь:
+            <span class="developer-contact"><a href="#">mail@htmlacademy.ru</a></span>
           </p>
-          <p>Разработано - <br>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-          </p>
+          <p>Разработано ‒
+            <span class="developer-contact"><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></span>
+            </p>
         </div>
       </section>
     </footer>

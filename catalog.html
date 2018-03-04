@@ -6,7 +6,7 @@
   <body>
     <header>
       <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта ТЕХНОМАРТ - страница каталога</h1>
-      <section class="action-product">
+      <section class="store-bar">
         <p class="logo"><a href="index.html"><img srс="http://placehold.it/150x100" alt="Логотип ТЕХНОМАРТ"></a></p>
         <p class="search">Поиск:</p>
         <p class="bookmarks">Закладки:<span>0</span></p>
@@ -39,10 +39,6 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
-
-
-
-
     </header>
     <main>
       <section class="breadcrumbs">
@@ -50,7 +46,7 @@
           <li><a href="index.html">Главная страница</a></li>
           <li><a href="#">КАТАЛОГ</a></li>
           <li><a href="#">ИНСТРУМЕНТ</a></li>
-          <li><a>ПЕРФОРАТОРЫ</a></li>
+          <li><a class="nav-current">ПЕРФОРАТОРЫ</a></li>
         </ul>
       </section>
       <section class="product">
@@ -66,25 +62,25 @@
             </div>
             <div class="price-range-type">
                 <span class="price-min-type">Min</span>
-                <span>-</span>
+                <span>‒</span>
                 <span class="price-max-type">Max</span>
             </div>
           </div>
           <div class="filter-maker">
             <h4>ПРОИЗВОДИТЕЛИ:</h4>
             <ul>
-              <li><button></button>BOSCH</li>
-              <li><button></button>ИНТЕРСКОЛ</li>
-              <li><button></button>MAKITA</li>
-              <li><button></button>DEWALT</li>
-              <li><button></button>HITACHI</li>
+              <li><button>yes-no</button>BOSCH</li>
+              <li><button>yes-no</button>ИНТЕРСКОЛ</li>
+              <li><button>yes-no</button>MAKITA</li>
+              <li><button>yes-no</button>DEWALT</li>
+              <li><button>yes-no</button>HITACHI</li>
             </ul>
           </div>
-          <div>
+          <div class="filter-power">
             <h4>ПИТАНИЕ:</h4>
             <ul>
-              <li><button></button>АККУМУЛЯТОРНЫЕ</li>
-              <li><button></button>СЕТЕВЫЕ</li>
+              <li><button>yes-no</button>АККУМУЛЯТОРНЫЕ</li>
+              <li><button>yes-no</button>СЕТЕВЫЕ</li>
             </ul>
           </div>
             <button class="filter-result">ПОКАЗАТЬ</button>
@@ -92,11 +88,11 @@
         <aside class="sorting">
           <h3>СОРТИРОВКА:</h3>
           <ul>
-            <li><button></button>ПО ЦЕНЕ</li>
-            <li><button></button>ПО ТИПУ</li>
-            <li><button></button>ПО ФУНКЦИОНАЛУ</li>
-            <li><button class="order-ascending">Иконка восходящей сортировки</button></li>
-            <li><button class="order-descending">Иконка нисходящей сортировки</button></li>
+            <li><button>yes-no</button>ПО ЦЕНЕ</li>
+            <li><button>yes-no</button>ПО ТИПУ</li>
+            <li><button>yes-no</button>ПО ФУНКЦИОНАЛУ</li>
+            <li><a class="order-ascending">Иконка восходящей сортировки</a></li>
+            <li><a class="order-descending">Иконка нисходящей сортировки</a></li>
           </ul>
         </aside>
         <div class="product-list">
@@ -104,130 +100,72 @@
           <ul>
             <li>
               <img srс="http://placehold.it/150x100" alt="Фото дрели">
-              <p class="item-name">
-                  Перфоратор BOSCH<br>
-                  BFG 3000
-              </p>
-              <p class="list-price">
-                22500 P.
-              </p>
-              <p class="sale-price">
-                15500 P.
-              </p>
+              <p class="item-name">Перфоратор BOSCH BFG 3000</p>
+              <p class="list-price">22500 P.</p>
+              <p class="sale-price">15500 P.</p>
             </li>
             <li>
               <img srс="http://placehold.it/150x100" alt="Фото дрели">
-              <p class="item-name">
-                  Перфоратор BOSCH<br>
-                  BFG 6000
-              </p>
-              <p class="list-price">
-                30500 P.
-              </p>
-              <p class="sale-price">
-                25500 P.
-              </p>
+              <p class="item-name">Перфоратор BOSCH BFG 6000</p>
+              <p class="list-price">30500 P.</p>
+              <p class="sale-price">25500 P.</p>
             </li>
             <li>
-              <button><span class="icon-cart"></span>КУПИТЬ</button>
-              <button>В ЗАКЛАДКИ</button>
-              <p class="item-name">
-                  Перфоратор BOSCH<br>
-                  BFG 2000
-              </p>
-              <p class="list-price">
-              </p>
-              <p class="sale-price">
-                12500 P.
-              </p>
+              <div class="product-action">
+                <button class="action-buy">КУПИТЬ</button>
+                <button class="action-bookmark">В ЗАКЛАДКИ</button>
+              </div>
+              <p class="item-name">Перфоратор BOSCH BFG 2000</p>
+              <p class="list-price"></p>
+              <p class="sale-price">12500 P.</p>
             </li>
             <li>
               <img srс="http://placehold.it/150x100" alt="Фото дрели">
-              <p class="item-name">
-                  Перфоратор BOSCH<br>
-                  BFG 3000
-              </p>
-              <p class="list-price">
-                22500 P.
-              </p>
-              <p class="sale-price">
-                15500 P.
-              </p>
+              <p class="item-name">Перфоратор BOSCH BFG 3000</p>
+              <p class="list-price">22500 P.</p>
+              <p class="sale-price">15500 P.</p>
             </li>
             <li>
               <img srс="http://placehold.it/150x100" alt="Фото дрели">
-              <p class="item-name">
-                  Перфоратор BOSCH<br>
-                  BFG 6000
-              </p>
-              <p class="list-price">
-                30500 P.
-              </p>
-              <p class="sale-price">
-                25500 P.
-              </p>
+              <p class="item-name">Перфоратор BOSCH BFG 6000</p>
+              <p class="list-price">30500 P.</p>
+              <p class="sale-price">25500 P.</p>
             </li>
             <li>
               <img srс="http://placehold.it/150x100" alt="Фото дрели">
-              <p class="item-name">
-                  Перфоратор BOSCH<br>
-                  BFG 2000
-              </p>
-              <p class="list-price">
-              </p>
-              <p class="sale-price">
-                12500 P.
-              </p>
+              <p class="item-name">Перфоратор BOSCH BFG 2000</p>
+              <p class="list-price"></p>
+              <p class="sale-price">12500 P.</p>
             </li>
             <li>
               <img srс="http://placehold.it/150x100" alt="Фото дрели">
-              <p class="item-name">
-                  Перфоратор BOSCH<br>
-                  BFG 3000
-              </p>
-              <p class="list-price">
-                22500 P.
-              </p>
-              <p class="sale-price">
-                15500 P.
-              </p>
+              <p class="item-name">Перфоратор BOSCH BFG 3000</p>
+              <p class="list-price">22500 P.</p>
+              <p class="sale-price">15500 P.</p>
             </li>
             <li>
               <img srс="http://placehold.it/150x100" alt="Фото дрели">
-              <p class="item-name">
-                  Перфоратор BOSCH<br>
-                  BFG 6000
-              </p>
-              <p class="list-price">
-                30500 P.
-              </p>
-              <p class="sale-price">
-                25500 P.
-              </p>
+              <p class="item-name">Перфоратор BOSCH BFG 6000</p>
+              <p class="list-price">30500 P.</p>
+              <p class="sale-price">25500 P.</p>
             </li>
             <li>
               <img srс="http://placehold.it/150x100" alt="Фото дрели">
-              <p class="item-name">
-                  Перфоратор BOSCH<br>
-                  BFG 2000
-              </p>
-              <p class="list-price">
-              </p>
-              <p class="sale-price">
-                12500 P.
-              </p>
+              <p class="item-name">Перфоратор BOSCH BFG 2000</p>
+              <p class="list-price"></p>
+              <p class="sale-price">12500 P.</p>
             </li>
           </ul>
         </div>
-        <div class="pagination">
+        <nav class="pagination">
           <h3 class="visually-hidden">Навигация по страницам</h3>
             <ul>
-              <li><a>1</a></li>
-              <li><a>2</a></li>
-              <li><a>3</a></li>
-              <li><a>СЛЕДУЮЩАЯ</a></li>
+              <li><a class="page-current">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">СЛЕДУЮЩАЯ</a></li>
             </ul>
-        </div>
+        </nav>
       </section>
       <section class="product-description">
         <h3>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3>
@@ -271,9 +209,9 @@
         </div>
         <div class="share">
           <ul>
-            <li><a class="social social-vkontakte" href="#">ВКонтакте</a></li>
-            <li><a class="social social-facebook" href="#">facebook</a></li>
-            <li><a class="social social-instagram" href="#">Instagram</a></li>
+            <li><a class="social social-vkontakte" href="https://vk.com/">ВКонтакте</a></li>
+            <li><a class="social social-facebook" href="https://www.facebook.com/">facebook</a></li>
+            <li><a class="social social-instagram" href="https://www.instagram.com/">Instagram</a></li>
           </ul>
         </div>
         <div class="developer">
@@ -288,10 +226,12 @@
 
     </footer>
     <section class="modal modal-cart">
-      <p><button class="close-modal-cart-item-added"></button></p>
-      <p><span class="icon-added"></span>ТОВАР ДОБАЛЕН В КОРЗИНУ</p>
-      <p><button class="order-submit-popup">ОФОРМИТЬ</button><p>
-      <p><button class="continue-shopping">ПРОДОЛЖИТЬ ПОКУПКИ</button><p>
+      <p><button class="close-modal-cart"></button></p>
+      <p>ТОВАР ДОБАЛЕН В КОРЗИНУ</p>
+      <ul>
+        <li><button class="action-next order-submit">ОФОРМИТЬ</button></li>
+        <li><button class="action-next shopping-continue">ПРОДОЛЖИТЬ ПОКУПКИ</button></li>
+      </ul>
     </section>
   </body>
 </html>

@@ -15,7 +15,7 @@
         <p class="search">Поиск:</p>
         <p class="bookmarks">Закладки:<span>0</span></p>
         <p class="cart">Корзина:<span>0</span></p>
-        <button class="order-submit-main">Оформить заказ</button>
+        <a class="order-submit-main" href="order-submit.html">Оформить заказ</a>
       </section>
       <section class="store-intro">
         <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
@@ -33,7 +33,7 @@
         </div>
       </section>
       <nav class="nav-main">
-        <ul>
+        <ul class="nav-site">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a class="nav-current">Каталог</a></li>
@@ -45,20 +45,20 @@
       </nav>
     </header>
     <main class="container">
-      <section class="breadcrumbs">
-        <ul>
-          <li><a href="index.html">Главная страница</a></li>
-          <li><a href="#">КАТАЛОГ</a></li>
-          <li><a href="#">ИНСТРУМЕНТ</a></li>
-          <li><a class="nav-current">ПЕРФОРАТОРЫ</a></li>
+      <!-- <section > -->
+        <ul class="breadcrumbs">
+          <li><a class="icon-home" href="index.html">Главная страница</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="instrument.html">Инструмент</a></li>
+          <li>Перфораторы</li>
         </ul>
-      </section>
+      <!-- </section> -->
       <section class="product">
-        <h2>ПЕРФОРАТОРЫ</h2>
+        <h2>Перфораторы</h2>
         <aside class="filter">
-          <h3>ФИЛЬТР:</h3>
+          <h3>Фильтр:</h3>
           <div class="filter-price">
-            <h4>ЦЕНА:</h4>
+            <h4>Цена:</h4>
             <div class="price-range-slider">
                 <span class="price-min-slider">Min</span>
                 <span class="price-line-slider">Slider</span>
@@ -71,7 +71,7 @@
             </div>
           </div>
           <div class="filter-maker">
-            <h4>ПРОИЗВОДИТЕЛИ:</h4>
+            <h4>Производители:</h4>
             <ul>
               <li><button>yes-no</button>BOSCH</li>
               <li><button>yes-no</button>ИНТЕРСКОЛ</li>
@@ -81,22 +81,24 @@
             </ul>
           </div>
           <div class="filter-power">
-            <h4>ПИТАНИЕ:</h4>
+            <h4>Питание:</h4>
             <ul>
-              <li><button>yes-no</button>АККУМУЛЯТОРНЫЕ</li>
-              <li><button>yes-no</button>СЕТЕВЫЕ</li>
+              <li><button>yes-no</button>Аккумуляторные</li>
+              <li><button>yes-no</button>Сетевые</li>
             </ul>
           </div>
-            <button class="filter-result">ПОКАЗАТЬ</button>
+            <button class="filter-result">Показать</button>
         </aside>
         <aside class="sorting">
-          <h3>СОРТИРОВКА:</h3>
-          <ul>
-            <li><button>yes-no</button>ПО ЦЕНЕ</li>
-            <li><button>yes-no</button>ПО ТИПУ</li>
-            <li><button>yes-no</button>ПО ФУНКЦИОНАЛУ</li>
-            <li><a class="order-ascending">Иконка восходящей сортировки</a></li>
-            <li><a class="order-descending">Иконка нисходящей сортировки</a></li>
+          <h3>Сортировка:</h3>
+          <ul class="sorting-parameter">
+            <li><a class="sorting-parameter-active">По цене</a></li>
+            <li><a>По типу</a></li>
+            <li><a>По функционалу</a></li>
+          </ul>
+          <ul class="sorting-order">
+            <li><a class="sorting-button sorting-button-active">Иконка восходящей сортировки</a></li>
+            <li><a class="sorting-button">Иконка нисходящей сортировки</a></li>
           </ul>
         </aside>
         <div class="product-list">
@@ -214,7 +216,7 @@
         <div class="share">
           <ul>
             <li><a class="social social-vkontakte" href="https://vk.com/">ВКонтакте</a></li>
-            <li><a class="social social-facebook" href="https://www.facebook.com/">facebook</a></li>
+            <li><a class="social social-facebook" href="https://www.facebook.com/">Facebook</a></li>
             <li><a class="social social-instagram" href="https://www.instagram.com/">Instagram</a></li>
           </ul>
         </div>

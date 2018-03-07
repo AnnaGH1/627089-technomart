@@ -13,8 +13,12 @@
           </a>
         </p>
         <p class="search">Поиск:</p>
-        <p class="bookmarks">Закладки:<span>0</span></p>
-        <p class="cart">Корзина:<span>0</span></p>
+        <p class="bookmarks">Закладки:
+          <span>0</span>
+        </p>
+        <p class="cart cart-with-items">Корзина:
+          <span>10</span>
+        </p>
         <a class="order-submit-main" href="order-submit.html">Оформить заказ</a>
       </section>
       <section class="store-intro">
@@ -22,14 +26,20 @@
         <p class="contact-phone">+7 (812) 555‒05‒55</p>
         <p class="contact-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <div class="nav-user">
-          <p>
-            <a href="#">Равшан Джамшутович</a>
-            <a href="#">Выход</span></a>
-          </p>
-          <p>
+          <ul class="user-authorized">
+          <li>
+            <a class="user-name" href="#">Равшан Джамшутович</a>
+          </li>
+          <li>
+            <a href="#">Выход</a>
+          </li>
+          <li class="user-data data-orders">
             <a href="#">Мои заказы</a>
+          </li>
+          <li class="user-data data-profile">
             <a href="#">Личный кабинет</a>
-          </p>
+          </li>
+          </ul>
         </div>
       </section>
       <nav class="nav-main">
@@ -45,20 +55,18 @@
       </nav>
     </header>
     <main class="container">
-      <!-- <section > -->
-        <ul class="breadcrumbs">
-          <li><a class="icon-home" href="index.html">Главная страница</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="instrument.html">Инструмент</a></li>
-          <li>Перфораторы</li>
-        </ul>
-      <!-- </section> -->
+      <ul class="breadcrumbs">
+        <li><a class="icon-home" href="index.html">Главная страница</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="instrument.html">Инструмент</a></li>
+        <li>Перфораторы</li>
+      </ul>
       <section class="catalog">
-        <h2>Перфораторы</h2>
+        <h1>Перфораторы</h1>
         <aside class="filter">
-          <h3>Фильтр:</h3>
+          <h2>Фильтр:</h2>
           <div class="filter-price">
-            <h4>Цена:</h4>
+            <h3>Цена:</h3>
             <div class="price-range-slider">
             </div>
             <div class="price-range-type">
@@ -66,7 +74,7 @@
             </div>
           </div>
           <div class="filter-maker">
-            <h4>Производители:</h4>
+            <h3>Производители:</h3>
             <ul>
               <li>BOSCH</li>
               <li>ИНТЕРСКОЛ</li>
@@ -76,7 +84,7 @@
             </ul>
           </div>
           <div class="filter-power">
-            <h4>Питание:</h4>
+            <h3>Питание:</h3>
             <ul>
               <li>Аккумуляторные</li>
               <li>Сетевые</li>
@@ -85,7 +93,7 @@
             <button class="filter-result">Показать</button>
         </aside>
         <aside class="sorting">
-          <h3>Сортировка:</h3>
+          <h2>Сортировка:</h2>
           <ul class="sorting-parameter">
             <li><a class="sorting-parameter-active">По цене</a></li>
             <li><a>По типу</a></li>
@@ -97,14 +105,14 @@
           </ul>
         </aside>
         <section>
-          <h3 class="visually-hidden">Список товаров</h3>
+          <h2 class="visually-hidden">Список товаров</h2>
           <ul class="catalog-list">
-            <li>
-              <h4>
+            <li class="catalog-item">
+              <h3>
                 <p class="item-name">Перфоратор BOSCH BFG 3000</p>
                 <p ><span class="item-list-price">22500 P.</span><span class="item-sales-price">15500 P.</span></p>
-              </h4>
-              <p class="description">
+              </h3>
+              <p class="item-image">
                 <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото дрели">
               </p>
               <div class="item-action">
@@ -112,12 +120,12 @@
                 <button class="item-bookmark">В закладки</button>
               </div>
             </li>
-            <li>
-              <h4>
+            <li class="catalog-item">
+              <h3>
                 <p class="item-name">Перфоратор BOSCH BFG 6000</p>
                 <p><span class="item-list-price">30500 P.</span><span class="item-sales-price">25500 P.</span></p>
-              </h4>
-              <p class="description">
+              </h3>
+              <p class="item-image">
                 <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото дрели">
               </p>
               <div class="item-action">
@@ -125,12 +133,12 @@
                 <button class="item-bookmark">В закладки</button>
               </div>
             </li>
-            <li class="new">
-              <h4>
+            <li class="catalog-item new">
+              <h3>
                 <p class="item-name">Перфоратор BOSCH BFG 2000</p>
                 <p><span class="item-list-price visually-hidden"></span><span class="item-sales-price">12500 P.</span></p>
-              </h4>
-              <p class="description">
+              </h3>
+              <p class="item-image">
                 <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото дрели">
               </p>
               <div class="item-action">
@@ -138,12 +146,12 @@
                 <button class="item-bookmark">В закладки</button>
               </div>
             </li>
-            <li>
-              <h4>
+            <li class="catalog-item">
+              <h3>
                 <p class="item-name">Перфоратор BOSCH BFG 3000</p>
                 <p><span class="item-list-price">22500 P.</span><span class="item-sales-price">15500 P.</span></p>
-              </h4>
-              <p class="description">
+              </h3>
+              <p class="item-image">
                 <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото дрели">
               </p>
               <div class="item-action">
@@ -151,12 +159,12 @@
                 <button class="item-bookmark">В закладки</button>
               </div>
             </li>
-            <li class="new">
-              <h4>
+            <li class="catalog-item new">
+              <h3>
                 <p class="item-name">Перфоратор BOSCH BFG 6000</p>
                 <p><span class="item-list-price">30500 P.</span><span class="item-sales-price">25500 P.</span></p>
-              </h4>
-              <p class="description">
+              </h3>
+              <p class="item-image">
                 <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото дрели">
               </p>
               <div class="item-action">
@@ -164,12 +172,12 @@
                 <button class="item-bookmark">В закладки</button>
               </div>
             </li>
-            <li>
-              <h4>
+            <li class="catalog-item">
+              <h3>
                 <p class="item-name">Перфоратор BOSCH BFG 2000</p>
                 <p><span class="item-list-price visually-hidden"></span><span class="item-sales-price">12500 P.</span></p>
-              </h4>
-              <p class="description">
+              </h3>
+              <p class="item-image">
                 <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото дрели">
               </p>
               <div class="item-action">
@@ -177,12 +185,12 @@
                 <button class="item-bookmark">В закладки</button>
               </div>
             </li>
-            <li class="new">
-              <h4>
+            <li class="catalog-item new">
+              <h3>
                 <p class="item-name">Перфоратор BOSCH BFG 3000</p>
                 <p><span class="item-list-price">22500 P.</span><span class="item-sales-price">15500 P.</span></p>
-              </h4>
-              <p class="description">
+              </h3>
+              <p class="item-image">
                 <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото дрели">
               </p>
               <div class="item-action">
@@ -190,12 +198,12 @@
                 <button class="item-bookmark">В закладки</button>
               </div>
             </li>
-            <li>
-              <h4>
+            <li class="catalog-item">
+              <h3>
                 <p class="item-name">Перфоратор BOSCH BFG 6000</p>
                 <p><span class="item-list-price">30500 P.</span><span class="item-sales-price">25500 P.</span></p>
-              </h4>
-              <p class="description">
+              </h3>
+              <p class="item-image">
                 <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото дрели">
               </p>
               <div class="item-action">
@@ -203,12 +211,12 @@
                 <button class="item-bookmark">В закладки</button>
               </div>
             </li>
-            <li>
-              <h4>
+            <li class="catalog-item">
+              <h3>
                 <p class="item-name">Перфоратор BOSCH BFG 2000</p>
                 <p><span class="item-list-price visually-hidden"></span><span class="item-sales-price">12500 P.</span></p>
-              </h4>
-              <p class="description">
+              </h3>
+              <p class="item-image">
                 <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото дрели">
               </p>
               <div class="item-action">
@@ -219,7 +227,7 @@
           </ul>
         </section>
         <nav class="pagination">
-          <h3 class="visually-hidden">Навигация по страницам</h3>
+          <h2 class="visually-hidden">Навигация по страницам</h2>
             <ul>
               <li><a class="page-current">1</a></li>
               <li><a href="#">2</a></li>
@@ -228,7 +236,7 @@
             </ul>
         </nav>
         <section class="catalog-category-about">
-          <h3>Пара слов о перфораторах</h3>
+          <h2>Пара слов о перфораторах</h2>
           <p>
             Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
@@ -238,7 +246,11 @@
     </main>
     <footer class="footer-main">
       <section class="nav-site-internal">
-        <p class="logo"><a href="index.html"><img srс="http://placehold.it/150x100" width="150" height="100" alt="Логотип ТЕХНОМАРТ"></a></p>
+        <p class="logo">
+          <a href="index.html">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип ТЕХНОМАРТ">
+          </a>
+        </p>
         <div class="contact">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555‒05‒55
@@ -264,19 +276,19 @@
 
       <section class="nav-site-external">
         <div class="rights">
-          © 2010‒2017 Компания "Техномарт"
+          © 2010‒2017 Компания "Техномарт"<br>
           Все права защищены
         </div>
         <div class="share">
           <ul>
-            <li><a class="social social-vkontakte" href="https://vk.com/">ВКонтакте</a></li>
-            <li><a class="social social-facebook" href="https://www.facebook.com/">Facebook</a></li>
-            <li><a class="social social-instagram" href="https://www.instagram.com/">Instagram</a></li>
+            <li><a class="social social-vkontakte" href="https://vk.com/" target="_blank">ВКонтакте</a></li>
+            <li><a class="social social-facebook" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a class="social social-instagram" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
           </ul>
         </div>
         <div class="developer">
           <p>Обратная связь:
-            <span class="developer-contact"><a href="#">mail@htmlacademy.ru</a></span>
+            <span class="developer-contact"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
           </p>
           <p>Разработано ‒
             <span class="developer-contact"><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></span>
@@ -286,7 +298,7 @@
 
     </footer>
     <section class="modal modal-cart">
-      <p><button class="close-modal-cart"></button></p>
+      <p><button class="close-modal-cart">x</button></p>
       <p>Товар добавлен в корзину</p>
       <ul>
         <li><button class="action-next order-submit">Оформить</button></li>

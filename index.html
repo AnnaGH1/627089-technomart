@@ -6,7 +6,6 @@
   </head>
   <body>
     <header class="header-main">
-      <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта ТЕХНОМАРТ - главная страница</h1>
       <section class="store-bar">
         <p class="logo">
           <a>
@@ -14,20 +13,24 @@
           </a>
         </p>
         <p class="search">Поиск:</p>
-        <p class="bookmarks">Закладки:<span>0</span></p>
-        <p class="cart">Корзина:<span>0</span></p>
+        <p class="bookmarks">Закладки:
+          <span>0</span>
+        </p>
+        <p class="cart">Корзина:
+          <span>0</span>
+        </p>
         <a class="order-submit-main" href="order-submit.html">Оформить заказ</a>
       </section>
       <section class="store-intro">
-        <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <h1 class="description">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <p class="contact-phone">+7 (812) 555‒05‒55</p>
         <p class="contact-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <div class="nav-user">
-          <ul>
+          <ul class="user-non-authorized">
             <li><button>Войти</button></li>
             <li><button>Регистрация</button></li>
           </ul>
-      </div>
+        </div>
       </section>
       <nav class="nav-main">
         <ul class="nav-site">
@@ -45,26 +48,28 @@
     <main class="container">
       <section class="promo">
         <h2 class="visually-hidden">Промо</h2>
-        <div class="promo-card card-material">
-          <p class="promo-card-title">Материалы</p>
-          <p class="promo-card-note"><a href="#">на любой вкус</a></p>
-        </div>
-        <div class="promo-card card-instrument">
-          <p class="promo-card-title">Инструмент</p>
-          <p class="promo-card-note"><a href="#">на все случаи</a></p>
-        </div>
-        <div class="promo-card card-equipment">
-          <p class="promo-card-title">Техника</p>
-          <p class="promo-card-note"><a href="#">для стройки</a></p>
-        </div>
-        <div class="promo-card card-promo">
-          <p class="promo-card-title">Скидки 50%</p>
-          <p class="promo-card-note"><a href="#">на 350 товаров</a></p>
-        </div>
-        <div class="promo-card card-delivery">
-          <p class="promo-card-title">Доставка</p>
-          <p class="promo-card-note"><a href="#">бесплатно</a></p>
-        </div>
+        <ul>
+          <li class="promo-card card-material new">
+            <p class="promo-card-title">Материалы</p>
+            <p class="promo-card-note"><a href="#">на любой вкус</a></p>
+          </li>
+          <li class="promo-card card-instrument">
+            <p class="promo-card-title">Инструмент</p>
+            <p class="promo-card-note"><a href="#">на все случаи</a></p>
+          </li>
+          <li class="promo-card card-equipment">
+            <p class="promo-card-title">Техника</p>
+            <p class="promo-card-note"><a href="#">для стройки</a></p>
+          </li>
+          <li class="promo-card card-promo">
+            <p class="promo-card-title">Скидки 50%</p>
+            <p class="promo-card-note"><a href="#">на 350 товаров</a></p>
+          </li>
+          <li class="promo-card card-delivery">
+            <p class="promo-card-title">Доставка</p>
+            <p class="promo-card-note"><a href="#">бесплатно</a></p>
+          </li>
+        </ul>
         <div class="promo-slider">
           <ul class="promo-slides">
             <li>
@@ -96,7 +101,7 @@
             <h2>Популярные товары:</h2>
             <a class="button show-all" href="#">Все популярные товары</a>
           </header>
-          <ul class="sorting-list">
+          <ul class="catalog-list">
             <li>
               <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото дрели">
               <p class="item-name">Перфоратор BOSCH BFG 9000</p>
@@ -115,7 +120,7 @@
               <p class="list-price">30500 P.</p>
               <p class="sale-price">25500 P.</p>
             </li>
-            <li>
+            <li class="new">
               <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото дрели">
               <p class="item-name">Перфоратор BOSCH BFG 2000</p>
               <p class="list-price"></p>
@@ -128,44 +133,44 @@
             <h2>Популярные производители:</h2>
             <a class=" button show-all" href="#">Все производители</a>
           </header>
-          <ul class="sorting-list">
+          <ul class="catalog-list">
               <li>
-                <a href="https://www.boschtools.com/us/en/">
+                <a href="#">
                   <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Bosch">
                 </a>
               </li>
               <li>
-                <a href="http://www.makita.ru/">
+                <a href="#">
                   <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Makita">
                 </a>
               </li>
               <li>
-                <a href="http://www.dewalt.ru/">
+                <a href="#">
                   <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип DeWalt">
                 </a>
               </li>
               <li>
-                <a href="http://www.interskol.ru/">
+                <a href="#">
                   <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип ИНТЕРСКОЛ">
                 </a>
               </li>
               <li>
-                <a href="http://www.hitachi-pt.ru/">
+                <a href="#">
                   <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип HITACHI">
                 </a>
               </li>
               <li>
-                <a href="http://www.lg.com/ru">
+                <a href="#">
                   <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип LG">
                 </a>
               </li>
               <li>
-                <a href="https://www.aeg-powertools.eu/ru-ru">
+                <a href="#">
                   <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип AEG">
                 </a>
               </li>
               <li>
-                <a href="https://www.metabo.com/ru/ru/">
+                <a href="#">
                   <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип metabo">
                 </a>
               </li>
@@ -183,21 +188,21 @@
         </div>
         <div class="services-slider">
           <ul class="services-slides">
-            <li>
+            <li class="services-slide-delivery">
               <h3>Доставка</h3>
               <p>
                 Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
                 Ведь мы неплохо заработаем, поднимая его на ваш этаж!
               </p>
             </li>
-            <li>
+            <li class="services-slide-warranty">
               <h3>Гарантия</h3>
               <p>
                 Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,
                 вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
               </p>
             </li>
-            <li>
+            <li class="services-slide-credit">
               <h3>Кредит</h3>
               <p>
                 Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
@@ -205,8 +210,8 @@
               <button class="send-credit-application">Отправить заявку</button>
             </li>
           </ul>
-          <ul class="services-slider-control">
-            <li><button class="control-active">Доставка</button></li>
+          <ul class="services-slider-controls">
+            <li><button>Доставка</button></li>
             <li><button>Гарантия</button></li>
             <li><button>Кредит</button></li>
           </ul>
@@ -218,26 +223,34 @@
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России!
           Техномарт работает со многими транспортными компаниями:</p>
-          <ul>
+          <ul class="shipping-company">
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="company-learn-more" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
+          <a class="company-learn-more" href="#">Подробнее о компании</a>
       </section>
 
       <section class="company-contacts">
-          <h2>КОНТАКТЫ</h2>
+          <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <p><a class="contact-map" href="https://yandex.ru/maps/"><img srс="http://placehold.it/150x100" width="150" height="100" alt="Карта"></a></p>
-          <a class="company-write-us" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+          <p>
+            <a class="contact-map" href="https://yandex.ru/maps/">
+              <img src="http://placehold.it/150x100" width="150" height="100" alt="Карта">
+            </a>
+          </p>
+          <a class="company-write-us" href="#">Заблудились? Напишите нам!</a>
       </section>
     </main>
 
 
     <footer class="footer-main">
       <section class="nav-site-internal">
-        <p class="logo"><a><img srс="http://placehold.it/150x100" width="150" height="100" alt="Логотип ТЕХНОМАРТ"></a></p>
+        <p class="logo">
+          <a>
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип ТЕХНОМАРТ">
+          </a>
+        </p>
         <div class="contact">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555‒05‒55
@@ -263,19 +276,19 @@
 
       <section class="nav-site-external">
         <div class="rights">
-          © 2010‒2017 Компания "Техномарт"
+          © 2010‒2017 Компания "Техномарт"<br>
           Все права защищены
         </div>
         <div class="share">
           <ul>
-            <li><a class="social social-vkontakte" href="https://vk.com/">ВКонтакте</a></li>
-            <li><a class="social social-facebook" href="https://www.facebook.com/">Facebook</a></li>
-            <li><a class="social social-instagram" href="https://www.instagram.com/">Instagram</a></li>
+            <li><a class="social social-vkontakte" href="https://vk.com/" target="_blank">ВКонтакте</a></li>
+            <li><a class="social social-facebook" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a class="social social-instagram" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
           </ul>
         </div>
         <div class="developer">
           <p>Обратная связь:
-            <span class="developer-contact"><a href="#">mail@htmlacademy.ru</a></span>
+            <span class="developer-contact"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
           </p>
           <p>Разработано ‒
             <span class="developer-contact"><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></span>

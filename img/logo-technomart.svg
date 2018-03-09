@@ -1,0 +1,15 @@
+<svg
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="220px" height="47px">
+<rect width="220" height="47" fill="rgb(238, 54, 67)"/>
+<text
+  kerning="auto"
+  font-family="Myriad Pro"
+  fill="rgb(0, 0, 0)"
+  transform="matrix( 0.8717176460396, 0, 0, 0.8717176460396,-14.5220974245962, 17.3222883667401)"
+  font-size="27.532px">
+  <tspan font-size="27.532px" font-family="Cuprum" fill="#FFFFFF">&#1058;&#1045;&#1061;&#1053;&#1054;&#1052;&#1040;&#1056;&#1058;</tspan>
+</text>
+
+</svg>

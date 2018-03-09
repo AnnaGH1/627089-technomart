@@ -5,35 +5,35 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <header class="header-main">
-      <section class="store-bar">
-        <p class="logo">
+    <header class="header">
+      <section class="header-bar">
+        <p class="header-bar-logo-technomart-small">
           <a>
-            <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип ТЕХНОМАРТ">
+            <img src="img/logo-technomart-small.svg" width="220" height="47" alt="Логотип ТЕХНОМАРТ">
           </a>
         </p>
-        <p class="search">Поиск:</p>
-        <p class="bookmarks">Закладки:
+        <p class="header-bar-search">Поиск:</p>
+        <p class="header-bar-bookmarks">Закладки:
           <span>0</span>
         </p>
-        <p class="cart">Корзина:
+        <p class="header-bar-cart-empty">Корзина:
           <span>0</span>
         </p>
-        <a class="order-submit-main" href="order-submit.html">Оформить заказ</a>
+        <a class="header-bar-order-submit" href="order-submit.html">Оформить заказ</a>
       </section>
-      <section class="store-intro">
-        <h1 class="description">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-        <p class="contact-phone">+7 (812) 555‒05‒55</p>
-        <p class="contact-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <div class="nav-user">
-          <ul class="user-non-authorized">
-            <li><button>Войти</button></li>
-            <li><button>Регистрация</button></li>
+      <section class="header-intro">
+        <h1 class="header-intro-description">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <p class="header-intro-phone">+7 (812) 555‒05‒55</p>
+        <p class="header-intro-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <nav class="header-intro-nav-user">
+          <ul class="header-intro-nav-user-non-authorized">
+            <li><a>Войти</a></li>
+            <li><a>Регистрация</a></li>
           </ul>
-        </div>
+        </nav>
       </section>
-      <nav class="nav-main">
-        <ul class="nav-site">
+      <nav class="header-nav-main">
+        <ul class="header-nav-main-site">
           <li><a>Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -44,6 +44,7 @@
         </ul>
       </nav>
     </header>
+
 
     <main class="container">
       <section class="promo">
@@ -244,28 +245,26 @@
     </main>
 
 
-    <footer class="footer-main">
-      <section class="nav-site-internal">
-        <p class="logo">
+    <footer class="footer">
+      <section class="footer-general">
+        <p class="footer-general-logo-technomart-large">
           <a>
             <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип ТЕХНОМАРТ">
           </a>
         </p>
-        <div class="contact">
+        <div class="footer-general-contact">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555‒05‒55
         </div>
-        <nav class="nav-secondary">
-          <ul>
+        <nav class="footer-general-nav-secondary">
+          <ul class="footer-general-nav-secondary-site">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-        </nav>
-        <nav class="nav-product">
-          <ul>
+          <ul class="footer-general-nav-secondary-products">
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
             <li><a href="#">Инструмент</a></li>
@@ -273,25 +272,24 @@
           </ul>
         </nav>
       </section>
-
-      <section class="nav-site-external">
-        <div class="rights">
+      <section class="footer-marketing">
+        <div class="footer-marketing-copyright">
           © 2010‒2017 Компания "Техномарт"<br>
           Все права защищены
         </div>
-        <div class="share">
-          <ul>
+        <div class="footer-marketing-share">
+          <ul class="footer-marketing-share-list">
             <li><a class="social social-vkontakte" href="https://vk.com/" target="_blank">ВКонтакте</a></li>
             <li><a class="social social-facebook" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
             <li><a class="social social-instagram" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
           </ul>
         </div>
-        <div class="developer">
+        <div class="footer-marketing-developer">
           <p>Обратная связь:
-            <span class="developer-contact"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
+            <span class="footer-marketing-developer-contact"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
           </p>
           <p>Разработано ‒
-            <span class="developer-contact"><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></span>
+            <span class="footer-marketing-developer-contact"><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></span>
             </p>
         </div>
       </section>

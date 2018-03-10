@@ -9,7 +9,7 @@
       <section class="header-bar">
         <p class="header-bar-logo-technomart-small">
           <a>
-            <img src="img/logo-technomart-small.svg" width="220" height="47" alt="Логотип ТЕХНОМАРТ">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип ТЕХНОМАРТ">
           </a>
         </p>
         <p class="header-bar-search">Поиск:</p>
@@ -22,7 +22,7 @@
         <a class="header-bar-order-submit" href="order-submit.html">Оформить заказ</a>
       </section>
       <section class="header-intro">
-        <h1 class="header-intro-description">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <p class="header-intro-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <p class="header-intro-phone">+7 (812) 555‒05‒55</p>
         <p class="header-intro-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <nav class="header-intro-nav-user">
@@ -47,28 +47,30 @@
 
 
     <main class="container">
+      <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
+
       <section class="promo">
         <h2 class="visually-hidden">Промо</h2>
-        <ul>
-          <li class="promo-card card-material new">
-            <p class="promo-card-title">Материалы</p>
-            <p class="promo-card-note"><a href="#">на любой вкус</a></p>
+        <ul class="promo-list">
+          <li class="promo-item item-material new">
+            <p class="promo-item-name">Материалы</p>
+            <p class="promo-item-note"><a href="#">на любой вкус</a></p>
           </li>
-          <li class="promo-card card-instrument">
-            <p class="promo-card-title">Инструмент</p>
-            <p class="promo-card-note"><a href="#">на все случаи</a></p>
+          <li class="promo-item item-instrument">
+            <p class="promo-item-name">Инструмент</p>
+            <p class="promo-item-note"><a href="#">на все случаи</a></p>
           </li>
-          <li class="promo-card card-equipment">
-            <p class="promo-card-title">Техника</p>
-            <p class="promo-card-note"><a href="#">для стройки</a></p>
+          <li class="promo-item item-equipment">
+            <p class="promo-item-name">Техника</p>
+            <p class="promo-item-note"><a href="#">для стройки</a></p>
           </li>
-          <li class="promo-card card-promo">
-            <p class="promo-card-title">Скидки 50%</p>
-            <p class="promo-card-note"><a href="#">на 350 товаров</a></p>
+          <li class="promo-item item-promo">
+            <p class="promo-item-name">Скидки 50%</p>
+            <p class="promo-item-note"><a href="#">на 350 товаров</a></p>
           </li>
-          <li class="promo-card card-delivery">
-            <p class="promo-card-title">Доставка</p>
-            <p class="promo-card-note"><a href="#">бесплатно</a></p>
+          <li class="promo-item item-delivery">
+            <p class="promo-item-name">Доставка</p>
+            <p class="promo-item-note"><a href="#">бесплатно</a></p>
           </li>
         </ul>
         <div class="promo-slider">
@@ -104,29 +106,37 @@
           <a class="button show-all" href="#">Все популярные товары</a>
         </header>
         <ul class="catalog-list">
-          <li class="list-item">
+          <li class="catalog-item">
               <img src="img/bfg9000.jpg" width="218" height="168" alt="Фото перфоратора">
-              <p class="item-name">Перфоратор BOSCH BFG 9000</p>
-              <p class="list-price">32500 P.</p>
-              <p class="sale-price">25500 P.</p>
+              <p class="catalog-item-name">Перфоратор BOSCH BFG 9000</p>
+              <p class="price">
+                <span class="price-regular">32500 P.</span>
+                <span>25500 P.</span>
+              </p>
           </li>
-          <li class="list-item">
+          <li class="catalog-item">
               <img src="img/bfg3000.jpg" width="218" height="168" alt="Фото перфоратора">
-              <p class="item-name">Перфоратор BOSCH BFG 3000</p>
-              <p class="list-price">22500 P.</p>
-              <p class="sale-price">15500 P.</p>
+              <p class="catalog-item-name">Перфоратор BOSCH BFG 3000</p>
+              <p class="price">
+                <span class="price-regular">22500 P.</span>
+                <span>15500 P.</span>
+              </p>
           </li>
-          <li class="list-item">
+          <li class="catalog-item">
               <img src="img/bfg6000.jpg" width="218" height="168" alt="Фото перфоратора">
-              <p class="item-name">Перфоратор BOSCH BFG 6000</p>
-              <p class="list-price">30500 P.</p>
-              <p class="sale-price">25500 P.</p>
+              <p class="catalog-item-name">Перфоратор BOSCH BFG 6000</p>
+              <p class="price">
+                <span class="price-regular">30500 P.</span>
+                <span>25500 P.</span>
+              </p>
           </li>
-          <li class="list-item new">
+          <li class="catalog-item new">
               <img src="img/bfg2000.jpg" width="218" height="168" alt="Фото перфоратора">
-              <p class="item-name">Перфоратор BOSCH BFG 2000</p>
-              <p class="list-price"></p>
-              <p class="sale-price">12500 P.</p>
+              <p class="catalog-item-name">Перфоратор BOSCH BFG 2000</p>
+              <p class="price">
+                <span class="price-regular"></span>
+                <span>12500 P.</span>
+              </p>
           </li>
         </ul>
       </section>
@@ -137,42 +147,42 @@
           <a class=" button show-all" href="#">Все производители</a>
         </header>
         <ul class="catalog-list">
-          <li class="list-item">
+          <li class="catalog-item">
             <a href="#">
               <img src="img/bosch.png" width="126" height="37" alt="Логотип Bosch">
             </a>
           </li>
-          <li class="list-item">
+          <li class="catalog-item">
             <a href="#">
               <img src="img/makita.png" width="123" height="40" alt="Логотип Makita">
             </a>
           </li>
-          <li class="list-item">
+          <li class="catalog-item">
             <a href="#">
               <img src="img/dewalt.png" width="146" height="44" alt="Логотип DeWalt">
             </a>
           </li>
-          <li class="list-item">
+          <li class="catalog-item">
             <a href="#">
               <img src="img/interskol.png" width="184" height="32" alt="Логотип ИНТЕРСКОЛ">
             </a>
           </li>
-          <li class="list-item">
+          <li class="catalog-item">
             <a href="#">
               <img src="img/hitachi.png" width="169" height="31" alt="Логотип HITACHI">
             </a>
           </li>
-          <li class="list-item">
+          <li class="catalog-item">
             <a href="#">
               <img src="img/lg.png" width="121" height="73" alt="Логотип LG">
             </a>
           </li>
-          <li class="list-item">
+          <li class="catalog-item">
             <a href="#">
               <img src="img/aeg.png" width="151" height="84" alt="Логотип AEG">
             </a>
           </li>
-          <li class="list-item">
+          <li class="catalog-item">
             <a href="#">
               <img src="img/metabo.png" width="204" height="69" alt="Логотип metabo">
             </a>
@@ -287,11 +297,15 @@
         </div>
         <div class="footer-marketing-developer">
           <p>Обратная связь:
-            <span class="footer-marketing-developer-contact"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
+            <span class="footer-marketing-developer-contact">
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </span>
           </p>
           <p>Разработано ‒
-            <span class="footer-marketing-developer-contact"><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></span>
-            </p>
+            <span class="footer-marketing-developer-contact">
+              <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
+            </span>
+          </p>
         </div>
       </section>
     </footer>

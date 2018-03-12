@@ -24,9 +24,13 @@
         <p class="header-intro-phone">+7 (812) 555‒05‒55</p>
         <p class="header-intro-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <nav class="header-intro-nav-user">
-          <ul class="header-intro-nav-user-non-authorized">
-            <li><a>Войти</a></li>
-            <li><a>Регистрация</a></li>
+          <ul class="user-non-authorized">
+            <li class="user-login">
+              <a href="#">Войти</a>
+            </li>
+            <li class="user-signup">
+              <a href="#">Регистрация</a>
+            </li>
           </ul>
         </nav>
       </section>
@@ -91,8 +95,10 @@
           <div class="promo-slider-controls">
             <button class="control-arrow">Стрелка влево</button>
             <button class="control-arrow">Стрелка вправо</button>
-            <button class="control-indicator">Индикатор слайда</button>
-            <button class="control-indicator">Индикатор слайда</button>
+            <div class="control-indicators">
+              <button>Индикатор слайда</button>
+              <button>Индикатор слайда</button>
+            </div>
           </div>
           <a class="button-catalog" href="catalog.html">Открыть каталог</a>
         </div>
@@ -309,7 +315,7 @@
 
 
     <section class="modal modal-write-us">
-      <button class="close-modal-write-us">x</button>
+      <button class="modal-write-us-close">x</button>
       <span>Ваше имя:</span>
       <!-- Форма -->
       <span>Представьтесь, пожалуйста</span>
@@ -321,14 +327,14 @@
       <span>Текст письма:</span>
       <!-- Форма -->
       <span>В свободной форме</span>
-      <div>
-        <button class=" button send-message">Отправить</button>
-      </div>
+      <section class="modal-write-us-footer">
+        <button class="modal-write-us-send">Отправить</button>
+      </section>
     </section>
 
 
     <section class="modal modal-map-popup">
-      <button class="close-modal-map-popup">x</button>
+      <button class="modal-map-popup-close">x</button>
       <img src="img/map-large.jpg" width="940" height="446" alt="Карта увеличенная">
     </section>
   </body>

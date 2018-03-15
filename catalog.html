@@ -9,14 +9,17 @@
         <p class="header-bar-logo-technomart-small">
           <a href="index.html">Техномарт</a>
         </p>
-        <p class="header-bar-search">Поиск:</p>
-        <p class="header-bar-bookmarks">Закладки:
+        <form class="header-bar-search">
+          <label class="visually-hidden" for="search">Поиск</label>
+          <input name="search" type="search" id="search" placeholder="Поиск:">
+        </form>
+        <a class="header-bar-bookmarks" href="#">Закладки:
           <span>0</span>
-        </p>
-        <p class="header-bar-cart-not-empty">Корзина:
+        </a>
+        <a class="header-bar-cart-not-empty" href="#">Корзина:
           <span>10</span>
-        </p>
-        <a class="header-bar-order-submit" href="order-submit.html">Оформить заказ</a>
+        </a>
+        <a class="header-bar-order-submit" href="#">Оформить заказ</a>
       </section>
       <section class="header-intro">
         <p class="header-intro-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
@@ -65,32 +68,50 @@
       <h1 class="catalog-section-name">Перфораторы</h1>
       <aside class="catalog-controls">
         <h2 class="catalog-control-name">Фильтр:</h2>
-        <div class="catalog-control-options">
-          <h3 class="catalog-control-option-name">Цена:</h3>
-          <div class="price-range-slider">
+        <form class="catalog-control-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="catalog-control-options">
+            <legend class="catalog-control-option-name">Цена:</legend>
+            <div class="price-range-slider">
             </div>
-          <div class="price-range-type">
-                ‒
+            <div class="price-range-type">
+              <input name="price-min" type="text" id="price-min" placeholder="0">
+              ‒
+              <input name="price-max" type="text" id="price-max" placeholder="30000">
             </div>
-        </div>
-        <div class="catalog-control-options">
-          <h3 class="catalog-control-option-name">Производители:</h3>
-          <ul class="options-list">
-              <li>BOSCH</li>
-              <li>ИНТЕРСКОЛ</li>
-              <li>MAKITA</li>
-              <li>DEWALT</li>
-              <li>HITACHI</li>
+          </fieldset>
+          <fieldset class="catalog-control-options">
+            <legend class="catalog-control-option-name">Производители:</legend>
+            <ul class="options-list">
+              <li>
+                <input name="bosch" type="checkbox" id="bosch" checked><label for="bosch">BOSCH</label>
+              </li>
+              <li>
+                <input name="interskol" type="checkbox" id="interskol"><label for="interskol">ИНТЕРСКОЛ</label>
+              </li>
+              <li>
+                <input name="makita" type="checkbox" id="makita" checked><label for="makita">MAKITA</label>
+              </li>
+              <li>
+                <input name="dewalt" type="checkbox" id="dewalt"><label for="dewalt">DEWALT</label>
+              </li>
+              <li>
+                <input name="hitachi" type="checkbox" id="hitachi"><label for="hitachi">HITACHI</label>
+              </li>
             </ul>
-        </div>
-        <div class="catalog-control-options">
-          <h3 class="catalog-control-option-name">Питание:</h3>
-          <ul class="options-list">
-            <li>Аккумуляторные</li>
-            <li>Сетевые</li>
-          </ul>
-        </div>
-        <button class="catalog-control-result">Показать</button>
+          </fieldset>
+          <fieldset class="catalog-control-options">
+            <legend class="catalog-control-option-name">Питание:</legend>
+            <ul class="options-list">
+              <li>
+                <input name="power-type" type="radio" id="power-type"  value="cordless" checked><label for="power-type">Аккумуляторные</label>
+              </li>
+              <li>
+                <input name="power-type" type="radio" id="power-type" value="corded"><label for="power-type">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="catalog-control-result" type="submit">Показать</button>
+        </form>
       </aside>
       <aside class="catalog-controls">
         <h2 class="catalog-control-name">Сортировка:</h2>
@@ -268,9 +289,9 @@
         </div>
         <div class="footer-marketing-share">
           <ul class="footer-marketing-share-list">
-            <li><a class="social social-vkontakte" href="https://vk.com/" target="_blank">ВКонтакте</a></li>
-            <li><a class="social social-facebook" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-            <li><a class="social social-instagram" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><a class="social social-vkontakte visually-hidden" href="https://vk.com/" target="_blank">ВКонтакте</a></li>
+            <li><a class="social social-facebook visually-hidden" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a class="social social-instagram visually-hidden" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
           </ul>
         </div>
         <div class="footer-marketing-developer">

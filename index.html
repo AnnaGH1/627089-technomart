@@ -10,7 +10,7 @@
         <p class="header-bar-logo-technomart-small">
           <a>Техномарт</a>
         </p>
-        <form class="header-bar-search">
+        <form class="header-bar-search" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="search">Поиск</label>
           <input name="search" type="search" id="search" placeholder="Поиск:">
         </form>
@@ -39,13 +39,27 @@
       </section>
       <nav class="header-nav-main">
         <ul class="header-nav-main-site">
-          <li><a>Главная</a></li>
-          <li><a href="#">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li>
+            <a>Главная</a>
+          </li>
+          <li>
+            <a href="#">Компания</a>
+          </li>
+          <li>
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="#">Спецпредложения</a>
+          </li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -96,11 +110,11 @@
             </li>
           </ul>
           <div class="promo-slider-controls">
-            <button class="control-arrow">Стрелка влево</button>
-            <button class="control-arrow">Стрелка вправо</button>
+            <button class="control-arrow" type="button">Стрелка влево</button>
+            <button class="control-arrow" type="button">Стрелка вправо</button>
             <div class="control-indicators">
-              <button>Индикатор слайда</button>
-              <button>Индикатор слайда</button>
+              <button type="button">Индикатор слайда</button>
+              <button type="button">Индикатор слайда</button>
             </div>
           </div>
           <a class="button-catalog" href="catalog.html">Открыть каталог</a>
@@ -230,9 +244,15 @@
             </li>
           </ul>
           <ul class="services-slider-controls">
-            <li><button>Доставка</button></li>
-            <li><button>Гарантия</button></li>
-            <li><button>Кредит</button></li>
+            <li>
+              <button type="button">Доставка</button>
+            </li>
+            <li>
+              <button type="button">Гарантия</button>
+            </li>
+            <li>
+              <button type="button">Кредит</button>
+            </li>
           </ul>
         </div>
       </section>
@@ -274,17 +294,35 @@
         </div>
         <nav class="footer-general-nav-secondary">
           <ul class="footer-general-nav-secondary-site">
-            <li><a href="#">Компания</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li>
+              <a href="#">Компания</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="catalog.html">Каталог</a>
+            </li>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
           </ul>
           <ul class="footer-general-nav-secondary-products">
-            <li><a href="#">Материалы</a></li>
-            <li><a href="#">Техника</a></li>
-            <li><a href="#">Инструмент</a></li>
-            <li><a href="#">Спецпредложения</a></li>
+            <li>
+              <a href="#">Материалы</a>
+            </li>
+            <li>
+              <a href="#">Техника</a>
+            </li>
+            <li>
+              <a href="#">Инструмент</a>
+            </li>
+            <li>
+              <a href="#">Спецпредложения</a>
+            </li>
           </ul>
         </nav>
       </section>
@@ -295,9 +333,15 @@
         </div>
         <div class="footer-marketing-share">
           <ul class="footer-marketing-share-list">
-            <li><a class="social social-vkontakte visually-hidden" href="https://vk.com/" target="_blank">ВКонтакте</a></li>
-            <li><a class="social social-facebook visually-hidden" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-            <li><a class="social social-instagram visually-hidden" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li>
+              <a class="social social-vkontakte visually-hidden" href="https://vk.com/" target="_blank">ВКонтакте</a>
+            </li>
+            <li>
+              <a class="social social-facebook visually-hidden" href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </li>
+            <li>
+              <a class="social social-instagram visually-hidden" href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </li>
           </ul>
         </div>
         <div class="footer-marketing-developer">
@@ -318,8 +362,11 @@
 
 
     <section class="modal modal-write-us">
+      <button class="modal-write-us-close visually-hidden" type="button">
+        Закрыть
+        <span class="close-indicator"></span>
+      </button>
       <form>
-        <button class="modal-write-us-close visually-hidden">Закрыть</button>
         <label for="user-name">Ваше имя:</label>
         <input name="user-name" type="text" id="user-name" placeholder="Представьтесь, пожалуйста">
 
@@ -337,8 +384,11 @@
 
 
     <section class="modal modal-map-popup">
-      <button class="modal-map-popup-close visually-hidden">Закрыть</button>
-      <img src="img/map-large.jpg" width="940" height="446" alt="Карта увеличенная">
+      <button class="modal-map-popup-close visually-hidden" type="button">
+        Закрыть
+        <span class="close-indicator"></span>
+      </button>
+      <img src="img/map-large.jpg" width="940" height="446" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
     </section>
   </body>
 

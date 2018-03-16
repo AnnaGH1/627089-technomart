@@ -9,7 +9,7 @@
         <p class="header-bar-logo-technomart-small">
           <a href="index.html">Техномарт</a>
         </p>
-        <form class="header-bar-search">
+        <form class="header-bar-search" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="search">Поиск</label>
           <input name="search" type="search" id="search" placeholder="Поиск:">
         </form>
@@ -46,13 +46,27 @@
       </section>
       <nav class="header-nav-main">
         <ul class="header-nav-main-site">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Компания</a></li>
-          <li><a>Каталог</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="#">Компания</a>
+          </li>
+          <li>
+            <a>Каталог</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="#">Спецпредложения</a>
+          </li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -60,69 +74,92 @@
 
     <main class="container">
       <ul class="breadcrumbs">
-        <li><a class="icon-home" href="index.html">Главная страница</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="instrument.html">Инструмент</a></li>
+        <li>
+          <a class="icon-home" href="index.html">Главная страница</a>
+        </li>
+        <li>
+          <a href="catalog.html">Каталог</a>
+        </li>
+        <li>
+          <a href="instrument.html">Инструмент</a>
+        </li>
         <li>Перфораторы</li>
       </ul>
       <h1 class="catalog-section-name">Перфораторы</h1>
-      <aside class="catalog-controls">
+      <aside class="catalog-control">
         <h2 class="catalog-control-name">Фильтр:</h2>
-        <form class="catalog-control-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="catalog-control-options">
-            <legend class="catalog-control-option-name">Цена:</legend>
+        <form class="catalog-control-filter" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter-category">
+            <legend class="filter-category-name">Цена:</legend>
             <div class="price-range-slider">
             </div>
-            <div class="price-range-type">
+            <div class="price-range-input">
               <input name="price-min" type="text" id="price-min" placeholder="0">
               ‒
               <input name="price-max" type="text" id="price-max" placeholder="30000">
             </div>
           </fieldset>
-          <fieldset class="catalog-control-options">
-            <legend class="catalog-control-option-name">Производители:</legend>
-            <ul class="options-list">
+          <fieldset class="filter-category">
+            <legend class="filter-category-name">Производители:</legend>
+            <ul class="filter-category-options">
               <li>
-                <input name="bosch" type="checkbox" id="bosch" checked><label for="bosch">BOSCH</label>
+                <input class="filter-input filter-input-checkbox visually-hidden" name="bosch" type="checkbox" id="bosch" checked>
+                <label for="bosch">BOSCH</label>
               </li>
               <li>
-                <input name="interskol" type="checkbox" id="interskol"><label for="interskol">ИНТЕРСКОЛ</label>
+                <input class="filter-input filter-input-checkbox visually-hidden" name="interskol" type="checkbox" id="interskol">
+                <label for="interskol">ИНТЕРСКОЛ</label>
               </li>
               <li>
-                <input name="makita" type="checkbox" id="makita" checked><label for="makita">MAKITA</label>
+                <input class="filter-input filter-input-checkbox visually-hidden " name="makita" type="checkbox" id="makita" checked>
+                <label for="makita">MAKITA</label>
               </li>
               <li>
-                <input name="dewalt" type="checkbox" id="dewalt"><label for="dewalt">DEWALT</label>
+                <input class="filter-input filter-input-checkbox visually-hidden" name="dewalt" type="checkbox" id="dewalt">
+                <label for="dewalt">DEWALT</label>
               </li>
               <li>
-                <input name="hitachi" type="checkbox" id="hitachi"><label for="hitachi">HITACHI</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="catalog-control-options">
-            <legend class="catalog-control-option-name">Питание:</legend>
-            <ul class="options-list">
-              <li>
-                <input name="power-type" type="radio" id="power-type"  value="cordless" checked><label for="power-type">Аккумуляторные</label>
-              </li>
-              <li>
-                <input name="power-type" type="radio" id="power-type" value="corded"><label for="power-type">Сетевые</label>
+                <input class="filter-input filter-input-checkbox visually-hidden" name="hitachi" type="checkbox" id="hitachi">
+                <label for="hitachi">HITACHI</label>
               </li>
             </ul>
           </fieldset>
-          <button class="catalog-control-result" type="submit">Показать</button>
+          <fieldset class="filter-category">
+            <legend class="filter-category-name">Питание:</legend>
+            <ul class="filter-category-options">
+              <li>
+                <input class="filter-input filter-input-radio visually-hidden" name="power-type" type="radio" id="power-type"  value="cordless" checked>
+                <label for="power-type">Аккумуляторные</label>
+              </li>
+              <li>
+                <input class="filter-input filter-input-radio visually-hidden" name="power-type" type="radio" id="power-type" value="corded">
+                <label for="power-type">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="filter-result-button" type="submit">Показать</button>
         </form>
       </aside>
-      <aside class="catalog-controls">
+      <aside class="catalog-control">
         <h2 class="catalog-control-name">Сортировка:</h2>
-        <ul class="catalog-control-options">
-            <li><a>По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По функционалу</a></li>
+        <ul class="catalog-control-sorting-options">
+            <li>
+              <a>По цене</a>
+            </li>
+            <li>
+              <a href="#">По типу</a>
+            </li>
+            <li>
+              <a href="#">По функционалу</a>
+            </li>
         </ul>
-        <ul class="catalog-control-result">
-            <li><a class="button" title="Ascending">По возрастанию</a></li>
-            <li><a class="button" title="Descending" href="#">По убыванию</a></li>
+        <ul class="catalog-control-sorting-result">
+            <li>
+              <a class="button" title="Ascending">По возрастанию</a>
+            </li>
+            <li>
+              <a class="button" title="Descending" href="#">По убыванию</a>
+            </li>
         </ul>
       </aside>
       <section class="catalog">
@@ -135,8 +172,8 @@
               <span>15500 P.</span>
             </p>
             <div class="catalog-item-action">
-              <button class="catalog-item-buy">Купить</button>
-              <button class="catalog-item-bookmark">В закладки</button>
+              <button class="catalog-item-buy" type="button">Купить</button>
+              <button class="catalog-item-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -147,8 +184,8 @@
               <span>25500 P.</span>
             </p>
             <div class="catalog-item-action">
-              <button class="catalog-item-buy">Купить</button>
-              <button class="catalog-item-bookmark">В закладки</button>
+              <button class="catalog-item-buy" type="button">Купить</button>
+              <button class="catalog-item-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item new">
@@ -159,8 +196,8 @@
               <span>12500 P.</span>
             </p>
             <div class="catalog-item-action">
-              <button class="catalog-item-buy">Купить</button>
-              <button class="catalog-item-bookmark">В закладки</button>
+              <button class="catalog-item-buy" type="button">Купить</button>
+              <button class="catalog-item-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -171,8 +208,8 @@
               <span>15500 P.</span>
             </p>
             <div class="catalog-item-action">
-              <button class="catalog-item-buy">Купить</button>
-              <button class="catalog-item-bookmark">В закладки</button>
+              <button class="catalog-item-buy" type="button">Купить</button>
+              <button class="catalog-item-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item new">
@@ -183,8 +220,8 @@
               <span>25500 P.</span>
             </p>
             <div class="catalog-item-action">
-              <button class="catalog-item-buy">Купить</button>
-              <button class="catalog-item-bookmark">В закладки</button>
+              <button class="catalog-item-buy" type="button">Купить</button>
+              <button class="catalog-item-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -195,8 +232,8 @@
               <span>12500 P.</span>
             </p>
             <div class="catalog-item-action">
-              <button class="catalog-item-buy">Купить</button>
-              <button class="catalog-item-bookmark">В закладки</button>
+              <button class="catalog-item-buy" type="button">Купить</button>
+              <button class="catalog-item-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item new">
@@ -207,8 +244,8 @@
               <span>15500 P.</span>
             </p>
             <div class="catalog-item-action">
-              <button class="catalog-item-buy">Купить</button>
-              <button class="catalog-item-bookmark">В закладки</button>
+              <button class="catalog-item-buy" type="button">Купить</button>
+              <button class="catalog-item-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -219,8 +256,8 @@
               <span>25500 P.</span>
             </p>
             <div class="catalog-item-action">
-              <button class="catalog-item-buy">Купить</button>
-              <button class="catalog-item-bookmark">В закладки</button>
+              <button class="catalog-item-buy" type="button">Купить</button>
+              <button class="catalog-item-bookmark" type="button">В закладки</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -231,8 +268,8 @@
               <span>12500 P.</span>
             </p>
             <div class="catalog-item-action">
-              <button class="catalog-item-buy">Купить</button>
-              <button class="catalog-item-bookmark">В закладки</button>
+              <button class="catalog-item-buy" type="button">Купить</button>
+              <button class="catalog-item-bookmark" type="button">В закладки</button>
             </div>
           </li>
         </ul>
@@ -240,10 +277,18 @@
       <nav class="pagination">
         <h2 class="visually-hidden">Навигация по страницам</h2>
           <ul class="pagination-list">
-            <li class="pagination-list-item"><a class="page-current">1</a></li>
-            <li class="pagination-list-item"><a href="#">2</a></li>
-            <li class="pagination-list-item"><a href="#">3</a></li>
-            <li class="pagination-list-item"><a href="#">Следующая</a></li>
+            <li class="pagination-list-item">
+              <a class="page-current">1</a>
+            </li>
+            <li class="pagination-list-item">
+              <a href="#">2</a>
+            </li>
+            <li class="pagination-list-item">
+              <a href="#">3</a>
+            </li>
+            <li class="pagination-list-item">
+              <a href="#">Следующая</a>
+            </li>
           </ul>
       </nav>
       <section class="catalog-section-about">
@@ -268,17 +313,35 @@
         </div>
         <nav class="footer-general-nav-secondary">
           <ul class="footer-general-nav-secondary-site">
-            <li><a href="#">Компания</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a>Каталог</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li>
+              <a href="#">Компания</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a>Каталог</a>
+            </li>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
           </ul>
           <ul class="footer-general-nav-secondary-products">
-            <li><a href="#">Материалы</a></li>
-            <li><a href="#">Техника</a></li>
-            <li><a href="#">Инструмент</a></li>
-            <li><a href="#">Спецпредложения</a></li>
+            <li>
+              <a href="#">Материалы</a>
+            </li>
+            <li>
+              <a href="#">Техника</a>
+            </li>
+            <li>
+              <a href="#">Инструмент</a>
+            </li>
+            <li>
+              <a href="#">Спецпредложения</a>
+            </li>
           </ul>
         </nav>
       </section>
@@ -289,9 +352,15 @@
         </div>
         <div class="footer-marketing-share">
           <ul class="footer-marketing-share-list">
-            <li><a class="social social-vkontakte visually-hidden" href="https://vk.com/" target="_blank">ВКонтакте</a></li>
-            <li><a class="social social-facebook visually-hidden" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-            <li><a class="social social-instagram visually-hidden" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li>
+              <a class="social social-vkontakte visually-hidden" href="https://vk.com/" target="_blank">ВКонтакте</a>
+            </li>
+            <li>
+              <a class="social social-facebook visually-hidden" href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </li>
+            <li>
+              <a class="social social-instagram visually-hidden" href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </li>
           </ul>
         </div>
         <div class="footer-marketing-developer">
@@ -312,15 +381,18 @@
 
 
     <section class="modal modal-cart">
-      <button class="modal-cart-close visually-hidden">Закрыть</button>
+      <button class="modal-cart-close visually-hidden" type="button">
+        Закрыть
+        <span class="close-indicator"></span>
+      </button>
       <p>Товар добавлен в корзину</p>
       <section class="modal-cart-footer">
-        <ul class="modal-cart-actions">
-          <li class="action order-submit">
-            <button>Оформить</button>
+        <ul class="modal-cart-user-actions">
+          <li>
+            <button class="user-action order-submit" type="button">Оформить</button>
           </li>
-          <li class="action shopping-continue">
-            <button>Продолжить покупки</button>
+          <li>
+            <button class="user-action shopping-continue" type="button">Продолжить покупки</button>
           </li>
         </ul>
       </section>

@@ -331,29 +331,25 @@
           © 2010‒2017 Компания "Техномарт"<br>
           Все права защищены
         </div>
-        <div class="footer-marketing-share">
+        <div>
           <ul class="footer-marketing-share-list">
             <li>
-              <a class="social social-vkontakte visually-hidden" href="https://vk.com/" target="_blank">ВКонтакте</a>
+              <a class="social social-vkontakte" href="https://vk.com/" target="_blank">ВКонтакте</a>
             </li>
             <li>
-              <a class="social social-facebook visually-hidden" href="https://www.facebook.com/" target="_blank">Facebook</a>
+              <a class="social social-facebook" href="https://www.facebook.com/" target="_blank">Facebook</a>
             </li>
             <li>
-              <a class="social social-instagram visually-hidden" href="https://www.instagram.com/" target="_blank">Instagram</a>
+              <a class="social social-instagram" href="https://www.instagram.com/" target="_blank">Instagram</a>
             </li>
           </ul>
         </div>
         <div class="footer-marketing-developer">
           <p>Обратная связь:
-            <span class="footer-marketing-developer-contact">
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </span>
+            <a class="footer-marketing-developer-contact" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p>Разработано ‒
-            <span class="footer-marketing-developer-contact">
-              <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
-            </span>
+            <a class="footer-marketing-developer-contact" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
           </p>
         </div>
       </section>
@@ -362,11 +358,10 @@
 
 
     <section class="modal modal-write-us">
-      <button class="modal-write-us-close visually-hidden" type="button">
+      <button class="close" type="button">
         Закрыть
-        <span class="close-indicator"></span>
       </button>
-      <form>
+      <form class="modal-write-us-content" action="https://echo.htmlacademy.ru" method="post">
         <label for="user-name">Ваше имя:</label>
         <input name="user-name" type="text" id="user-name" placeholder="Представьтесь, пожалуйста">
 
@@ -376,20 +371,22 @@
         <label for="message">Текст письма:</label>
         <textarea name="message" id="message" rows="#" cols="#" placeholder="В свободной форме"></textarea>
 
-        <section class="modal-write-us-footer">
+        <footer>
           <button class="modal-write-us-send" type="submit">Отправить</button>
-        </section>
+        </footer>
       </form>
     </section>
 
 
     <section class="modal modal-map-popup">
-      <button class="modal-map-popup-close visually-hidden" type="button">
+      <button class="close" type="button">
         Закрыть
-        <span class="close-indicator"></span>
       </button>
       <img src="img/map-large.jpg" width="940" height="446" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
     </section>
+
+
+
   </body>
 
 </html>

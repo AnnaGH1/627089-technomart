@@ -312,12 +312,18 @@
 
 
     <section class="modal modal-cart">
-      <p><button class="close-modal-cart">x</button></p>
+      <button class="modal-cart-close visually-hidden">Закрыть</button>
       <p>Товар добавлен в корзину</p>
-      <ul>
-        <li><button class="action-next order-submit">Оформить</button></li>
-        <li><button class="action-next shopping-continue">Продолжить покупки</button></li>
-      </ul>
+      <section class="modal-cart-footer">
+        <ul class="modal-cart-actions">
+          <li class="action order-submit">
+            <button>Оформить</button>
+          </li>
+          <li class="action shopping-continue">
+            <button>Продолжить покупки</button>
+          </li>
+        </ul>
+      </section>
     </section>
   </body>
 </html>

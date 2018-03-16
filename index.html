@@ -318,26 +318,26 @@
 
 
     <section class="modal modal-write-us">
-      <button class="modal-write-us-close">x</button>
-      <span>Ваше имя:</span>
-      <!-- Форма -->
-      <span>Представьтесь, пожалуйста</span>
+      <form>
+        <button class="modal-write-us-close visually-hidden">Закрыть</button>
+        <label for="user-name">Ваше имя:</label>
+        <input name="user-name" type="text" id="user-name" placeholder="Представьтесь, пожалуйста">
 
-      <span>Ваш e-mail:</span>
-      <!-- Форма -->
-      <span>Для отправки ответа</span>
+        <label for="user-email">Ваш e-mail:</label>
+        <input name="user-email" type="email" id="user-email" placeholder="Для отправки ответа">
 
-      <span>Текст письма:</span>
-      <!-- Форма -->
-      <span>В свободной форме</span>
-      <section class="modal-write-us-footer">
-        <button class="modal-write-us-send">Отправить</button>
-      </section>
+        <label for="message">Текст письма:</label>
+        <textarea name="message" id="message" rows="#" cols="#" placeholder="В свободной форме"></textarea>
+
+        <section class="modal-write-us-footer">
+          <button class="modal-write-us-send" type="submit">Отправить</button>
+        </section>
+      </form>
     </section>
 
 
     <section class="modal modal-map-popup">
-      <button class="modal-map-popup-close">x</button>
+      <button class="modal-map-popup-close visually-hidden">Закрыть</button>
       <img src="img/map-large.jpg" width="940" height="446" alt="Карта увеличенная">
     </section>
   </body>

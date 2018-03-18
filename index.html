@@ -7,19 +7,13 @@
   <body>
     <header class="header">
       <section class="header-bar">
-        <p class="logo-small">
-          <a>Техномарт</a>
-        </p>
+        <a class="logo logo-header">Техномарт</a>
         <form class="search" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="search">Поиск</label>
           <input name="search" type="search" id="search" placeholder="Поиск:">
         </form>
-        <a class="bookmarks" href="#">Закладки:
-          <span>0</span>
-        </a>
-        <a class="cart-empty" href="#">Корзина:
-          <span>0</span>
-        </a>
+        <a class="bookmarks" href="#">Закладки: 0</a>
+        <a class="cart-empty" href="#">Корзина: 0</a>
         <a class="order-submit" href="#">Оформить заказ</a>
       </section>
       <section class="header-intro">
@@ -37,8 +31,8 @@
           </ul>
         </nav>
       </section>
-      <nav class="header-nav">
-        <ul class="header-nav-site">
+      <nav class="header-nav-links">
+        <ul class="nav-site">
           <li>
             <a>Главная</a>
           </li>
@@ -71,47 +65,47 @@
       <section class="promo">
         <h2 class="visually-hidden">Промо</h2>
         <ul class="promo-list">
-          <li class="promo-item item-material new">
-            <p class="promo-item-name">Материалы</p>
-            <p class="promo-item-note"><a href="#">на любой вкус</a></p>
+          <li class="promo-item material new">
+            <p class="name">Материалы</p>
+            <p class="note"><a href="#">на любой вкус</a></p>
           </li>
-          <li class="promo-item item-instrument">
-            <p class="promo-item-name">Инструмент</p>
-            <p class="promo-item-note"><a href="#">на все случаи</a></p>
+          <li class="promo-item instrument">
+            <p class="name">Инструмент</p>
+            <p class="note"><a href="#">на все случаи</a></p>
           </li>
-          <li class="promo-item item-equipment">
-            <p class="promo-item-name">Техника</p>
-            <p class="promo-item-note"><a href="#">для стройки</a></p>
+          <li class="promo-item equipment">
+            <p class="name">Техника</p>
+            <p class="note"><a href="#">для стройки</a></p>
           </li>
-          <li class="promo-item item-promo">
-            <p class="promo-item-name">Скидки 50%</p>
-            <p class="promo-item-note"><a href="#">на 350 товаров</a></p>
+          <li class="promo-item discount">
+            <p class="name">Скидки 50%</p>
+            <p class="note"><a href="#">на 350 товаров</a></p>
           </li>
-          <li class="promo-item item-delivery">
-            <p class="promo-item-name">Доставка</p>
-            <p class="promo-item-note"><a href="#">бесплатно</a></p>
+          <li class="promo-item delivery">
+            <p class="name">Доставка</p>
+            <p class="note"><a href="#">бесплатно</a></p>
           </li>
         </ul>
         <div class="promo-slider">
-          <ul class="promo-slide-list">
-            <li class="promo-slide-item">
+          <ul class="slide-list">
+            <li class="slide-item">
               <h3>
-                <span class="slide-title">Дрели</span>
-                <span class="slide-title-note">Соседям на радость!</span>
+                <span class="name">Дрели</span>
+                <span class="note">Соседям на радость!</span>
               </h3>
               <img src="img/slide-drill.jpg" width="620" height="266" alt="Фото дрели в действии">
             </li>
-            <li class="promo-slide-item">
+            <li class="slide-item">
               <h3>
-                <span class="slide-title">Перфораторы</span>
-                <span class="slide-title-note">Настоящие мужские игрушки!</span>
+                <span class="name">Перфораторы</span>
+                <span class="note">Настоящие мужские игрушки!</span>
               </h3>
               <img src="img/slide-perforator.jpg" width="620" height="266" alt="Фото перфоратора в действии">
             </li>
           </ul>
-          <div class="promo-slider-controls">
-            <button class="control-arrow" type="button">Стрелка влево</button>
-            <button class="control-arrow" type="button">Стрелка вправо</button>
+          <div class="slider-controls">
+            <button class="arrow" type="button">Стрелка влево</button>
+            <button class="arrow" type="button">Стрелка вправо</button>
             <div class="control-indicators">
               <button type="button">Индикатор слайда</button>
               <button type="button">Индикатор слайда</button>
@@ -220,22 +214,22 @@
           </p>
         </div>
         <div class="services-slider">
-          <ul class="services-slide-list">
-            <li class="services-slide-item item-delivery">
+          <ul class="slide-list">
+            <li class="slide-item delivery">
               <h3>Доставка</h3>
               <p>
                 Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
                 Ведь мы неплохо заработаем, поднимая его на ваш этаж!
               </p>
             </li>
-            <li class="services-slide-item item-warranty">
+            <li class="slide-item warranty">
               <h3>Гарантия</h3>
               <p>
                 Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,
                 вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
               </p>
             </li>
-            <li class="services-slide-item item-credit">
+            <li class="slide-item credit">
               <h3>Кредит</h3>
               <p>
                 Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
@@ -243,7 +237,7 @@
               <button class="send-credit-application">Отправить заявку</button>
             </li>
           </ul>
-          <ul class="services-slider-controls">
+          <ul class="slider-controls">
             <li>
               <button type="button">Доставка</button>
             </li>
@@ -285,14 +279,8 @@
 
     <footer class="footer">
       <section class="footer-general">
-        <p class="logo-large">
-          <a>Техномарт</a>
-        </p>
-        <div class="contact">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-          +7 (812) 555‒05‒55
-        </div>
-        <nav class="nav">
+        <a class="logo logo-footer">Техномарт</a>
+        <nav class="footer-nav-links">
           <ul class="nav-site">
             <li>
               <a href="#">Компания</a>
@@ -310,6 +298,12 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
+        </nav>
+        <div class="contacts">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          +7 (812) 555‒05‒55
+        </div>
+        <nav class="footer-nav-links">
           <ul class="nav-products">
             <li>
               <a href="#">Материалы</a>
@@ -332,7 +326,7 @@
           Все права защищены
         </div>
         <div>
-          <ul class="social">
+          <ul class="social-links">
             <li>
               <a class="social social-vkontakte" href="https://vk.com/" target="_blank">ВКонтакте</a>
             </li>
@@ -358,18 +352,16 @@
 
 
     <section class="modal modal-write-us">
-      <button class="close" type="button">
-        Закрыть
-      </button>
-      <form class="content" action="https://echo.htmlacademy.ru" method="post">
+      <button class="close" type="button">Закрыть</button>
+      <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
         <label for="user-name">Ваше имя:</label>
         <input name="user-name" type="text" id="user-name" placeholder="Представьтесь, пожалуйста">
 
         <label for="user-email">Ваш e-mail:</label>
         <input name="user-email" type="email" id="user-email" placeholder="Для отправки ответа">
 
-        <label for="message">Текст письма:</label>
-        <textarea name="message" id="message" rows="#" cols="#" placeholder="В свободной форме"></textarea>
+        <label for="user-message">Текст письма:</label>
+        <textarea name="user-message" id="message" rows="#" cols="#" placeholder="В свободной форме"></textarea>
 
         <footer>
           <button class="send" type="submit">Отправить</button>
@@ -379,9 +371,7 @@
 
 
     <section class="modal modal-map-popup">
-      <button class="close" type="button">
-        Закрыть
-      </button>
+      <button class="close" type="button">Закрыть</button>
       <img src="img/map-large.jpg" width="940" height="446" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
     </section>
 

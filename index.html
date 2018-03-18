@@ -7,26 +7,26 @@
   <body>
     <header class="header">
       <section class="header-bar">
-        <p class="header-bar-logo-technomart-small">
+        <p class="header-logo-small">
           <a>Техномарт</a>
         </p>
-        <form class="header-bar-search" action="https://echo.htmlacademy.ru" method="post">
+        <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="search">Поиск</label>
           <input name="search" type="search" id="search" placeholder="Поиск:">
         </form>
-        <a class="header-bar-bookmarks" href="#">Закладки:
+        <a class="header-bookmarks" href="#">Закладки:
           <span>0</span>
         </a>
-        <a class="header-bar-cart-empty" href="#">Корзина:
+        <a class="header-cart-empty" href="#">Корзина:
           <span>0</span>
         </a>
-        <a class="header-bar-order-submit" href="#">Оформить заказ</a>
+        <a class="header-order-submit" href="#">Оформить заказ</a>
       </section>
       <section class="header-intro">
-        <p class="header-intro-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <p class="header-intro-phone">+7 (812) 555‒05‒55</p>
-        <p class="header-intro-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <nav class="header-intro-nav-user">
+        <p class="header-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <p class="header-phone">+7 (812) 555‒05‒55</p>
+        <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <nav class="header-nav-user">
           <ul class="user-non-authorized">
             <li class="user-login">
               <a href="#">Войти</a>
@@ -37,8 +37,8 @@
           </ul>
         </nav>
       </section>
-      <nav class="header-nav-main">
-        <ul class="header-nav-main-site">
+      <nav class="header-nav">
+        <ul class="header-nav-site">
           <li>
             <a>Главная</a>
           </li>
@@ -285,15 +285,15 @@
 
     <footer class="footer">
       <section class="footer-general">
-        <p class="footer-general-logo-technomart-large">
+        <p class="logo-large">
           <a>Техномарт</a>
         </p>
-        <div class="footer-general-contact">
+        <div class="contact">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555‒05‒55
         </div>
-        <nav class="footer-general-nav-secondary">
-          <ul class="footer-general-nav-secondary-site">
+        <nav class="nav">
+          <ul class="nav-site">
             <li>
               <a href="#">Компания</a>
             </li>
@@ -310,7 +310,7 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-          <ul class="footer-general-nav-secondary-products">
+          <ul class="nav-products">
             <li>
               <a href="#">Материалы</a>
             </li>
@@ -327,12 +327,12 @@
         </nav>
       </section>
       <section class="footer-marketing">
-        <div class="footer-marketing-copyright">
+        <div class="copyright">
           © 2010‒2017 Компания "Техномарт"<br>
           Все права защищены
         </div>
         <div>
-          <ul class="footer-marketing-share-list">
+          <ul class="social">
             <li>
               <a class="social social-vkontakte" href="https://vk.com/" target="_blank">ВКонтакте</a>
             </li>
@@ -344,12 +344,12 @@
             </li>
           </ul>
         </div>
-        <div class="footer-marketing-developer">
+        <div class="developer">
           <p>Обратная связь:
-            <a class="footer-marketing-developer-contact" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="developer-contact" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p>Разработано ‒
-            <a class="footer-marketing-developer-contact" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
+            <a class="developer-contact" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
           </p>
         </div>
       </section>
@@ -361,7 +361,7 @@
       <button class="close" type="button">
         Закрыть
       </button>
-      <form class="modal-write-us-content" action="https://echo.htmlacademy.ru" method="post">
+      <form class="content" action="https://echo.htmlacademy.ru" method="post">
         <label for="user-name">Ваше имя:</label>
         <input name="user-name" type="text" id="user-name" placeholder="Представьтесь, пожалуйста">
 
@@ -372,7 +372,7 @@
         <textarea name="message" id="message" rows="#" cols="#" placeholder="В свободной форме"></textarea>
 
         <footer>
-          <button class="modal-write-us-send" type="submit">Отправить</button>
+          <button class="send" type="submit">Отправить</button>
         </footer>
       </form>
     </section>

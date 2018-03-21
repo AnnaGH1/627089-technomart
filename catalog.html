@@ -2,6 +2,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
   </head>
   <body>
     <header class="header">
@@ -12,7 +16,7 @@
           <input name="search" type="search" id="search" placeholder="Поиск:">
         </form>
         <a class="bookmarks" href="#">Закладки: 0</a>
-        <a class="cart-not-empty" href="#">Корзина: 10</a>
+        <a class="cart not-empty" href="#">Корзина: 10</a>
         <a class="order-submit" href="#">Оформить заказ</a>
       </section>
       <section class="header-intro">
@@ -39,7 +43,7 @@
         </nav>
       </section>
       <nav class="header-nav-links">
-        <ul class="nav-site">
+        <ul class="nav-main">
           <li>
             <a href="index.html">Главная</a>
           </li>
@@ -83,7 +87,7 @@
       <h1 class="catalog-section-name">Перфораторы</h1>
 
       <aside class="catalog-control">
-        <h2 class="name">Фильтр:</h2>
+        <h2 class="control-type">Фильтр:</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="category">
             <legend class="category-name">Цена:</legend>
@@ -97,7 +101,7 @@
           </fieldset>
           <fieldset class="category">
             <legend class="category-name">Производители:</legend>
-            <ul class="options">
+            <ul class="category-options">
               <li>
                 <input class="filter-input filter-input-checkbox visually-hidden" name="bosch" type="checkbox" id="bosch" checked>
                 <label for="bosch">BOSCH</label>
@@ -122,14 +126,14 @@
           </fieldset>
           <fieldset class="category">
             <legend class="category-name">Питание:</legend>
-            <ul class="options">
+            <ul class="category-options">
               <li>
-                <input class="filter-input filter-input-radio visually-hidden" name="power-type" type="radio" id="power-type"  value="cordless" checked>
-                <label for="power-type">Аккумуляторные</label>
+                <input class="filter-input filter-input-radio visually-hidden" name="power-type" type="radio" id="power-type-cordless"  value="cordless" checked>
+                <label for="power-type-cordless">Аккумуляторные</label>
               </li>
               <li>
-                <input class="filter-input filter-input-radio visually-hidden" name="power-type" type="radio" id="power-type" value="corded">
-                <label for="power-type">Сетевые</label>
+                <input class="filter-input filter-input-radio visually-hidden" name="power-type" type="radio" id="power-type-corded" value="corded">
+                <label for="power-type-corded">Сетевые</label>
               </li>
             </ul>
           </fieldset>
@@ -138,7 +142,7 @@
       </aside>
 
       <aside class="catalog-control">
-        <h2 class="name">Сортировка:</h2>
+        <h2 class="control-type">Сортировка:</h2>
         <ul class="options">
           <li>
             <a>По цене</a>

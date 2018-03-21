@@ -1,0 +1,505 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: normal;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Фоны разделов */
+.header-bar,
+.footer-marketing {
+  background-color: #293449;
+}
+
+.header-intro {
+  background-image: ;
+}
+
+.header-nav-links,
+.footer-general {
+  background-color: #32425c;
+}
+
+.catalog-nav {
+  background-color: #f9f5f0;
+}
+
+.services {
+  background-image: ;
+}
+
+.catalog-section-name,
+.catalog-section-about {
+  background-color: #f2f6f8;
+}
+
+/* Логотип */
+.logo {
+  color: #ffffff;
+  background-color: #ee3643;
+
+}
+
+.logo-header {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.logo-footer {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+a.logo:hover {
+  background-color: #ca2c37;
+}
+
+a.logo:active {
+  background-color: #ba2732;
+}
+
+
+/* Форма поиска */
+.header-bar form.search {
+  color: #ffffff;
+}
+.header-bar form.search:hover {
+  background-color: #212a3a;
+}
+
+/* Закладки и Корзина */
+.header-bar .bookmarks,
+.header-bar .cart {
+  color: #ffffff;
+  line-height: 18px;
+}
+
+.header-bar .bookmarks:hover,
+.header-bar .cart.empty:hover {
+   background-color: #212a3a;
+}
+
+.header-bar .bookmarks:active,
+.header-bar .cart.empty:active {
+  background-color: #161d29;
+  color: rgba(255,255,255,0.6);
+}
+
+.header-bar .cart.not-empty {
+  background-color: #ee3643;
+}
+
+/* Кнопка Оформить заказ */
+.header-bar a.order-submit {
+  color: #ffffff;
+  background-color: #63a63e;
+  line-height: 18px;
+}
+
+.header-bar a.order-submit:hover {
+  background-color: #5fbb2d;
+}
+
+.header-bar a.order-submit:active {
+  background-color: #518534;
+  color: rgba(255,255,255,0.51);
+}
+
+/* Шапка - описание магазина и контакты */
+.header-intro .description {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.header-intro .phone {
+  font-size: 21px;
+  line-height: 21px;
+  color: #e9292a;
+}
+
+.header-intro .address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+/* Навигация пользователя */
+.nav-user a {
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+/* Навигация неавторизованного пользователя */
+.user-non-authorized a:hover {
+  color: #ee3643;
+}
+
+.user-non-authorized a:active {
+  color: rgba(0,0,0,0.3);
+}
+
+
+
+/* Навигация авторизованного пользователя */
+.user-authorized-main a:active {
+  color: rgba(0,0,0,0.3);
+}
+
+.user-authorized-secondary a {
+  color: #32425c;
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.user-authorized-secondary a:hover {
+  color: #ee3643;
+}
+
+.user-authorized-secondary a:active {
+  color: rgba(50,66,92,0.3);
+}
+
+
+/* Навигация по сайту */
+.nav-main a {
+  color: rgb(255,255,255);
+}
+
+.nav-main a:hover {
+  background-color: #293449;
+}
+
+.nav-main a:active {
+  background-color: #1d2739;
+  color: rgba(255,255,255,0.5);
+}
+
+/* Промо */
+.promo-item {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.promo-item.material {
+  background-color: #ffbf47;
+}
+
+.promo-item.instrument {
+  background-color: #3bbce3;
+}
+
+.promo-item.equipment {
+  background-color: #dc91d8;
+}
+
+.promo-item.discount {
+  background-color: #8ed78f;
+}
+
+.promo-item.delivery {
+  background-color: #ffc047;
+}
+
+.promo-item .note {
+  color: #ffffff;
+  background-color: #e5e5e5;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.promo-item .note:hover {
+  background-color: #cccccc;
+}
+.promo-item .note:active {
+  background-color: #b2b2b2;
+}
+
+/* Промо - слайдер */
+.slide-item .name {
+  font-size: 36px;
+  line-height: 36px;
+  /* color: #ffffff; */
+  font-weight: bold;
+}
+
+.slide-item .note {
+  font-size: 18px;
+  line-height: 24px;
+  /* color: #ffffff; */
+}
+
+/* Кнопки - каталог, компания-контакты */
+.button-catalog,
+.catalog-nav .button,
+.company-about .learn-more,
+.company-contacts .write-us {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ee3643;
+}
+
+.button-catalog:hover {
+  background-color: #ca2c37;
+}
+
+.button-catalog:active {
+  background-color: #ba2732;
+}
+
+/* Заголовки разделов */
+
+
+.catalog-nav h2,
+.services-intro h2,
+.services-slider .slide-item h3,
+.company-about h2,
+.company-contacts h2,
+.catalog-section-name,
+.catalog-section-about h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.catalog-nav h2 {
+  color: #32425c;
+}
+
+.services-slider .slide-item h3 {
+  font-size: 36px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.catalog-section-name {
+  color: #32425c;
+}
+
+/* Каталог - карточки товаров */
+.name,
+.price {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.price {
+  font-size: 17px;
+  line-height: 18px;
+  /* color: #ffffff; */
+}
+
+.price-regular {
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.action button {
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.buy {
+  color: #ffffff;
+  background-color: #63a63e;
+}
+
+.buy:hover {
+  background-color: #5fbb2d;
+}
+
+.buy:active {
+  background-color: #518534;
+}
+
+.bookmark {
+  color: #32425c;
+}
+
+.bookmark:hover {
+
+}
+
+.bookmark:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+/* Раздел Сервисы, О компании, описание раздела каталога- текст */
+.services-intro p,
+.services-slider .slide-item p,
+.company-about p,
+.company-contacts p,
+.catalog-section-about p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.shipping-partners {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* Раздел Сервисы - кнопки */
+.services-slider .slide-item button {
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ff5357;
+}
+
+.services-slider .slider-controls button {
+  color: #ffffff;
+  background-color: #32425c;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.services-slider .slider-controls button:hover {
+  background-color: #293449;
+}
+
+.services-slider .slider-controls button:active {
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+/* Фильтр, Сортировка, Навигация по страницам */
+.catalog-control,
+.catalog-control button,
+.pagination {
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.catalog-control h2 {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.filter .category-name {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filter fieldset label {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+/* Сортировка */
+.catalog-control .options a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-control .options a:hover {
+  color: #000000;
+}
+
+.catalog-control .options a:active {
+  color: #ee3643;
+}
+
+/* Фильтр */
+
+
+/* Футер */
+.footer-general .contacts {
+  color: #f3f7f9;
+}
+
+.footer-general .contacts,
+.footer-nav-links {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-nav-links .nav-site a {
+  color: rgb(241,245,247);
+}
+
+.footer-nav-links .nav-site a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav-links .nav-site a:active {
+  color: rgba(241,245,247,0.5);
+  text-decoration: none;
+}
+
+.footer-nav-links .nav-products a {
+  color: rgb(255,209,128);
+}
+
+.footer-nav-links .nav-products a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav-links .nav-products a:active {
+  color: rgba(255,209,128,0.5);
+  text-decoration: none;
+}
+
+.footer-marketing {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-marketing .developer a {
+  color: #ffd180;
+}
+
+.footer-marketing .developer a:hover {
+  text-decoration: underline;
+}
+
+.footer-marketing .developer a:active {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+/* Модальные окна */
+.modal-write-us button.send {
+    font-family: inherit;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: #ee3643;
+}
+
+.modal-write-us label {
+    font-size: 18px;
+    line-height: 18px;
+}

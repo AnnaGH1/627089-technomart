@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -13,7 +16,7 @@
           <input name="search" type="search" id="search" placeholder="Поиск:">
         </form>
         <a class="bookmarks" href="#">Закладки: 0</a>
-        <a class="cart-empty" href="#">Корзина: 0</a>
+        <a class="cart empty" href="#">Корзина: 0</a>
         <a class="order-submit" href="#">Оформить заказ</a>
       </section>
       <section class="header-intro">
@@ -32,7 +35,7 @@
         </nav>
       </section>
       <nav class="header-nav-links">
-        <ul class="nav-site">
+        <ul class="nav-main">
           <li>
             <a>Главная</a>
           </li>
@@ -67,23 +70,23 @@
         <ul class="promo-list">
           <li class="promo-item material new">
             <p class="name">Материалы</p>
-            <p class="note"><a href="#">на любой вкус</a></p>
+            <a class="note" href="#">на любой вкус</a>
           </li>
           <li class="promo-item instrument">
             <p class="name">Инструмент</p>
-            <p class="note"><a href="#">на все случаи</a></p>
+            <a class="note" href="#">на все случаи</a>
           </li>
           <li class="promo-item equipment">
             <p class="name">Техника</p>
-            <p class="note"><a href="#">для стройки</a></p>
+            <a class="note" href="#">для стройки</a>
           </li>
           <li class="promo-item discount">
             <p class="name">Скидки 50%</p>
-            <p class="note"><a href="#">на 350 товаров</a></p>
+            <a class="note" href="#">на 350 товаров</a>
           </li>
           <li class="promo-item delivery">
             <p class="name">Доставка</p>
-            <p class="note"><a href="#">бесплатно</a></p>
+            <a class="note" href="#">бесплатно</a>
           </li>
         </ul>
         <div class="promo-slider">
@@ -118,7 +121,7 @@
       <section class="catalog">
         <header class="catalog-nav">
           <h2>Популярные товары:</h2>
-          <a class="button show-all" href="#">Все популярные товары</a>
+          <a class="button" href="#">Все популярные товары</a>
         </header>
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -159,7 +162,7 @@
       <section class="catalog">
         <header class="catalog-nav">
           <h2>Популярные производители:</h2>
-          <a class=" button show-all" href="#">Все производители</a>
+          <a class=" button" href="#">Все производители</a>
         </header>
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -261,7 +264,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="company-learn-more" href="#">Подробнее о компании</a>
+          <a class="learn-more" href="#">Подробнее о компании</a>
       </section>
 
       <section class="company-contacts">
@@ -272,7 +275,7 @@
               <img src="img/map.jpg" width="300" height="158" alt="Карта">
             </a>
           </p>
-          <a class="company-write-us" href="#">Заблудились? Напишите нам!</a>
+          <a class="write-us" href="#">Заблудились? Напишите нам!</a>
       </section>
     </main>
 
@@ -353,7 +356,7 @@
 
     <section class="modal modal-write-us">
       <button class="close" type="button">Закрыть</button>
-      <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <label for="user-name">Ваше имя:</label>
         <input name="user-name" type="text" id="user-name" placeholder="Представьтесь, пожалуйста">
 

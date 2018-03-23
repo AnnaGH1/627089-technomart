@@ -9,6 +9,7 @@ body {
   line-height: 17px;
   font-weight: normal;
   color: #000000;
+
 }
 
 a {
@@ -22,8 +23,9 @@ a {
   background-color: #293449;
 }
 
-.header-intro {
-  background-image: ;
+.header-container {
+  background-color: #f1f5f7;
+
 }
 
 .header-nav-links,
@@ -36,12 +38,18 @@ a {
 }
 
 .services {
-  background-image: ;
+  background-color: #f2f6f8;;
 }
 
 .catalog-section-name,
 .catalog-section-about {
   background-color: #f2f6f8;
+}
+
+/* Верхняя панель */
+.header-bar {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Логотип */
@@ -61,7 +69,8 @@ a {
   line-height: 30px;
 }
 
-a.logo:hover {
+a.logo:hover,
+a.logo:focus {
   background-color: #ca2c37;
 }
 
@@ -71,12 +80,34 @@ a.logo:active {
 
 
 /* Форма поиска */
-.header-bar form.search {
-  color: #ffffff;
-}
-.header-bar form.search:hover {
+.header-bar .search:hover,
+.header-bar .search:focus {
   background-color: #212a3a;
 }
+
+.header-bar .search:active {
+  background-color: #293449;
+}
+
+.header-bar input {
+  font-family: inherit;
+  /* color: #000000; */
+  font-size: 17px;
+  line-height: 18px;
+  background-color: transparent;
+  border: none;
+}
+
+.header-bar input:hover,
+.header-bar input:focus {
+  background-color: transparent;
+}
+
+.header-bar input:active {
+  background-color: #ffffff;
+}
+
+
 
 /* Закладки и Корзина */
 .header-bar .bookmarks,
@@ -86,7 +117,9 @@ a.logo:active {
 }
 
 .header-bar .bookmarks:hover,
-.header-bar .cart.empty:hover {
+.header-bar .bookmarks:focus,
+.header-bar .cart.empty:hover,
+.header-bar .cart.empty:focus {
    background-color: #212a3a;
 }
 
@@ -107,7 +140,8 @@ a.logo:active {
   line-height: 18px;
 }
 
-.header-bar a.order-submit:hover {
+.header-bar a.order-submit:hover,
+.header-bar a.order-submit:focus {
   background-color: #5fbb2d;
 }
 
@@ -117,6 +151,10 @@ a.logo:active {
 }
 
 /* Шапка - описание магазина и контакты */
+.header-intro {
+  display: ;
+}
+
 .header-intro .description {
   font-size: 16px;
   line-height: 23px;
@@ -144,8 +182,15 @@ a.logo:active {
   line-height: 21px;
 }
 
+.user-non-authorized,
+.user-authorized-main,
+.user-authorized-secondary {
+  list-style: none;
+}
+
 /* Навигация неавторизованного пользователя */
-.user-non-authorized a:hover {
+.user-non-authorized a:hover,
+.user-non-authorized a:focus {
   color: #ee3643;
 }
 
@@ -167,7 +212,8 @@ a.logo:active {
   line-height: 18px;
 }
 
-.user-authorized-secondary a:hover {
+.user-authorized-secondary a:hover,
+.user-authorized-secondary a:focus {
   color: #ee3643;
 }
 
@@ -177,11 +223,18 @@ a.logo:active {
 
 
 /* Навигация по сайту */
+.nav-main {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
 .nav-main a {
   color: rgb(255,255,255);
 }
 
-.nav-main a:hover {
+.nav-main a:hover,
+.nav-main a:focus {
   background-color: #293449;
 }
 
@@ -192,6 +245,9 @@ a.logo:active {
 
 /* Промо */
 .promo-item {
+  display: inline-block;
+  width: 300px;
+  height: 123px;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -225,7 +281,8 @@ a.logo:active {
   line-height: 18px;
 }
 
-.promo-item .note:hover {
+.promo-item .note:hover,
+.promo-item .note:focus {
   background-color: #cccccc;
 }
 .promo-item .note:active {
@@ -233,35 +290,43 @@ a.logo:active {
 }
 
 /* Промо - слайдер */
+.slide-list {
+  list-style: none;
+}
+
+.slide-item .name,
+.slide-item .note {
+  /* color: #ffffff; */
+}
+
 .slide-item .name {
   font-size: 36px;
   line-height: 36px;
-  /* color: #ffffff; */
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .slide-item .note {
   font-size: 18px;
   line-height: 24px;
-  /* color: #ffffff; */
 }
 
-/* Кнопки - каталог, компания-контакты */
-.button-catalog,
-.catalog-nav .button,
-.company-about .learn-more,
-.company-contacts .write-us {
+/* Кнопки */
+.button {
+  font-family: inherit;
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
   background-color: #ee3643;
+  border: none;
 }
 
-.button-catalog:hover {
+.button:hover,
+.button:focus {
   background-color: #ca2c37;
 }
 
-.button-catalog:active {
+.button:active {
   background-color: #ba2732;
 }
 
@@ -296,58 +361,71 @@ a.logo:active {
 }
 
 /* Каталог - карточки товаров */
-.name,
-.price {
+.catalog .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.catalog-item.name,
+.catalog-item.price {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
 }
 
-.name {
+.catalog-item.name {
   font-size: 18px;
   line-height: 20px;
 }
 
-.price {
+.catalog-item.price {
   font-size: 17px;
   line-height: 18px;
   /* color: #ffffff; */
 }
 
-.price-regular {
+.catalog-item.price-regular {
   color: #a9a9a9;
   text-decoration: line-through;
 }
 
-.action button {
+.catalog-item.action .button {
   font: inherit;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
-.buy {
+.catalog-item.buy {
   color: #ffffff;
   background-color: #63a63e;
 }
 
-.buy:hover {
+.catalog-item.buy:hover,
+.catalog-item.buy:focus {
   background-color: #5fbb2d;
 }
 
-.buy:active {
+.catalog-item.buy:active {
   background-color: #518534;
 }
 
-.bookmark {
+.catalog-item.bookmark {
   color: #32425c;
+  background-color: #ffffff;
+  border: 2px solid #63a63e;
 }
 
-.bookmark:hover {
+.catalog-item.bookmark:hover,
+.catalog-item.bookmark:focus {
+  background-color: #ffffff;
+  border: 2px solid #32425c;
 
 }
 
-.bookmark:active {
+.catalog-item.bookmark:active {
   color: rgba(50, 66, 92, 0.3);
+  border: 2px solid #c1c6ce;
 }
 
 /* Раздел Сервисы, О компании, описание раздела каталога- текст */
@@ -366,24 +444,33 @@ a.logo:active {
   line-height: 20px;
 }
 
-/* Раздел Сервисы - кнопки */
+/* Раздел Сервисы  */
+.services .slide-list,
+.services .slider-controls {
+  list-style: none;
+}
+
 .services-slider .slide-item button {
-  font: inherit;
+  font-family: inherit;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
   background-color: #ff5357;
+  border: none;
 }
 
 .services-slider .slider-controls button {
+  font-family: inherit;
   color: #ffffff;
   background-color: #32425c;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
+  border: none;
 }
 
-.services-slider .slider-controls button:hover {
+.services-slider .slider-controls button:hover,
+.services-slider .slider-controls button:focus {
   background-color: #293449;
 }
 
@@ -392,64 +479,114 @@ a.logo:active {
   background-color: #ffffff;
 }
 
-/* Фильтр, Сортировка, Навигация по страницам */
-.catalog-control,
-.catalog-control button,
+/* Каталог - управление */
+.breadcrumbs,
+.control-type,
+.options-sorting,
+.filter .result-button,
 .pagination {
   font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
   text-transform: uppercase;
   font-size: 13px;
   line-height: 18px;
 }
 
-.catalog-control h2 {
-  font-size: 13px;
-  font-weight: normal;
+.breadcrumbs a {
+  color: #000000;
 }
 
+.breadcrumbs,
+.options-sorting, .result-sorting {
+  list-style: none;
+}
+
+/* Каталог - фильтр */
 .filter .category-name {
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
 }
 
-.filter fieldset label {
+.category-options {
+  list-style: none;
+}
+
+.filter .category label {
   font-size: 15px;
   line-height: 20px;
 }
 
-/* Сортировка */
-.catalog-control .options a {
+/* Каталог - сортировка */
+.options-sorting a {
   color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #ee3643;
 }
 
-.catalog-control .options a:hover {
+.options-sorting a:hover,
+.options-sorting a:focus {
   color: #000000;
+  border-bottom: 1px solid #ee3643;
 }
 
-.catalog-control .options a:active {
+.options-sorting a:active {
   color: #ee3643;
+  border-bottom: none;
 }
 
-/* Фильтр */
+.options-sorting a.option-current {
+  color: #ee3643;
+  border-bottom: none;
+}
 
+/* Навигация по страницам */
+.pagination-list {
+  list-style: none;
+}
 
+.pagination-item a {
+  color: inherit;
+  border: 1px solid #e5e5e5;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-item a:active {
+  border: 1px solid #ee3643;
+}
+
+.pagination-item a.page-current {
+  color: #ffffff;
+  border: 1px solid #ee3643;
+  background-color: #ee3643;
+}
 /* Футер */
 .footer-general .contacts {
   color: #f3f7f9;
+}
+
+.nav-site,
+.nav-products,
+.social-links {
+  list-style: none;
 }
 
 .footer-general .contacts,
 .footer-nav-links {
   font-size: 18px;
   line-height: 24px;
+
 }
 
 .footer-nav-links .nav-site a {
   color: rgb(241,245,247);
 }
 
-.footer-nav-links .nav-site a:hover {
+.footer-nav-links .nav-site a:hover,
+.footer-nav-links .nav-site a:focus {
   text-decoration: underline;
 }
 
@@ -462,7 +599,8 @@ a.logo:active {
   color: rgb(255,209,128);
 }
 
-.footer-nav-links .nav-products a:hover {
+.footer-nav-links .nav-products a:hover,
+.footer-nav-links .nav-products a:focus {
   text-decoration: underline;
 }
 
@@ -477,11 +615,20 @@ a.logo:active {
   line-height: 18px;
 }
 
+.footer-marketing .social-links {
+  text-align: center;
+}
+.footer-marketing .social {
+  color: #ffffff;
+}
+
+
 .footer-marketing .developer a {
   color: #ffd180;
 }
 
-.footer-marketing .developer a:hover {
+.footer-marketing .developer a:hover,
+.footer-marketing .developer a:focus {
   text-decoration: underline;
 }
 
@@ -491,15 +638,26 @@ a.logo:active {
 }
 
 /* Модальные окна */
-.modal-write-us button.send {
-    font-family: inherit;
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 18px;
-    background-color: #ee3643;
+
+.modal-cart .shopping-continue {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .modal-write-us label {
-    font-size: 18px;
-    line-height: 18px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.modal-cart p {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.modal-cart .user-actions {
+  list-style: none;
+}
+
+.modal-cart footer {
+  background-color: #f1f1f1;
 }

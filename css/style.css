@@ -317,6 +317,7 @@ a.logo:active {
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
   background-color: #ee3643;
   border: none;
 }
@@ -389,43 +390,38 @@ a.logo:active {
   text-decoration: line-through;
 }
 
-.catalog-item.action .button {
-  font: inherit;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
 
-.catalog-item.buy {
+
+.button.buy {
   color: #ffffff;
   background-color: #63a63e;
 }
 
-.catalog-item.buy:hover,
-.catalog-item.buy:focus {
+.button.buy:hover,
+.button.buy:focus {
   background-color: #5fbb2d;
 }
 
-.catalog-item.buy:active {
+.button.buy:active {
   background-color: #518534;
 }
 
-.catalog-item.bookmark {
+.button.bookmark {
   color: #32425c;
   background-color: #ffffff;
-  border: 2px solid #63a63e;
+  border: 3px solid #63a63e;
 }
 
-.catalog-item.bookmark:hover,
-.catalog-item.bookmark:focus {
+.button.bookmark:hover,
+.button.bookmark:focus {
   background-color: #ffffff;
-  border: 2px solid #32425c;
+  border: 3px solid #32425c;
 
 }
 
-.catalog-item.bookmark:active {
+.button.bookmark:active {
   color: rgba(50, 66, 92, 0.3);
-  border: 2px solid #c1c6ce;
+  border: 3px solid #c1c6ce;
 }
 
 /* Раздел Сервисы, О компании, описание раздела каталога- текст */
@@ -516,8 +512,23 @@ a.logo:active {
   font-size: 15px;
   line-height: 20px;
 }
+.filter fieldset {
+  border: none;
+}
 
 /* Каталог - сортировка */
+.options-sorting a.option-current {
+  color: #ee3643;
+  border-bottom: none;
+}
+
+.options-sorting a.option-current:hover,
+.options-sorting a.option-current:focus,
+.options-sorting a.option-current:active {
+  color: #ee3643;
+  border-bottom: none;
+}
+
 .options-sorting a {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #ee3643;
@@ -534,15 +545,26 @@ a.logo:active {
   border-bottom: none;
 }
 
-.options-sorting a.option-current {
-  color: #ee3643;
-  border-bottom: none;
-}
 
 /* Навигация по страницам */
 .pagination-list {
   list-style: none;
 }
+
+.pagination-item a.page-current {
+  color: #ffffff;
+  border: 1px solid #ee3643;
+  background-color: #ee3643;
+}
+
+.pagination-item a.page-current:hover,
+.pagination-item a.page-current:focus,
+.pagination-item a.page-current:active {
+  color: #ffffff;
+  border: 1px solid #ee3643;
+  background-color: #ee3643;
+}
+
 
 .pagination-item a {
   color: inherit;
@@ -558,11 +580,6 @@ a.logo:active {
   border: 1px solid #ee3643;
 }
 
-.pagination-item a.page-current {
-  color: #ffffff;
-  border: 1px solid #ee3643;
-  background-color: #ee3643;
-}
 /* Футер */
 .footer-general .contacts {
   color: #f3f7f9;

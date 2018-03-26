@@ -22,11 +22,6 @@ a {
 }
 
 /* Хедер */
-.header {
-  display: flex;
-  flex-direction: column;
-}
-
 .header-bar-wrapper {
   width: 100%;
   background-color: #293449;
@@ -52,14 +47,52 @@ a {
 
 .header-intro {
   display: flex;
+  align-items: baseline;
   width: 940px;
-  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
   /* outline: 3px dotted green; */
 }
 
+.header-intro .description {
+  flex-basis: 200px;
+  margin-top: 0;
+  padding-left: 50px;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+  font-style: italic;
+}
+
+.header-intro .contacts {
+  padding-left: 70px;
+}
+
+.header-intro .contacts .phone {
+  border: 3px solid #ffffff;
+  color: #e9292a;
+  font-size: 21px;
+  line-height: 21px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.header-intro .contacts .address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
 .header-nav-links {
   width: 940px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 0 #293449;
   /* outline: 3px dotted green; */
@@ -67,18 +100,35 @@ a {
 
 .nav-main {
   display: flex;
-  width: 940px;
-  margin: 0;
-  padding: 0;
-  height: 61px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style: none;
 }
 
 .nav-main li {
-  display: block;
-  margin: auto;
+  flex-grow: 1;
 }
 
+/* Навигация по сайту - состояния ссылок */
+
+.nav-main a {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+
+.nav-main a:hover,
+.nav-main a:focus {
+  background-color: #293449;
+}
+
+.nav-main a:active {
+  background-color: #1d2739;
+  color: rgba(255,255,255,0.5);
+}
 /* Логотип */
 .logo {
   display: block;
@@ -88,13 +138,19 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #ee3643;
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
+
 }
 
 .logo-header {
   font-size: 24px;
   line-height: 24px;
-  height: 47px;
   padding-top: 13px;
+  padding-bottom: 17px;
+  padding-left: 55px;
+  padding-right: 55px;
+  height: 47px;
+  z-index: 1;
 
 }
 
@@ -103,6 +159,9 @@ a {
   line-height: 30px;
   height: 68px;
   padding-top: 21px;
+  padding-bottom: 26px;
+  padding-left: 42px;
+  padding-right: 41px;
 }
 
 a.logo:hover,
@@ -116,6 +175,11 @@ a.logo:active {
 
 
 /* Форма поиска */
+.header-bar .search {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 .header-bar .search:hover,
 .header-bar .search:focus {
   background-color: #212a3a;
@@ -147,13 +211,23 @@ a.logo:active {
 
 /* Закладки и Корзина */
 .header-bar .bookmarks {
+  padding-left: 44px;
+  padding-right: 28px;
   margin-left: auto;
+}
+
+.header-bar .cart {
+  padding-left: 49px;
+  padding-right: 31px;
 }
 
 .header-bar .bookmarks,
 .header-bar .cart {
   color: #ffffff;
   line-height: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
 }
 
 .header-bar .bookmarks:hover,
@@ -176,10 +250,12 @@ a.logo:active {
 /* Кнопка Оформить заказ */
 .header-bar a.order-submit {
   color: #ffffff;
-  width: 150px;
-  height: 42px;
   background-color: #63a63e;
   line-height: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 22px;
 }
 
 .header-bar a.order-submit:hover,
@@ -192,45 +268,51 @@ a.logo:active {
   color: rgba(255,255,255,0.51);
 }
 
-/* Шапка - описание магазина и контакты */
-.header-intro .description {
-  font-size: 16px;
-  line-height: 23px;
-  font-style: italic;
-  color: #ee3643;
-}
-
-.header-intro .phone {
-  font-size: 21px;
-  line-height: 21px;
-  color: #e9292a;
-}
-
-.header-intro .address {
-  font-size: 14px;
-  line-height: 24px;
-  color: #32425c;
-}
 
 /* Навигация пользователя */
 .nav-user {
   margin-left: auto;
 }
 
-.nav-user a {
-  color: #000000;
-  background-color: #ffffff;
-  font-size: 21px;
-  line-height: 21px;
-}
-
 .user-non-authorized,
-.user-authorized-main,
-.user-authorized-secondary {
+.user-authorized {
+  display: flex;
+  margin-top: 0;
+  padding-left: 0;
   list-style: none;
 }
 
 /* Навигация неавторизованного пользователя */
+.user-non-authorized li {
+  height: 45px;
+}
+
+.user-non-authorized li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.user-non-authorized li a {
+  display: block;
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 21px;
+  line-height: 21px;
+  text-decoration: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.user-login {
+  padding-left: 47px;
+  padding-right: 26px;
+}
+
+.user-signup {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
 .user-non-authorized a:hover,
 .user-non-authorized a:focus {
   color: #ee3643;
@@ -243,42 +325,60 @@ a.logo:active {
 
 
 /* Навигация авторизованного пользователя */
-.user-authorized-main a:active {
+.authorized-main {
+  margin-bottom: 10px;
+}
+
+.authorized-main li {
+  height: 45px;
+}
+
+.authorized-main li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.authorized-main a {
+  display: block;
+  /* font-family: "Cuprum", Arial, sans-serif; */
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 21px;
+  line-height: 21px;
+  text-decoration: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.authorized-main a:hover,
+.authorized-main a:focus {
+}
+
+.authorized-main a:active {
   color: rgba(0,0,0,0.3);
 }
 
-.user-authorized-secondary a {
+.authorized-secondary a {
   color: #32425c;
-  text-decoration: underline;
   font-size: 16px;
   line-height: 18px;
+  border-bottom: 1px solid #32425c;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.user-authorized-secondary a:hover,
-.user-authorized-secondary a:focus {
+
+.authorized-secondary a:hover,
+.authorized-secondary a:focus {
   color: #ee3643;
+  border-bottom: 1px solid #ee3643;
 }
 
-.user-authorized-secondary a:active {
+.authorized-secondary a:active {
   color: rgba(50,66,92,0.3);
+  border-bottom: 1px solid rgba(50,66,92,0.3);
 }
 
 
-/* Навигация по сайту - состояния ссылок */
-
-.nav-main a {
-  color: rgb(255,255,255);
-}
-
-.nav-main a:hover,
-.nav-main a:focus {
-  background-color: #293449;
-}
-
-.nav-main a:active {
-  background-color: #1d2739;
-  color: rgba(255,255,255,0.5);
-}
 
 /* Промо */
 .promo-item {

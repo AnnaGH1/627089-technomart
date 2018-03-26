@@ -16,10 +16,21 @@ a {
   text-decoration: none;
 }
 
-.container {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* .container {
   width: 940px;
   margin: 0 auto;
-}
+} */
 
 /* Хедер */
 .header-bar-wrapper {
@@ -378,8 +389,16 @@ a.logo:active {
 
 
 /* Промо */
+.promo {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.promo-list {
+  padding-left: 0;
+}
+
 .promo-item {
-  display: inline-block;
   width: 300px;
   height: 123px;
   font-size: 24px;
@@ -426,11 +445,22 @@ a.logo:active {
 /* Промо - слайдер */
 .slide-list {
   list-style: none;
+  padding-left: 0;
 }
 
-.slide-item .name,
-.slide-item .note {
-  /* color: #ffffff; */
+.slide-item {
+  position: relative;
+}
+
+.promo .slide-item h3 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: 25px;
+  left: 25px;
+  color: #ffffff;
 }
 
 .slide-item .name {
@@ -445,6 +475,38 @@ a.logo:active {
   line-height: 24px;
 }
 
+
+.promo .slide-item button,
+.promo .slide-item a {
+  position: absolute;
+}
+
+.slide-item .arrow-left {
+  margin-left: -600px;
+  margin-top: 130px;
+}
+
+.slide-item .arrow-right {
+  margin-left: -100px;
+  margin-top: 130px;
+}
+
+.slide-item .indicator-1 {
+  margin-left: -390px;
+  margin-top: 215px;
+}
+
+.slide-item .indicator-2 {
+  margin-left: -330px;
+  margin-top: 215px;
+}
+
+.promo .slide-item .button-catalog {
+  margin-left: -600px;
+  margin-top: 200px;
+}
+
+
 /* Кнопки */
 .button {
   font-family: inherit;
@@ -454,7 +516,11 @@ a.logo:active {
   text-transform: uppercase;
   background-color: #ee3643;
   border: none;
-  height: 38px;
+  /* height: 38px; */
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 49px;
+  padding-right: 45px;
 }
 
 .button:hover,
@@ -472,12 +538,14 @@ a.logo:active {
 .services-slider .slide-item h3,
 .company-about h2,
 .company-contacts h2,
-.catalog-section-name,
-.catalog-section-about h2 {
+.section-name,
+.section-about h2 {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .catalog-nav h2 {
@@ -494,7 +562,25 @@ a.logo:active {
   color: #32425c;
 }
 
-/* Каталог - карточки товаров */
+/* Каталог */
+.catalog-index {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.catalog-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-nav h2 {
+  margin-left: 25px;
+}
+
+.catalog-nav .button {
+  margin-right: 25px;
+}
+
 .catalog .catalog-list {
   display: flex;
   flex-wrap: wrap;
@@ -577,22 +663,26 @@ a.logo:active {
 .services-slider .slide-item p,
 .company-about p,
 .company-contacts p,
-.catalog-section-about p {
+.section-about p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
-.shipping-partners {
-  font-size: 18px;
-  line-height: 20px;
-}
+
 
 /* Раздел Сервисы  */
-.services {
+.services-wrapper {
+  width: 100%;
   background-color: #f2f6f8;;
 }
 
+.services {
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .services .slide-list,
 .services .slider-controls {
@@ -628,17 +718,112 @@ a.logo:active {
   background-color: #ffffff;
 }
 
+/* Раздел О компании */
+.company-about-container {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  margin-bottom: 80px;
+}
+
+.company-about {
+  width: 520px;
+}
+
+.shipping-partners {
+  font-size: 18px;
+  line-height: 20px;
+  list-style: none;
+}
+
+.shipping-partners li {
+  padding-bottom: 15px;
+}
 /* Каталог - общее */
 .catalog-nav {
   background-color: #f9f5f0;
 }
 
-.catalog-section-name,
-.catalog-section-about {
+.breadcrumbs {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  padding-left: 0;
+
+}
+
+.section-name {
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 34px;
+  text-indent: 28px;
+  color: #32425c;
   background-color: #f2f6f8;
 }
 
+.section-about-wrapper {
+  width: 100%;
+  background-color: #f2f6f8;
+}
 
+.section-about {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-about h2 {
+  padding-top: 68px;
+  padding-bottom: 30px;
+}
+.section-about p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 39px;
+}
+
+/* Каталог - сетка */
+.catalog-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.catalog-left-wrapper {
+  width: 220px;
+}
+
+.catalog-right-wrapper {
+  width: 700px;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.control-sorting {
+  display: flex;
+  align-items: baseline;
+  background-color: #f7f3ec;
+}
+
+.options-sorting,
+.result-sorting {
+  display: flex;
+  padding-left: 0;
+}
+
+
+.pagination-list {
+  display: flex;
+  padding-left: 0;
+}
 
 /* Каталог - управление */
 .breadcrumbs,
@@ -651,15 +836,45 @@ a.logo:active {
   text-transform: uppercase;
   font-size: 13px;
   line-height: 18px;
+
+}
+
+.breadcrumbs {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumbs li {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .breadcrumbs a {
   color: #000000;
 }
 
-.breadcrumbs,
-.options-sorting, .result-sorting {
+.control-type {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 13px;
+  padding-bottom: 15px;
+}
+
+
+.options-sorting,
+.result-sorting {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.options-sorting li,
+.result-sorting li {
+  /* padding-left: 25px;
+  padding-right: 25px; */
 }
 
 /* Каталог - фильтр */
@@ -682,6 +897,7 @@ a.logo:active {
 }
 
 /* Каталог - сортировка */
+
 .options-sorting a.option-current {
   color: #ee3643;
   border-bottom: none;
@@ -712,8 +928,17 @@ a.logo:active {
 
 
 /* Навигация по страницам */
+.pagination {
+  margin-top: 52px;
+  margin-bottom: 60px;
+}
+
 .pagination-list {
   list-style: none;
+}
+
+.pagination-list li:not(last-child) {
+  margin-right: 10px;
 }
 
 .pagination-item a.page-current {
@@ -734,6 +959,11 @@ a.logo:active {
 .pagination-item a {
   color: inherit;
   border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  padding-right: 15px;
 }
 
 .pagination-item a:hover,

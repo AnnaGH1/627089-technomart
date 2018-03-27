@@ -398,17 +398,10 @@ a.logo:active {
   padding-left: 0;
 }
 
-.promo-item {
-  width: 300px;
-  height: 123px;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: bold;
-  color: #ffffff;
-}
+
 
 .promo-item.material {
-  background-color: #ffbf47;
+  background-color: rgb(255,191,71);
 }
 
 .promo-item.instrument {
@@ -427,19 +420,43 @@ a.logo:active {
   background-color: #ffc047;
 }
 
-.promo-item .note {
+.promo-item {
+  width: 300px;
   color: #ffffff;
-  background-color: #e5e5e5;
+  list-style: none;
+  padding-left: 22px;
+  padding-top: 26px;
+  padding-bottom: 22px;
+
+}
+
+.promo-item .name {
+  font-size: 24px;
+  line-height: 30px;
+  /* font-weight: bold; */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.promo-item .note {
+  height: 38px;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+  color: #ffffff;
+  background-color: rgba(229,229,229,0.1);
+  padding-top: 8px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .promo-item .note:hover,
 .promo-item .note:focus {
-  background-color: #cccccc;
+  background-color: rgba(204,204,204,0.1);
 }
 .promo-item .note:active {
-  background-color: #b2b2b2;
+  background-color: rgba(178,178,178,0.1);;
 }
 
 /* Промо - слайдер */

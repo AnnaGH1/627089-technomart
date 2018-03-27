@@ -85,6 +85,7 @@ a {
   color: #e9292a;
   font-size: 21px;
   line-height: 21px;
+  text-align: center;
   padding-top: 12px;
   padding-bottom: 12px;
   margin-top: 0;
@@ -395,11 +396,52 @@ a.logo:active {
 }
 
 .promo-list {
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
+  list-style: none;
 }
 
+.promo-item {
+  box-sizing: border-box;
+  color: #ffffff;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 26px;
+  padding-bottom: 32px;
 
+}
 
+.promo-item .name {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 25px;
+  padding-right: 10px;
+}
+
+.promo-item .note {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #e5e5e5;
+  /* background-color: rgba(229,229,229,0.1); */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.promo-item .note:hover,
+.promo-item .note:focus {
+  background-color: rgba(204,204,204,0.1);
+}
+.promo-item .note:active {
+  background-color: rgba(178,178,178,0.1);;
+}
 .promo-item.material {
   background-color: rgb(255,191,71);
 }
@@ -420,44 +462,6 @@ a.logo:active {
   background-color: #ffc047;
 }
 
-.promo-item {
-  width: 300px;
-  color: #ffffff;
-  list-style: none;
-  padding-left: 22px;
-  padding-top: 26px;
-  padding-bottom: 22px;
-
-}
-
-.promo-item .name {
-  font-size: 24px;
-  line-height: 30px;
-  /* font-weight: bold; */
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.promo-item .note {
-  height: 38px;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  background-color: rgba(229,229,229,0.1);
-  padding-top: 8px;
-  padding-bottom: 14px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.promo-item .note:hover,
-.promo-item .note:focus {
-  background-color: rgba(204,204,204,0.1);
-}
-.promo-item .note:active {
-  background-color: rgba(178,178,178,0.1);;
-}
 
 /* Промо - слайдер */
 .slide-list {
@@ -533,9 +537,9 @@ a.logo:active {
   text-transform: uppercase;
   background-color: #ee3643;
   border: none;
-  /* height: 38px; */
-  padding-top: 14px;
-  padding-bottom: 14px;
+  border-radius: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 49px;
   padding-right: 45px;
 }
@@ -565,9 +569,6 @@ a.logo:active {
   margin-bottom: 0;
 }
 
-.catalog-nav h2 {
-  color: #32425c;
-}
 
 .services-slider .slide-item h3 {
   font-size: 36px;
@@ -585,17 +586,22 @@ a.logo:active {
   margin: 0 auto;
 }
 
+.catalog-nav-wrapper {
+  padding: 25px;
+  background-color: #f9f5f0;
+}
+
 .catalog-nav {
   display: flex;
   justify-content: space-between;
 }
 
 .catalog-nav h2 {
-  margin-left: 25px;
+  color: #32425c;
 }
 
 .catalog-nav .button {
-  margin-right: 25px;
+  /* margin-right: 25px; */
 }
 
 .catalog .catalog-list {
@@ -715,6 +721,13 @@ a.logo:active {
   border: none;
 }
 
+.services-slider .slider-controls {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 240px;
+}
+
 .services-slider .slider-controls button {
   font-family: inherit;
   color: #ffffff;
@@ -722,7 +735,10 @@ a.logo:active {
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
+  box-shadow: inset 0 -1px 0 0 #33445a;
+  padding: 15px;
   border: none;
+  width: 100%;
 }
 
 .services-slider .slider-controls button:hover,
@@ -759,10 +775,6 @@ a.logo:active {
   padding-bottom: 15px;
 }
 /* Каталог - общее */
-.catalog-nav {
-  background-color: #f9f5f0;
-}
-
 .breadcrumbs {
   display: flex;
   width: 940px;
@@ -895,6 +907,24 @@ a.logo:active {
 }
 
 /* Каталог - фильтр */
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+.filter fieldset legend,
+.filter fieldset ul {
+  padding: 0;
+  margin: 0;
+}
+
 .filter .category-name {
   font-weight: bold;
   font-size: 17px;
@@ -961,6 +991,7 @@ a.logo:active {
 .pagination-item a.page-current {
   color: #ffffff;
   border: 1px solid #ee3643;
+  border-radius: 2px;
   background-color: #ee3643;
 }
 
@@ -1146,11 +1177,63 @@ a.logo:active {
   text-decoration: none;
 }
 
-/* Модальные окна */
+/* Модальное окно - напишите нам */
+.modal-write-us {
+  width: 620px;
+  border-top: 7px solid #ff5358;
+  /* outline: 2px dotted green; */
+}
 
-.modal-cart .shopping-continue {
-  color: #000000;
-  background-color: #ffffff;
+.modal-write-us .button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+}
+
+.modal-write-us .form-top-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  margin-right: 80px;
+  /* outline: 2px dotted blue; */
+}
+
+.modal-write-us .contact-info {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.modal-write-us .user-name-container,
+.modal-write-us .user-email-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.modal-write-us .user-name-container {
+  margin-right: 20px;
+}
+
+.modal-write-us .message {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.modal-write-us label {
+  padding-bottom: 13px;
+}
+
+
+.modal-write-us footer {
+  display: flex;
+  padding: 37px 80px;
+  background-color: #f4f4f4;
+  /* outline: 2px dotted blue; */
+}
+
+.modal-write-us footer .button {
+  flex-grow: 1;
 }
 
 .modal-write-us label {
@@ -1158,15 +1241,57 @@ a.logo:active {
   line-height: 18px;
 }
 
+
+/* Модальное окно - карта */
+.modal-map-popup {
+  position: relative;
+  width: 940px;
+}
+
+.modal-map-popup .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Модальное окно - корзина */
+.modal-cart {
+  width: 620px;
+  border-top: 7px solid #ff5358;
+}
+
+.modal-cart .button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+}
+
+.modal-cart .shopping-continue {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+
+
 .modal-cart p {
   font-size: 30px;
   line-height: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 178px;
+}
+
+
+.modal-cart footer {
+  padding: 37px 80px;
+  background-color: #f1f1f1;
 }
 
 .modal-cart .user-actions {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
-}
-
-.modal-cart footer {
-  background-color: #f1f1f1;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }

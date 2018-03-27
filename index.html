@@ -125,10 +125,12 @@
         </section>
 
         <section class="catalog catalog-index">
-          <header class="catalog-nav">
-            <h2>Популярные товары:</h2>
-            <a class="button" href="#">Все популярные товары</a>
-          </header>
+          <div class="catalog-nav-wrapper">
+            <header class="catalog-nav">
+              <h2>Популярные товары:</h2>
+              <a class="button" href="#">Все популярные товары</a>
+            </header>
+          </div>
           <ul class="catalog-list">
             <li class="catalog-item">
                 <img src="img/bfg9000.jpg" width="218" height="168" alt="Фото перфоратора">
@@ -166,10 +168,12 @@
         </section>
 
         <section class="catalog catalog-index">
-          <header class="catalog-nav">
-            <h2>Популярные производители:</h2>
-            <a class=" button" href="#">Все производители</a>
-          </header>
+          <div class="catalog-nav-wrapper">
+            <header class="catalog-nav">
+              <h2>Популярные производители:</h2>
+              <a class=" button" href="#">Все производители</a>
+            </header>
+          </div>
           <ul class="catalog-list">
             <li class="catalog-item">
               <a href="#">
@@ -372,17 +376,26 @@
 
 
       <section class="modal modal-write-us">
-        <button class="close" type="button">Закрыть</button>
+        <div class="button-container">
+          <button class="close" type="button">Закрыть</button>
+        </div>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <label for="user-name">Ваше имя:</label>
-          <input name="user-name" type="text" id="user-name" placeholder="Представьтесь, пожалуйста">
-
-          <label for="user-email">Ваш e-mail:</label>
-          <input name="user-email" type="email" id="user-email" placeholder="Для отправки ответа">
-
-          <label for="user-message">Текст письма:</label>
-          <textarea name="user-message" id="message" rows="#" cols="#" placeholder="В свободной форме"></textarea>
-
+          <div class="form-top-container">
+            <div class="contact-info">
+              <div class="user-name-container">
+                <label for="user-name">Ваше имя:</label>
+                <input name="user-name" type="text" id="user-name" placeholder="Представьтесь, пожалуйста">
+              </div>
+              <div class="user-email-container">
+                <label for="user-email">Ваш e-mail:</label>
+                <input name="user-email" type="email" id="user-email" placeholder="Для отправки ответа">
+              </div>
+            </div>
+            <div class="message">
+              <label for="user-message">Текст письма:</label>
+              <textarea name="user-message" id="message" rows="5" cols="#" placeholder="В свободной форме"></textarea>
+            </div>
+          </div>
           <footer>
             <button class="button send" type="submit">Отправить</button>
           </footer>

@@ -76,19 +76,32 @@ a {
   padding-left: 70px;
 }
 
-.header-intro .contacts .phone {
+.header-intro .phone {
+  position: relative;
   border: 3px solid #ffffff;
   color: #e9292a;
   font-size: 21px;
   line-height: 21px;
-  text-align: center;
+  padding-left: 74px;
   padding-top: 12px;
   padding-bottom: 12px;
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-.header-intro .contacts .address {
+.header-intro .phone::before {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  vertical-align: middle;
+  left: 15px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+}
+
+.header-intro .address {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -188,8 +201,33 @@ a {
 
 /* Форма поиска */
 .header-bar .search {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  position: relative;
+  padding-left: 0;
+  margin-bottom: 0;
+  /* outline: 1px solid magenta; */
+
+}
+
+
+.header-bar .search::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  /* vertical-align: middle; */
+  top: 12px;
+  left: 10px;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+}
+
+
+
+
+.header-bar .search label  {
+  font-size: 0;
+  /* outline: 2px solid orange; */
 }
 
 .header-bar .search:hover,
@@ -208,6 +246,10 @@ a {
   line-height: 18px;
   background-color: transparent;
   border: none;
+  padding-left: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
 }
 
 .header-bar input:hover,
@@ -235,11 +277,11 @@ a {
 
 .header-bar .bookmarks,
 .header-bar .cart {
+  position: relative;
   color: #ffffff;
   line-height: 18px;
   padding-top: 12px;
   padding-bottom: 12px;
-
 }
 
 .header-bar .bookmarks:hover,
@@ -257,6 +299,32 @@ a {
 
 .header-bar .cart.not-empty {
   background-color: #ee3643;
+}
+
+.header-bar .bookmarks::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 14px;
+  height: 16px;
+  vertical-align: middle;
+  left: 15px;
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  /* outline: 1px solid green; */
+}
+
+.header-bar .cart::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  left: 15px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  /* outline: 1px solid green; */
 }
 
 /* Кнопка Оформить заказ */
@@ -303,6 +371,31 @@ a {
   margin-right: 10px;
 }
 
+.user-non-authorized .user-login a {
+  position: relative;
+  padding-left: 47px;
+  padding-right: 26px;
+}
+
+.user-non-authorized .user-login a::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  vertical-align: middle;
+  left: 14px;
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+
+}
+
+.user-signup a {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
 .user-non-authorized a {
   display: block;
   color: #000000;
@@ -323,15 +416,7 @@ a {
   color: rgba(0,0,0,0.3);
 }
 
-.user-login {
-  padding-left: 47px;
-  padding-right: 26px;
-}
 
-.user-signup {
-  padding-left: 24px;
-  padding-right: 24px;
-}
 
 
 
@@ -397,17 +482,26 @@ a {
 .promo {
   width: 940px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .promo-list {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
 
+.promo-list li {
+  /* flex-grow: 1; */
+}
+
 .promo-item {
-  width: 300px;
+  /* width: 300px; */
   box-sizing: border-box;
   color: #ffffff;
   padding-left: 23px;
@@ -446,31 +540,43 @@ a {
 .promo-item .note:active {
   background-color: rgba(178,178,178,0.3);;
 }
+
+
 .promo-item.material {
   background-color: rgb(255,191,71);
+  /* order: 1; */
 }
 
 .promo-item.instrument {
   background-color: #3bbce3;
+  /* order: 2; */
 }
 
 .promo-item.equipment {
   background-color: #dc91d8;
+  /* order: 3; */
 }
 
 .promo-item.discount {
   background-color: #8ed78f;
+  order: 2;
 }
 
 .promo-item.delivery {
   background-color: #ffc047;
+  order: 3;
 }
 
 
 /* Промо - слайдер */
+.promo-slider {
+  order: 1;
+}
+
 .slide-list {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .slide-item {
@@ -822,6 +928,9 @@ a {
   margin: 0;
   margin-bottom: 100px;
   list-style: none;
+  background-image: url("../img/services-menu-shadow.png");
+  background-repeat: no-repeat;
+  /* background-position: right center; */
 }
 
 .services .slider-controls button {
@@ -996,6 +1105,18 @@ a {
   color: #000000;
 }
 
+.breadcrumbs .icon-home {
+  display: inline-block;
+  width: 15px;
+  height: 12px;
+  vertical-align: middle;
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
+  font-size: 0;
+  /* outline: 1px solid green; */
+
+}
+
 .control-type {
   margin-top: 0;
   margin-bottom: 0;
@@ -1086,6 +1207,23 @@ a {
 .options-sorting a:active {
   color: #ee3643;
   border-bottom: none;
+}
+
+.control-sorting .result-sorting .button-dir {
+  display: inline-block;
+  width: 11px;
+  height: 10px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  font-size: 0;
+}
+
+.control-sorting .result-sorting .button-dir.ascending {
+  background-image: url("../img/icon-up-dir.svg");
+}
+
+.control-sorting .result-sorting .button-dir.descending {
+  background-image: url("../img/icon-down-dir.svg");
 }
 
 /* Каталог - карточки товаров */
@@ -1263,7 +1401,36 @@ a {
 }
 
 .social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #212a3a;
+  border-radius: 50%;
   color: #ffffff;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social:hover,
+.social:focus {
+  background-color: #ee3643;
+}
+
+.social:active {
+  background-color: #ee3643;
+}
+
+.social-vkontakte {
+  background-image: url(../img/icon-vk.svg);
+}
+
+.social-facebook {
+  background-image: url(../img/icon-fb.svg);
+}
+
+.social-instagram {
+  background-image: url(../img/icon-insta.svg);
 }
 
 .developer {

@@ -532,6 +532,7 @@ a {
 }
 
 .promo-item {
+  position: relative;
   display: inline-block;
   width: 300px;
   height: 123px;
@@ -539,8 +540,60 @@ a {
   color: #ffffff;
   padding-left: 22px;
   padding-top: 26px;
-  /* padding-bottom: 32px; */
   /* outline: 1px solid blue; */
+}
+
+.promo-item::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  /* outline: 1px solid blue; */
+}
+
+
+.material::before {
+  top: 31px;
+  right: 43px;
+  width: 44px;
+  height: 65px;
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+}
+
+.instrument::before {
+  top: 33px;
+  right: 28px;
+  width: 75px;
+  height: 63px;
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+}
+
+.equipment::before {
+  top: 31px;
+  right: 31px;
+  width: 78px;
+  height: 62px;
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+}
+
+.discount::before {
+  top: 26px;
+  right: 45px;
+  width: 59px;
+  height: 72px;
+  background-image: url("../img/icon-4.svg");
+  background-repeat: no-repeat;
+}
+
+.free-delivery::before {
+  top: 32px;
+  right: 31px;
+  width: 78px;
+  height: 63px;
+  background-image: url("../img/icon-5.svg");
+  background-repeat: no-repeat;
 }
 
 .promo-item .name {
@@ -640,54 +693,55 @@ a {
 }
 
 
-.promo-slider .arrow,
-.promo-slider .arrow,
-.promo-slider .indicators-container,
-.promo-slider .button-catalog {
-  position: absolute;
-}
 
-.arrow::before {
-  content: "";
-  display: inline-block;
+.arrow {
+  position: absolute;
   width: 22px;
   height: 40px;
-  position: absolute;
-  left: -10px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
   /* outline: 1px solid green; */
+}
+
+.arrow-left {
+  left: 20px;
+  top: 40%;
   background-image: url("../img/icon-left.svg");
   background-repeat: no-repeat;
 }
 
-.arrow.dir-left {
-  left: 20px;
-  top: 45%;
-}
-
-.dir-right::before {
-  content: "";
-  display: inline-block;
-  width: 22px;
-  height: 40px;
-  position: absolute;
-  left: 70px;
-  /* outline: 1px solid blue; */
+.arrow-right {
+  left: 560px;
+  top: 40%;
   background-image: url("../img/icon-right.svg");
   background-repeat: no-repeat;
 }
 
-.arrow.dir-right {
-  right: 20px;
-  top: 45%;
+
+.indicator {
+  display: none;
+  /* position: absolute;
+  width: 10px;
+  height: 10px;
+  font-size: 0;
+  cursor: pointer;
+  outline: 1px solid green;
+  background-image: url("../img/indicator-slide-white.png");
+  background-repeat: no-repeat; */
 }
 
+/* .indicator-1 {
+  left: 80%;
+  top: 60%;
 
-.indicators-container {
-  left: 230px;
-  bottom: 38px;
-}
+} */
+
+
 
 .button-catalog {
+  position: absolute;
   left: 20px;
   bottom: 20px;
 }
@@ -1627,20 +1681,19 @@ a {
 
 /* Модальное окно - напишите нам */
 .modal .close {
-  cursor: pointer;
-}
-
-.modal .button-container::before {
-  content: "";
-  display: inline-block;
   position: absolute;
+  top: 9px;
+  right: 16px;
   width: 21px;
   height: 21px;
   background-image: url("../img/form-2.svg");
   background-repeat: no-repeat;
-
-
+  font-size: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
 }
+
 
 
 .modal-write-us {
@@ -1650,8 +1703,10 @@ a {
 }
 
 .modal-write-us .button-container {
+  position: relative;
   display: flex;
   justify-content: flex-end;
+  padding-top: 40px;
   padding-bottom: 10px;
 }
 
@@ -1717,6 +1772,15 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/form-2.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  font-size: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
 }
 
 /* Модальное окно - корзина */
@@ -1739,6 +1803,7 @@ a {
 
 
 .modal-cart p {
+  position: relative;
   font-size: 30px;
   line-height: 30px;
   padding-top: 30px;
@@ -1746,6 +1811,18 @@ a {
   padding-left: 178px;
 }
 
+.modal-cart p::before {
+  content: "";
+  width: 66px;
+  height: 66px;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 81px;
+  background-image: url("../img/form-1.svg");
+  background-repeat: no-repeat;
+
+}
 
 .modal-cart footer {
   padding: 37px 80px;

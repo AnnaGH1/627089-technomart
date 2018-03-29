@@ -99,12 +99,17 @@
               <form class="filter" action="https://echo.htmlacademy.ru" method="post">
                 <fieldset class="category">
                   <legend class="category-name">Цена:</legend>
-                  <div class="price-range-slider">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
                   </div>
-                  <div class="price-range-input">
-                    <input name="price-min" type="text" id="price-min" placeholder="0">
-                    ‒
-                    <input name="price-max" type="text" id="price-max" placeholder="30000">
+                  <div class="price-controls">
+                    <input name="price-min" type="text" id="price-min" value="0">
+                    <span class="price-dash">‒</span>
+                    <input name="price-max" type="text" id="price-max" value="30000">
                   </div>
                 </fieldset>
                 <fieldset class="category">

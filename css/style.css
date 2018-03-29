@@ -1155,7 +1155,6 @@ a {
 .breadcrumbs,
 .control-type,
 .options-sorting,
-.filter .result-button,
 .pagination {
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
@@ -1237,16 +1236,18 @@ a {
 
 /* Каталог - фильтр */
 .filter {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
   margin-bottom: 0;
 }
 
 .filter .result-button {
-  cursor: pointer;
   width: 140px;
   height: 38px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  cursor: pointer;
 }
 
 .filter fieldset {
@@ -1270,13 +1271,79 @@ a {
   list-style: none;
 }
 
+.filter fieldset {
+  border: none;
+}
+
 .filter .category label {
   font-size: 15px;
   line-height: 20px;
 }
-.filter fieldset {
-  border: none;
+
+.range-controls {
+  position: relative;
+  box-sizing: border-box;
+  width: 220px;
+  padding-top: 39px;
+  padding-bottom: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f7f3ec;
+  margin-bottom: 9px;
 }
+
+.range-controls .scale {
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.range-toggle {
+  position: absolute;
+  top: 30px;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 0 #e0ddd8;
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 20px;
+}
+
+.range-toggle-max {
+  left: 160px;
+}
+
+.price-dash {
+  align-self: center;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.price-controls input {
+  text-align: center;
+  background-color: #f7f3ec;
+  border: 1px solid #f7f3ec;
+  border-radius: 5px;
+  width: 95px;
+  height: 38px;
+  padding: 0;
+}
+
 
 /* Каталог - сортировка */
 

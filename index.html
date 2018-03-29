@@ -72,96 +72,54 @@
 
         <section class="promo">
           <h2 class="visually-hidden">Промо</h2>
-          <ul class="promo-list">
-            <li class="promo-item material new">
-              <p class="name">Материалы</p>
-              <a class="note" href="#">на любой вкус</a>
-            </li>
-            <li class="promo-item instrument">
-              <p class="name">Инструмент</p>
-              <a class="note" href="#">на все случаи</a>
-            </li>
-            <li class="promo-item equipment">
-              <p class="name">Техника</p>
-              <a class="note" href="#">для стройки</a>
-            </li>
-            <li class="promo-item discount">
-              <p class="name">Скидки 50%</p>
-              <a class="note" href="#">на 350 товаров</a>
-            </li>
-            <li class="promo-item delivery">
-              <p class="name">Доставка</p>
-              <a class="note" href="#">бесплатно</a>
-            </li>
-            <li>
-              <div class="promo-slider">
-                <ul class="slide-list">
-                  <li class="slide-item">
-                    <h3>
-                      <span class="name">Дрели</span>
-                      <span class="note">Соседям на радость!</span>
-                    </h3>
-                    <button class="arrow-left" type="button">Предыдущий</button>
-                    <button class="arrow-right" type="button">Следующий</button>
-                    <div class="indicators-container">
-                      <button class="indicator-1" type="button">Слайд 1</button>
-                      <button class="indicator-2"type="button">Слайд 2</button>
-                    </div>
-                    <a class="button button-catalog" href="catalog.html">Открыть каталог</a>
-                    <img src="img/slide-drill.jpg" width="620" height="266" alt="Фото дрели в действии">
-                  </li>
-                  <li class="slide-item visually-hidden">
-                    <h3>
-                      <span class="name">Перфораторы</span>
-                      <span class="note">Настоящие мужские игрушки!</span>
-                    </h3>
-                    <button class="arrow-left" type="button">Предыдущий</button>
-                    <button class="arrow-right" type="button">Следующий</button>
-                    <div class="indicators-container">
-                      <button class="indicator-1" type="button">Слайд 1</button>
-                      <button class="indicator-2"type="button">Слайд 2</button>
-                    </div>
-                    <a class="button button-catalog" href="catalog.html">Открыть каталог</a>
-
-                    <img src="img/slide-perforator.jpg" width="620" height="266" alt="Фото перфоратора в действии">
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <!-- <div class="promo-slider">
+          <div class="promo-item material new">
+            <p class="name">Материалы</p>
+            <a class="note" href="#">на любой вкус</a>
+          </div>
+          <div class="promo-item instrument">
+            <p class="name">Инструмент</p>
+            <a class="note" href="#">на все случаи</a>
+          </div>
+          <div class="promo-item equipment">
+            <p class="name">Техника</p>
+            <a class="note" href="#">для стройки</a>
+          </div>
+          <div class="promo-slider">
             <ul class="slide-list">
-              <li class="slide-item">
+              <li class="slide-item slide-drill">
                 <h3>
                   <span class="name">Дрели</span>
                   <span class="note">Соседям на радость!</span>
                 </h3>
-                <button class="arrow-left" type="button">Предыдущий</button>
-                <button class="arrow-right" type="button">Следующий</button>
-                <div class="indicators-container">
-                  <button class="indicator-1" type="button">Слайд 1</button>
-                  <button class="indicator-2"type="button">Слайд 2</button>
-                </div>
-                <a class="button button-catalog" href="catalog.html">Открыть каталог</a>
                 <img src="img/slide-drill.jpg" width="620" height="266" alt="Фото дрели в действии">
               </li>
-              <li class="slide-item">
+              <li class="slide-item slide-perforator hidden">
                 <h3>
                   <span class="name">Перфораторы</span>
                   <span class="note">Настоящие мужские игрушки!</span>
                 </h3>
-                <button class="arrow-left" type="button">Предыдущий</button>
-                <button class="arrow-right" type="button">Следующий</button>
-                <div class="indicators-container">
-                  <button class="indicator-1" type="button">Слайд 1</button>
-                  <button class="indicator-2"type="button">Слайд 2</button>
-                </div>
-                <a class="button button-catalog" href="catalog.html">Открыть каталог</a>
-
                 <img src="img/slide-perforator.jpg" width="620" height="266" alt="Фото перфоратора в действии">
               </li>
             </ul>
-          </div> -->
+            <button class="arrow dir-left" type="button">Предыдущий</button>
+            <button class="arrow dir-right" type="button">Следующий</button>
+            <div class="indicators-container">
+              <button class="indicator-1" type="button">Слайд 1</button>
+              <button class="indicator-2"type="button">Слайд 2</button>
+            </div>
+            <a class="button button-catalog" href="catalog.html">Открыть каталог</a>
+          </div>
+          <div class="promo-items-wrapper">
+            <div class="promo-item discount">
+              <p class="name">Скидки 50%</p>
+              <a class="note" href="#">на 350 товаров</a>
+            </div>
+            <div class="promo-item free-delivery">
+              <p class="name">Доставка</p>
+              <a class="note" href="#">бесплатно</a>
+            </div>
+          </div>
+
         </section>
 
         <section class="catalog catalog-index">
@@ -280,21 +238,21 @@
                 </li>
               </ul>
               <ul class="slide-list">
-                <li class="slide-item delivery">
-                  <h3>Доставка</h3>
-                  <p>
-                    Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                    Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-                  </p>
+                <li class="slide-item delivery hidden">
+                    <h3>Доставка</h3>
+                    <p>
+                      Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                      Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                    </p>
                 </li>
-                <li class="slide-item warranty visually-hidden">
+                <li class="slide-item warranty hidden">
                   <h3>Гарантия</h3>
                   <p>
                     Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,
                     вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
                   </p>
                 </li>
-                <li class="slide-item credit visually-hidden">
+                <li class="slide-item credit">
                   <h3>Кредит</h3>
                   <p>
                     Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
@@ -302,7 +260,6 @@
                   <button class="button send-credit-application">Отправить заявку</button>
                 </li>
               </ul>
-            </div>
           </section>
         </div>
 
@@ -417,7 +374,7 @@
 
       <section class="modal modal-write-us">
         <div class="button-container">
-          <button class="close" type="button">Закрыть</button>
+          <button class="close visually-hidden" type="button">Закрыть</button>
         </div>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-top-container">

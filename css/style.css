@@ -1097,7 +1097,7 @@ a {
 
 .services-intro {
   width: 410px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .services-slider {
@@ -1111,42 +1111,38 @@ a {
   margin: 0;
 }
 
-.services .slide-item {
-  padding-left: 80px;
-  /* outline: 2px solid magenta; */
+/* Слайды раздела Сервисы */
+.services .slide-list {
+  /* outline: 2px solid green; */
 }
 
-
+.services .slide-item {
+  padding-left: 80px;
+  /* outline: 4px solid magenta; */
+}
 
 .slide-item p {
   margin: 0;
   padding-top: 20px;
 }
 
-.delivery {
-  padding-right: 320px;
-}
 
 .delivery {
   background-image: url("../img/services-delivery.png");
   background-repeat: no-repeat;
   background-position: right bottom;
+  padding-right: 320px;
 }
 
-.warranty {
-  padding-right: 240px;
-}
 
 .warranty {
   background-image: url("../img/services-warranty.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-}
-
-.credit {
-  padding-right: 250px;
+  padding-right: 240px;
 
 }
+
 
 .credit p {
   margin-bottom: 50px;
@@ -1156,6 +1152,7 @@ a {
   background-image: url("../img/services-credit.png");
   background-repeat: no-repeat;
   background-position: right bottom;
+  padding-right: 250px;
 }
 
 
@@ -1169,14 +1166,25 @@ a {
   cursor: pointer;
 }
 
+/* Кнопки раздела Сервисы */
 .services .slider-controls {
+  position: relative;
   padding: 0;
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 100px;
   list-style: none;
+}
+
+.services .slider-controls::after {
+  content: "";
+  width: 10px;
+  height: 272px;
+  position: absolute;
+  top: -30px;
+  right: 0;
   background-image: url("../img/services-menu-shadow.png");
   background-repeat: no-repeat;
-  /* background-position: right center; */
+
 }
 
 .services .slider-controls button {
@@ -1192,6 +1200,7 @@ a {
   border: none;
   cursor: pointer;
   width: 240px;
+  /* outline: 1px solid green; */
 }
 
 .services .slider-controls button:hover,
@@ -1237,7 +1246,19 @@ a {
 }
 
 .shipping-partners li {
+  position: relative;
   padding-bottom: 15px;
+}
+
+.shipping-partners li::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  left: -30px;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
 }
 
 
@@ -1367,7 +1388,6 @@ a {
   height: 12px;
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
-  /* outline: 1px solid blue; */
 
 }
 
@@ -1380,11 +1400,10 @@ a {
   width: 15px;
   height: 12px;
   position: absolute;
-  vertical-align: middle;
+  left: 0;
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
   font-size: 0;
-  /* outline: 1px solid green; */
 
 }
 

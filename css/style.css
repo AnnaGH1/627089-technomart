@@ -301,7 +301,7 @@ a {
   color: rgba(255,255,255,0.6);
 }
 
-.header-bar .cart.not-empty {
+.header-bar .not-empty {
   background-color: #ee3643;
 }
 
@@ -468,25 +468,15 @@ a {
 }
 
 .user-logout a {
-  position: relative;
-  padding-left: 35px;
+  display: block;
+  padding-left: 30px;
   font-size: 0;
-  /* outline: 1px solid magenta; */
-}
-
-.user-logout a::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
   width: 21px;
   height: 17px;
-  vertical-align: middle;
-  left: 0;
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
-  /* outline: 1px solid green; */
-
 }
+
 
 
 
@@ -1169,6 +1159,11 @@ a {
   padding-bottom: 39px;
 }
 
+.control-filter h2,
+.control-sorting {
+  background-color: #f7f3ec;
+}
+
 /* Каталог - сетка */
 .catalog-wrapper {
   display: flex;
@@ -1190,14 +1185,15 @@ a {
 .control-sorting {
   display: flex;
   align-items: baseline;
-  background-color: #f7f3ec;
+  justify-content: space-between;
 }
 
 .options-sorting,
 .result-sorting {
   display: flex;
-  padding-left: 0;
+  /* outline: 1px solid blue; */
 }
+
 
 
 .pagination-list {
@@ -1272,21 +1268,19 @@ a {
   margin-bottom: 0;
   padding-top: 13px;
   padding-bottom: 15px;
+  padding-left: 20px;
 }
 
 
 .options-sorting,
 .result-sorting {
   list-style: none;
+  padding-left: 0;
+  padding-right: 20px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.options-sorting li,
-.result-sorting li {
-  /* padding-left: 25px;
-  padding-right: 25px; */
-}
 
 /* Каталог - фильтр */
 .filter {
@@ -1304,35 +1298,101 @@ a {
   cursor: pointer;
 }
 
-.filter fieldset {
+fieldset {
   padding: 0;
   margin: 0;
+  border: none;
 }
 
-.filter fieldset legend,
+.filter .category-name {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
 .filter fieldset ul {
   padding: 0;
   margin: 0;
 }
 
 .filter .category-name {
-  font-weight: bold;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .category-options {
   list-style: none;
 }
 
-.filter fieldset {
-  border: none;
+.category-options li {
+  margin-bottom: 15px;
 }
 
-.filter .category label {
+
+.filter label {
+  position: relative;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
+
+.filter-input-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  vertical-align: middle;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+
+}
+
+/* Фильтр по цене */
 
 .range-controls {
   position: relative;
@@ -1429,7 +1489,7 @@ a {
   border-bottom: none;
 }
 
-.control-sorting .result-sorting .button-dir {
+.result-sorting .button-dir {
   display: inline-block;
   width: 11px;
   height: 10px;
@@ -1444,6 +1504,15 @@ a {
 
 .control-sorting .result-sorting .button-dir.descending {
   background-image: url("../img/icon-down-dir.svg");
+}
+
+.options-sorting li:not(:first-child) {
+  padding-left: 72px;
+  /* outline: 1px solid red; */
+}
+
+.ascending {
+  padding-right: 20px;
 }
 
 
@@ -1680,7 +1749,7 @@ a {
 }
 
 /* Модальное окно - напишите нам */
-.modal .close {
+.modal-write-us .close {
   position: absolute;
   top: 9px;
   right: 16px;
@@ -1793,9 +1862,25 @@ a {
   display: flex;
   justify-content: flex-end;
   padding-bottom: 10px;
+  position: relative;
 }
 
-.modal-cart .shopping-continue {
+.modal-cart .close {
+  position: absolute;
+  top: 9px;
+  right: 16px;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/form-2.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  font-size: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.shopping-continue {
   color: #000000;
   background-color: #ffffff;
 }

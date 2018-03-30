@@ -367,6 +367,14 @@ a {
   list-style: none;
 }
 
+.authorized-secondary li:not(:first-child) {
+  list-style: initial;
+  margin-left: 28px;
+  color: #32425c;
+}
+
+
+
 /* Навигация неавторизованного пользователя */
 .user-non-authorized li {
   display: block;
@@ -812,9 +820,9 @@ a {
 
 
 .catalog-list {
-  width: 700px;
+  /* width: 700px; */
   padding: 0;
-  margin: 20px auto;
+  margin: 20px 0;
   list-style: none;
   font-size: 0;
   /* outline: 1px solid orange; */
@@ -836,7 +844,11 @@ a {
   /* outline: 1px solid green; */
 }
 
-.catalog-list li:nth-child(3n) {
+.catalog-list li:last-child {
+  margin-right: 0;
+}
+
+.catalog-inner .catalog-list li:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -1007,17 +1019,56 @@ a {
 }
 
 /* Каталог - производители */
-.catalog-list.makers li {
+.makers-list li {
   width: 208px;
   height: 123px;
-  display: flex;
-
+  position: relative;
+  padding: 10px 5px;
 }
 
-.catalog-list.makers a {
-  margin:auto;
+.makers-list li:nth-child(4n) {
+  margin-right: 0;
 }
 
+.makers-list a {
+  display: block;
+  position: absolute;
+}
+
+.makers-list .bosch {
+  top: 43px;
+  left: 41px;
+}
+
+.makers-list .makita {
+  top: 42px;
+  left: 42px;
+}
+.makers-list .dewalt {
+  top: 39px;
+  left: 31px;
+}
+.makers-list .interskol {
+  top: 45px;
+  left: 12px;
+}
+
+.makers-list .hitachi {
+  top: 46px;
+  left: 20px;
+}
+.makers-list .lg {
+  top: 25px;
+  left: 44px;
+}
+.makers-list .aeg {
+  top: 20px;
+  left: 29px;
+}
+.makers-list .metabo {
+  top: 34px;
+  left: 27px;
+}
 
 /* Раздел Сервисы, О компании, описание раздела каталога- текст */
 .services-intro p,

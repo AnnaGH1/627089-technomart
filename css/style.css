@@ -1979,6 +1979,7 @@ fieldset {
   height: 21px;
   background-image: url("../img/form-2.svg");
   background-repeat: no-repeat;
+  background-color: transparent;
   font-size: 0;
   padding: 0;
   border: 0;
@@ -2106,6 +2107,13 @@ fieldset {
   color: #000000;
   background-color: #ffffff;
   padding-left: 50px;
+}
+
+.shopping-continue:hover,
+.shopping-continue:focus,
+.shopping-continue:active {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 

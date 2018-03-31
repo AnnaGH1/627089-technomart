@@ -31,6 +31,32 @@ a {
   display: none;
 }
 
+/* Кнопки */
+.button {
+  font-family: inherit;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  border: none;
+  border-radius: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* padding-left: 68px; */
+  /* padding-right: 67px; */
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
 
 /* Хедер */
 .header-bar-wrapper {
@@ -58,7 +84,6 @@ a {
 
 .header-intro {
   display: flex;
-  align-items: baseline;
   width: 940px;
   margin-bottom: 25px;
   margin-left: auto;
@@ -93,7 +118,7 @@ a {
   padding-top: 8px;
   padding-bottom: 8px;
   margin-top: 0;
-  margin-bottom: 4px;
+  margin-bottom: 7px;
 }
 
 .header-intro .phone::before {
@@ -274,14 +299,14 @@ a {
 
 /* Закладки и Корзина */
 .header-bar .bookmarks {
-  padding-left: 44px;
+  padding-left: 45px;
   padding-right: 28px;
   margin-left: auto;
 }
 
 .header-bar .cart {
   padding-left: 49px;
-  padding-right: 27px;
+  padding-right: 30px;
 }
 
 .header-bar .bookmarks,
@@ -317,7 +342,7 @@ a {
   width: 14px;
   height: 16px;
   vertical-align: middle;
-  left: 17px;
+  left: 16px;
   background-image: url("../img/icon-bookmark.svg");
   background-repeat: no-repeat;
 }
@@ -358,7 +383,11 @@ a {
 
 
 /* Навигация пользователя */
-.nav-user {
+.header-index .nav-user {
+  margin-left: 69px;
+}
+
+.header-inner .nav-user {
   margin-left: 52px;
 }
 
@@ -376,7 +405,7 @@ a {
 /* Навигация неавторизованного пользователя */
 .user-non-authorized li {
   display: block;
-  padding-top: 12px;
+  padding-top: 0;
   padding-bottom: 12px;
 }
 
@@ -758,34 +787,20 @@ background-repeat: no-repeat;
   position: absolute;
   left: 25px;
   bottom: 25px;
+  padding-left: 50px;
+  padding-right: 48px;
 }
 
-
-/* Кнопки */
-.button {
-  font-family: inherit;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  background-color: #ee3643;
-  border: none;
-  border-radius: 2px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 68px;
-  padding-right: 67px;
-  cursor: pointer;
+.button-popular {
+  padding-left: 55px;
+  padding-right: 53px;
 }
 
-.button:hover,
-.button:focus {
-  background-color: #ca2c37;
+.button-makers {
+  padding-left: 70px;
+  padding-right: 65px;
 }
 
-.button:active {
-  background-color: #ba2732;
-}
 
 /* Заголовки разделов */
 .catalog-nav h2,
@@ -823,8 +838,9 @@ background-repeat: no-repeat;
 }
 
 .catalog-nav-wrapper {
-  padding: 27px;
   background-color: #f9f5f0;
+  padding: 27px;
+  padding-right: 24px;
 }
 
 .catalog-nav {
@@ -844,6 +860,15 @@ background-repeat: no-repeat;
   list-style: none;
   font-size: 0;
 }
+
+.makers-list {
+    margin-bottom: 55px;
+}
+
+.perforators-list {
+  margin-top: 11px;
+}
+
 
 
 .catalog-item {
@@ -997,8 +1022,8 @@ background-repeat: no-repeat;
   width: 129px;
   margin: 0 auto;
   margin-bottom: 7px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 11px;
+  padding-bottom: 6px;
   padding-left: 0;
   padding-right: 0;
   border: 3px solid #63a63e;
@@ -1062,43 +1087,43 @@ background-repeat: no-repeat;
 }
 
 .makers-list .bosch {
-  top: 43px;
-  left: 41px;
+  top: 54px;
+  left: 47px;
 }
 
 .makers-list .makita {
-  top: 42px;
-  left: 42px;
+  top: 51px;
+  left: 47px;
 }
 .makers-list .dewalt {
-  top: 39px;
-  left: 31px;
+  top: 50px;
+  left: 36px;
 }
 .makers-list .interskol {
-  top: 45px;
-  left: 12px;
+  top: 58px;
+  left: 16px;
 }
 
 .makers-list .hitachi {
-  top: 46px;
-  left: 20px;
+  top: 53px;
+  left: 26px;
 }
 .makers-list .lg {
-  top: 25px;
-  left: 44px;
+  top: 30px;
+  left: 46px;
 }
 .makers-list .aeg {
-  top: 20px;
-  left: 29px;
+  top: 30px;
+  left: 33px;
 }
 .makers-list .metabo {
-  top: 34px;
-  left: 27px;
+  top: 37px;
+  left: 33px;
 }
 
 /* Раздел Сервисы, О компании, описание раздела каталога- текст */
 .services-intro p,
-.services-slider .slide-item p,
+.services-slider p,
 .company-about p,
 .company-contacts p,
 .section-about p {
@@ -1149,13 +1174,14 @@ background-repeat: no-repeat;
 }
 
 .services .slide-item {
+  margin-top: 13px;
   padding-left: 80px;
   /* outline: 4px solid magenta; */
 }
 
 .slide-item p {
   margin: 0;
-  padding-top: 20px;
+  padding-top: 31px;
 }
 
 
@@ -1163,7 +1189,7 @@ background-repeat: no-repeat;
   background-image: url("../img/services-delivery.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-  padding-right: 320px;
+  padding-right: 340px;
 }
 
 
@@ -1202,7 +1228,7 @@ background-repeat: no-repeat;
 .services .slider-controls {
   position: relative;
   padding: 0;
-  margin-top: 0;
+  margin-top: 8px;
   margin-bottom: 100px;
   list-style: none;
 }
@@ -1219,7 +1245,7 @@ background-repeat: no-repeat;
 
 }
 
-.services .slider-controls button {
+.services button {
   font-family: inherit;
   color: #ffffff;
   background-color: #32425c;
@@ -1227,8 +1253,8 @@ background-repeat: no-repeat;
   font-size: 21px;
   line-height: 30px;
   box-shadow: inset 0 -1px 0 0 #33445a;
-  padding-top: 20px;
-  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 16px;
   padding-left: 20px;
   text-align: left;
   border: none;
@@ -1238,13 +1264,13 @@ background-repeat: no-repeat;
   /* outline: 1px solid green; */
 }
 
-.services .slider-controls button:hover,
-.services .slider-controls button:focus {
+.services button:hover,
+.services button:focus {
   background-color: #293449;
 }
 
-.services .slider-controls button:active,
-.services .slider-controls button.current {
+.services button:active,
+.services button.current {
   color: #32425c;
   background-color: #ffffff;
 }
@@ -1254,28 +1280,22 @@ background-repeat: no-repeat;
   width: 940px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  margin-top: 75px;
-  margin-bottom: 80px;
+  margin-top: 80px;
+  margin-bottom: 95px;
 }
 
-.company-about,
-.company-contacts {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 .company-about {
-  width: 520px;
+  margin-right: 60px;
 }
 
 .company-about p {
-  margin-top: 25px;
-  margin-bottom: 9px;
+  margin-top: 26px;
+  margin-bottom: 0;
+  padding-right: 0;
 }
 
-.company-about .button {
+.button-learn-more {
   align-self: flex-start;
   padding-left: 40px;
   padding-right: 40px;
@@ -1285,11 +1305,14 @@ background-repeat: no-repeat;
   font-size: 18px;
   line-height: 20px;
   list-style: none;
+  margin-top: 20px;
+  margin-bottom: 27px;
+  padding-left: 36px;
 }
 
 .shipping-partners li {
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 .shipping-partners li::before {
@@ -1297,12 +1320,33 @@ background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
   top: 8px;
-  left: -30px;
+  left: -36px;
   width: 25px;
   height: 2px;
   background-color: #ee3643;
 }
 
+
+.company-contacts {
+  margin-left: 45px;
+}
+
+.company-contacts p {
+  width: 180px;
+  margin-top: 26px;
+  margin-bottom: 30px;
+  padding-right: 0;
+}
+
+.contact-map {
+  display: block;
+  margin-bottom: 49px;
+}
+
+.button-write-us {
+  padding-left: 65px;
+    padding-right: 58px;
+}
 
 
 /* Каталог - общее */
@@ -1338,13 +1382,11 @@ background-repeat: no-repeat;
 }
 
 .section-about h2 {
-  padding-top: 68px;
-  padding-bottom: 30px;
+  padding-top: 63px;
+  padding-bottom: 26px;
 }
 .section-about p {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 39px;
+  padding-bottom: 68px;
 }
 
 .control-filter h2,
@@ -1373,7 +1415,6 @@ background-repeat: no-repeat;
 .control-sorting {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
 }
 
 .options-sorting,
@@ -1458,11 +1499,15 @@ background-repeat: no-repeat;
 }
 
 
-.options-sorting,
+.options-sorting {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 139px;
+}
+
 .result-sorting {
   list-style: none;
   padding-left: 0;
-  padding-right: 20px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1495,7 +1540,7 @@ fieldset {
 
 .price-category {
   border-bottom: 2px solid #e5e5e5;
-  padding-top: 15px;
+  padding-top: 17px;
   padding-bottom: 15px;
 }
 
@@ -1550,7 +1595,7 @@ fieldset {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
-  padding-left: 30px;
+  padding-left: 36px;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -1724,10 +1769,16 @@ fieldset {
   background-image: url("../img/icon-down-dir-grey.svg");
 }
 
+
 .options-sorting li:not(:first-child) {
-  padding-left: 72px;
+  padding-left: 70px;
   /* outline: 1px solid red; */
 }
+
+.options-sorting li:last-child {
+  padding-right: 42px;
+}
+
 
 .ascending {
   padding-right: 20px;
@@ -1736,15 +1787,15 @@ fieldset {
 
 /* Навигация по страницам */
 .pagination {
-  margin-top: 52px;
-  margin-bottom: 60px;
+  margin-top: 35px;
+  margin-bottom: 70px;
 }
 
 .pagination-list {
   list-style: none;
 }
 
-.pagination-list li:not(last-child) {
+.pagination-list li:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -1769,8 +1820,8 @@ fieldset {
   border: 1px solid #e5e5e5;
   border-radius: 2px;
   padding-top: 13px;
-  padding-bottom: 15px;
-  padding-left: 16px;
+  padding-bottom: 9px;
+  padding-left: 15px;
   padding-right: 15px;
 }
 
@@ -1781,6 +1832,11 @@ fieldset {
 
 .pagination-item a:active {
   border: 1px solid #ee3643;
+}
+
+.pagination-list li:last-child a {
+  padding-left: 28px;
+  padding-right: 32px;
 }
 
 /* Футер */
@@ -1882,31 +1938,40 @@ fieldset {
 
 .footer-marketing {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   width: 940px;
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 33px;
   padding-bottom: 35px;
   color: #ffffff;
   font-size: 16px;
   line-height: 18px;
 }
 
+.footer-inner .footer-marketing {
+  padding-top: 21px;
+  padding-bottom: 18px;
+}
 
-.social-links {
+.copyright {
+  padding-right: 87px;
+}
+
+.social-list {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 84px;
+  padding-left: 79px;
+  padding-right: 120px;
   padding-top: 0;
   list-style: none;
 }
 
-.social-links li {
+.social-list li {
 }
 
-.social-links li:not(:last-child) {
+.social-list li:not(:last-child) {
   padding-right: 5px;
 }
 
@@ -1947,13 +2012,17 @@ fieldset {
   display: flex;
 }
 
-.developer p {
+.developer-contact {
   display: flex;
   flex-direction: column;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 25px;
-  padding-right: 25px;
+  /* padding-left: 25px; */
+  /* padding-right: 25px; */
+}
+
+.developer p:first-of-type {
+  padding-right: 52px;
 }
 
 .developer a {

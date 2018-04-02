@@ -267,7 +267,7 @@ a {
 .search input {
   position: absolute;
   left: 0;
-  width: 270px;
+  width: 222px;
   font-family: inherit;
   font-size: 17px;
   line-height: 18px;
@@ -716,6 +716,7 @@ a {
 
 .slide-list {
   display: inline-block;
+  vertical-align: middle;
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -802,19 +803,22 @@ background-repeat: no-repeat;
   position: absolute;
   left: 25px;
   bottom: 25px;
-  padding-left: 50px;
-  padding-right: 48px;
+  display: inline-block;
+  text-align: center;
+  width: 185px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-.button-popular {
-  padding-left: 55px;
-  padding-right: 53px;
-}
-
+.button-popular,
 .button-makers {
-  padding-left: 70px;
-  padding-right: 65px;
+  display: inline-block;
+  text-align: center;
+  width: 243px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
+
 
 
 /* Заголовки разделов */
@@ -891,6 +895,7 @@ background-repeat: no-repeat;
 .catalog-item {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 218px;
   margin-right: 20px;
   margin-bottom: 18px;
@@ -1332,7 +1337,7 @@ background-repeat: no-repeat;
   margin: 0 auto;
   display: flex;
   margin-top: 80px;
-  margin-bottom: 95px;
+  margin-bottom: 85px;
 }
 
 
@@ -1347,9 +1352,11 @@ background-repeat: no-repeat;
 }
 
 .button-learn-more {
-  align-self: flex-start;
-  padding-left: 40px;
-  padding-right: 40px;
+  display: inline-block;
+  text-align: center;
+  width: 210px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .shipping-partners {
@@ -1357,7 +1364,7 @@ background-repeat: no-repeat;
   line-height: 20px;
   list-style: none;
   margin-top: 20px;
-  margin-bottom: 27px;
+  margin-bottom: 15px;
   padding-left: 36px;
 }
 
@@ -1391,12 +1398,15 @@ background-repeat: no-repeat;
 
 .contact-map {
   display: block;
-  margin-bottom: 49px;
+  margin-bottom: 38px;
 }
 
 .button-write-us {
-  padding-left: 65px;
-  padding-right: 58px;
+  display: inline-block;
+  text-align: center;
+  width: 290px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .button-write-us:hover,
@@ -1598,7 +1608,7 @@ background-repeat: no-repeat;
   border: 1px solid #e5e5e5;
 }
 
-fieldset {
+.filter .category {
   position: relative;
   padding: 0;
   margin: 0;
@@ -1637,7 +1647,7 @@ fieldset {
 }
 
 
-.filter fieldset ul {
+.filter .category-options {
   padding: 0;
   margin: 0;
   margin-top: 15px;
@@ -2046,6 +2056,7 @@ fieldset {
   display: inline-block;
   width: 40px;
   height: 40px;
+  vertical-align: middle;
   background-color: #212a3a;
   border-radius: 50%;
   color: #ffffff;

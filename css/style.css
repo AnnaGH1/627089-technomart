@@ -514,7 +514,7 @@ a {
 }
 
 .authorized-main li:last-child {
-  margin-left: 10px;
+  margin-left: 16px;
 }
 
 .user-profile a {
@@ -572,6 +572,12 @@ a {
   height: 17px;
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
+}
+
+.user-logout a::after {
+  content: "";
+  display: inline-block;
+  font-size: 21px;
 }
 
 .authorized-secondary li {

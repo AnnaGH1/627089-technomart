@@ -76,7 +76,6 @@ a {
 }
 
 .header-intro {
-  display: flex;
   width: 940px;
   margin-bottom: 25px;
   margin-left: auto;
@@ -84,7 +83,9 @@ a {
 }
 
 .header-intro .description {
-  flex-basis: 200px;
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
   align-self: flex-start;
   margin-top: 0;
   padding-top: 2px;
@@ -96,17 +97,21 @@ a {
 }
 
 .header-intro .contacts {
-  padding-left: 67px;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 62px;
 }
 
 .header-intro .phone {
   position: relative;
+  box-sizing: border-box;
+  width: 270px;
   border: 3px solid #ffffff;
   color: #e9292a;
   font-size: 21px;
   line-height: 21px;
-  padding-left: 71px;
-  padding-right: 50px;
+  text-align: center;
+  padding-left: 25px;
   padding-top: 8px;
   padding-bottom: 8px;
   margin-top: 0;
@@ -116,6 +121,7 @@ a {
 .header-intro .phone::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 19px;
   height: 19px;
   position: absolute;
@@ -238,6 +244,7 @@ a {
 .search::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 17px;
   height: 17px;
   position: absolute;
@@ -336,6 +343,7 @@ a {
 .bookmarks::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   position: absolute;
   width: 14px;
   height: 16px;
@@ -349,6 +357,7 @@ a {
 .cart::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   position: absolute;
   width: 15px;
   height: 15px;
@@ -384,16 +393,19 @@ a {
 
 /* Навигация пользователя */
 .header-index .nav-user {
-  margin-left: 69px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 65px;
 }
 
 .header-inner .nav-user {
-  margin-left: 52px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 46px;
 }
 
 .user-non-authorized,
 .user-authorized {
-  display: flex;
   margin-top: 0;
   padding-left: 0;
   list-style: none;
@@ -404,24 +416,28 @@ a {
 
 /* Навигация неавторизованного пользователя */
 .user-non-authorized li {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   padding-top: 0;
   padding-bottom: 12px;
 }
 
 .user-non-authorized li:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .user-non-authorized .user-login a {
   position: relative;
-  padding-left: 47px;
-  padding-right: 26px;
+  width: 100px;
+  text-align: center;
+  padding-left: 22px;
+
 }
 
 .user-non-authorized .user-login a::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   position: absolute;
   width: 20px;
   height: 17px;
@@ -431,9 +447,10 @@ a {
   background-repeat: no-repeat;
 }
 
-.user-signup a {
-  padding-left: 24px;
-  padding-right: 24px;
+
+.user-non-authorized .user-signup a {
+  width: 150px;
+  text-align: center;
 }
 
 .user-non-authorized a {
@@ -460,22 +477,31 @@ a {
 /* Навигация авторизованного пользователя */
 .authorized-main {
   margin-bottom: 5px;
+  font-size: 0;
 }
 
 .authorized-main li {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: #ffffff;
 }
 
+.authorized-main li:last-child {
+  margin-left: 10px;
+}
+
 .user-profile a {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 200px;
+  text-align: center;
   font-size: 21px;
   line-height: 21px;
   text-decoration: none;
-  padding-left: 46px;
-  padding-right: 36px;
+  padding-left: 40px;
   color: #000000;
 }
 
@@ -491,6 +517,7 @@ a {
 .user-profile a::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   position: absolute;
   width: 20px;
   height: 18px;
@@ -501,17 +528,32 @@ a {
 }
 
 .user-logout a {
-  display: block;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
   font-size: 0;
+  line-height: 21px;
+  margin-right: 10px;
+}
+
+.user-logout a::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 15px;
   width: 21px;
   height: 17px;
-  margin-right: 10px;
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
 }
 
-.authorized-secondary {
+.authorized-secondary li {
+  display: inline-block;
+  vertical-align: baseline;
 }
+
 
 .authorized-secondary li:first-child {
   margin-left: 16px;
@@ -579,6 +621,7 @@ a {
 .promo-item {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 300px;
   height: 123px;
   box-sizing: border-box;
@@ -590,6 +633,7 @@ a {
 .promo-item::before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   position: absolute;
 }
 
@@ -1496,7 +1540,6 @@ background-repeat: no-repeat;
 .options-sorting,
 .result-sorting {
   display: flex;
-  /* outline: 1px solid blue; */
 }
 
 
@@ -1610,42 +1653,39 @@ background-repeat: no-repeat;
   position: relative;
   padding: 0;
   margin: 0;
-  margin-bottom: 8px;
   border: none;
 }
 
-.price-category {
+.filter .price-category {
   border-bottom: 2px solid #e5e5e5;
-  padding-top: 14px;
   padding-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .price-category legend {
   padding-top: 6px;
-  margin-bottom: 0px;
+  margin-bottom: 13px;
 }
 
-.maker-category {
+
+.filter .maker-category {
   border-bottom: 2px solid #e5e5e5;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .maker-category legend {
   padding-top: 5px;
 }
 
-.power-category {
+.filter .power-category {
   padding-top: 0;
-  margin-top: 11px;
-  margin-bottom: 60px;
-}
-
-.power-category legend {
-  padding-top: 9px;
+  margin-top: 15px;
+  margin-bottom: 58px;
 }
 
 
 .filter .category-options {
+  list-style: none;
   padding: 0;
   margin: 0;
   margin-top: 15px;
@@ -1659,9 +1699,6 @@ background-repeat: no-repeat;
   text-transform: uppercase;
 }
 
-.category-options {
-  list-style: none;
-}
 
 .category-options li {
   margin-bottom: 20px;

@@ -178,6 +178,11 @@ a {
   box-shadow: 0 4px 0 0 #293449;
 }
 
+.nav-main a:visited {
+  background-color: #32425c;
+  box-shadow: 0 4px 0 0 #293449;
+}
+
 .nav-main a:link:hover,
 .nav-main a:link:focus {
   background-color: #293449;
@@ -218,6 +223,11 @@ a {
 .logo:link {
   background-color: #ee3643;
 }
+
+.logo:visited {
+  background-color: #ee3643;
+}
+
 
 .logo:link:hover,
 .logo:link:focus {
@@ -292,8 +302,19 @@ a {
   background-color: #ffffff;
 }
 
-.search input[type="search"]::placeholder {
+.search input[type="text"]::placeholder {
   color: #ffffff;
+  opacity: 1;
+}
+
+.search input[type="text"]::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.search input[type="text"]:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
 }
 
 /* Закладки и Корзина */
@@ -611,10 +632,11 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 940px;
+  font-size: 0;
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .promo-items-wrapper {
@@ -963,7 +985,7 @@ background-repeat: no-repeat;
   margin-right: 0;
 }
 
-.catalog-item .flag {
+.flag {
   position: absolute;
   top: -1px;;
   right: -1px;
@@ -974,7 +996,7 @@ background-repeat: no-repeat;
   z-index: 20;
 }
 
-.catalog-item .flag-new {
+.flag-new {
   background-image: url("../img/flag-new.png");
   background-repeat: no-repeat;
 }

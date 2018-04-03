@@ -501,7 +501,7 @@ a {
 
 /* Навигация авторизованного пользователя */
 .authorized-main {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   font-size: 0;
 }
 
@@ -584,12 +584,12 @@ a {
 
 
 .authorized-secondary li:first-child {
-  margin-left: 16px;
+  margin-left: 20px;
 }
 
 .authorized-secondary li:not(:first-child) {
   position: relative;
-  margin-left: 31px;
+  margin-left: 28px;
   color: #32425c;
 }
 
@@ -600,7 +600,7 @@ a {
   height: 4px;
   position: absolute;
   top: 40%;
-  left: -16px;
+  left: -17px;
   background-color: currentColor;
   border-radius: 50%;
 }
